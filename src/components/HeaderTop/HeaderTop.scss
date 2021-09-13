@@ -1,0 +1,104 @@
+.HeaderTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 16px 0;
+    // opacity: 0.05;
+    border-bottom: 1px solid #D1D1D1;
+    margin-bottom: 40px;
+
+    .top {
+
+        .tel,
+        .email,
+        .chat-us {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: #151515;
+        }
+
+        .tel {
+            margin: 0 33px;
+        }
+
+        .chat-us {
+            color: #6A983C;
+        }
+    }
+
+    .links a {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #6A983C;
+
+        &:nth-child(2) {
+            margin: 40px;
+        }
+    }
+}
+
+.Bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .select-option {
+        background: #F9F9F9;
+        border: 1px solid #D1D1D1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding: 10px 15px;
+        width: 500px;
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+
+        select {
+            border: none;
+            outline: none;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            color: #151515;
+            background-color: #F9F9F9;
+        }
+
+        .line {
+            width: 2px;
+            height: 20px;
+            background-color: #D1D1D1;
+            // transform: rotate(90deg);
+            border-radius: 10px;
+            margin: 0 30px;
+            flex-direction: column;
+        }
+
+        input {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #A9A9A9;
+            border: none;
+            outline: none;
+            background-color: #F9F9F9;
+            width: 60%;
+        }
+    }
+
+    .icons {
+        .user-icon {
+            margin-right: 45px;
+        }
+    }
+}

@@ -1,11 +1,13 @@
-
+import Header from '../../containers/Header'
+import HomeCards from '../../containers/HomeCards';
 
 import './Home.scss';
 
 const Home = () => {
     return (
         <div className="Home">
-            <h1>Home</h1>
+            <Header />
+            <HomeCards />
         </div>
     )
 }
