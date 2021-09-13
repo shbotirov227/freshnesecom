@@ -1,0 +1,57 @@
+.Card {
+    background: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 130px;
+
+    .card-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #151515;
+        margin: 16px 0 5px 0;
+    }
+
+    .card-text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #575757;
+    }
+
+    .card-prices {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16px;
+
+        .card-price {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #151515;
+        }
+
+        .card-btn {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            color: #FFFFFF;
+            background: #6A983C;
+            border: 2px solid #46760A;
+            box-sizing: border-box;
+            border-radius: 12px;
+            padding: 7px 12px;
+        }
+    }
+}

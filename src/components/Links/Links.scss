@@ -1,0 +1,48 @@
+.Links {
+    width: 20%;
+    text-align: left;
+    margin-top: 65px;
+
+    .links-category {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 16px;
+
+        .link {
+            display: inline-block;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            text-decoration-line: underline;
+            color: #6A983C;
+            margin-bottom: 15px;
+        }
+    }
+
+    .links-btn {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: #151515;
+        background: #F5F5F5;
+        border-radius: 12px;
+        margin-top: 35px;
+        padding: 13px 40px 13px 16px;
+        border: none;
+        outline: none;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .arrow-right {
+        position: absolute;
+        left: 165px;
+        bottom: 38px;
+    }
+}
