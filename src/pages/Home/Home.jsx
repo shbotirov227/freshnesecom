@@ -1,3 +1,4 @@
+import CardBlock from '../../containers/CardBlock';
 import Carousel from '../../containers/Carousel';
 import Header from '../../containers/Header'
 import HomeCards from '../../containers/HomeCards';
@@ -10,6 +11,7 @@ const Home = () => {
             <Header />
             <HomeCards />
             <Carousel />
+            <CardBlock />
         </div>
     )
 }

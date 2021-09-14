@@ -1,15 +1,13 @@
 .Carousel {
     border-top: 1px solid #D1D1D1;
     margin-top: 75px;
-    margin-bottom: 170px;
-
+    margin-bottom: 90px;
     .carousel-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: 70px;
         margin-bottom: 45px;
-
         .carousel-btn {
             font-style: normal;
             font-weight: bold;
@@ -19,13 +17,19 @@
             outline: none;
             border: none;
             background-color: transparent;
-            
             .carousel-arrow {
                 margin-left: 15px;
             }
         }
+        .cardBlock-inner-title {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #151515;
+        }
     }
-
     .carousel-cards {
         display: flex;
         align-items: center;

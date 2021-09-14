@@ -1,0 +1,19 @@
+.CardBlock {
+    margin-bottom: 145px !important;
+    .cardBlock-inner {
+        margin-bottom: 40px;
+        .cardBlock-inner-title {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #151515;
+        }
+    }
+    .cardBlock-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

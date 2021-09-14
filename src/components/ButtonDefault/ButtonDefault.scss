@@ -1,0 +1,26 @@
+.default {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: #151515;
+    }
+    .btn {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: #151515;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        .arrow {
+            margin-left: 15px;
+        }
+    }
+}
