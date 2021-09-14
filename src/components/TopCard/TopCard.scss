@@ -1,0 +1,56 @@
+.TopCard {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 80%;
+
+    .topcard-bg {
+        // width: 620px;
+        // height: 350px;
+        padding: 50px 180px 35px 35px;
+        background-color: #F4F8EC;
+        border-radius: 15px;
+        background-image: url(../../assets/images/Group.png);
+
+        &:nth-child(1) {
+            margin-right: 65px;
+        }
+
+        .topcard-title {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: #6A983C;
+        }
+
+        .topcard-name {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            color: #151515;
+            margin: 10px 0 100px 0;
+        }
+
+        .topcard-btn {
+            border: 2px solid #92C064;
+            box-sizing: border-box;
+            border-radius: 12px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            color: #151515;
+            padding: 15px;
+            background-color: transparent;
+
+            .topcard-arrow {
+                margin-left: 15px;
+            }
+        }
+    }
+}

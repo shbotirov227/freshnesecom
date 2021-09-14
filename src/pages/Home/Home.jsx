@@ -1,3 +1,4 @@
+import Carousel from '../../containers/Carousel';
 import Header from '../../containers/Header'
 import HomeCards from '../../containers/HomeCards';
 
@@ -8,6 +9,7 @@ const Home = () => {
         <div className="Home">
             <Header />
             <HomeCards />
+            <Carousel />
         </div>
     )
 }

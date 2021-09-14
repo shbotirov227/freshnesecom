@@ -4,24 +4,24 @@ import { ArrowRight } from '../../assets/icons/icons';
 
 import './Links.scss';
 
-const Links = () => {
+const Links = ({ linksTitle, link1, link2, link3, link4, link5, btnTitle }) => {
     return (
         <div className="Links">
-            <h3>Category menu</h3>
+            <h2 className="links-title">{linksTitle}</h2>
 
             <div className="links-category">
-                <Link to="#" className="link">Bakery</Link>
-                <Link to="#" className="link">Fruit and vegetables</Link>
-                <Link to="#" className="link">Meat and fish</Link>
-                <Link to="#" className="link">Drinks</Link>
-                <Link to="#" className="link">Kitchen</Link>
+                <Link to="#" className="link">{link1}</Link>
+                <Link to="#" className="link">{link2}</Link>
+                <Link to="#" className="link">{link3}</Link>
+                <Link to="#" className="link">{link4}</Link>
+                <Link to="#" className="link">{link5}</Link>
             </div>
 
             <button className="links-btn">
-                More categories
+                {btnTitle}
+            <span className="arrow-right"><ArrowRight /></span>
             </button>
 
-            <span className="arrow-right"><ArrowRight /></span>
         </div>
     )
 }

@@ -2,17 +2,25 @@
 import Img from '../../assets/images/Rectangle.png';
 import './Card.scss';
 
-const Card = () => {
+const Card = ({ cardTitle, cardText, cardPrice, cardBtn, cardRate, iconRate }) => {
     return (
         <div className="Card">
-
+            {
+                iconRate ? <span className="iconRate">{iconRate}</span> : undefined
+            }
             <img src={Img} alt="" />
-            <h5 className="card-title">Product Title</h5>
-            <span className="card-text">Space for a small product description </span>
+            <h5 className="card-title">{cardTitle}</h5>
+            <span className="card-text">{cardText}</span>
 
             <div className="card-prices">
-                <h4 className="card-price">1.48 USD</h4>
-                <button className="card-btn">Buy now</button>
+                <div>
+                    <h4 className="card-price">{cardPrice}</h4>
+                    
+                    {
+                        cardRate ? <span className="cardRate">{cardRate}</span> : undefined
+                    }
+                </div>
+                <button className="card-btn">{cardBtn}</button>
             </div>
 
         </div>

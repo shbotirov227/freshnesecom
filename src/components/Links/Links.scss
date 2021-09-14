@@ -1,7 +1,6 @@
 .Links {
     width: 20%;
     text-align: left;
-    margin-top: 65px;
 
     .links-category {
         display: flex;
@@ -10,12 +9,20 @@
         text-align: left;
         margin-top: 16px;
 
+        .links-title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #151515;
+        }
+
         .link {
             display: inline-block;
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: normal;
-            font-size: 14px;
+            font-size: 17px;
             line-height: 19px;
             text-decoration-line: underline;
             color: #6A983C;
@@ -27,7 +34,7 @@
         font-family: 'Poppins';
         font-style: normal;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 17px;
         line-height: 22px;
         color: #151515;
         background: #F5F5F5;
@@ -36,13 +43,11 @@
         padding: 13px 40px 13px 16px;
         border: none;
         outline: none;
-        position: relative;
         cursor: pointer;
     }
 
     .arrow-right {
-        position: absolute;
-        left: 165px;
-        bottom: 38px;
+        position: relative;
+        right: -13px;
     }
 }

@@ -6,7 +6,7 @@
     &-inner {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        // justify-content: space-between;
     }
 
     select {
@@ -19,5 +19,6 @@
         color: #151515;
         border: none;
         outline: none;
+        margin-right: 50px;
     }
 }

@@ -3,4 +3,14 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 65px !important;
+    box-sizing: border-box;
+
+    .bottom {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 140px;
+    }
 }
