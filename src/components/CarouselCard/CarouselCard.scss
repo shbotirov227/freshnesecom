@@ -1,0 +1,39 @@
+.CarouselCard {
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 25px 35px 40px 25px;
+    width: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    .carouselCard-text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        color: #151515;
+        margin-bottom: 25px;
+    }
+
+    .carouselCard-author {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #A9A9A9;
+    }
+
+    .carouselCard-img {
+        position: absolute;
+        bottom: -25px;
+    }
+}

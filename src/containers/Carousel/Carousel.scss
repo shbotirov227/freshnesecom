@@ -1,8 +1,34 @@
 .Carousel {
     border-top: 1px solid #D1D1D1;
     margin-top: 75px;
+    margin-bottom: 170px;
 
     .carousel-inner {
-        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 70px;
+        margin-bottom: 45px;
+
+        .carousel-btn {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            color: #151515;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            
+            .carousel-arrow {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .carousel-cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
