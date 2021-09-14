@@ -37,6 +37,20 @@ const ImgSection = () => {
             date="14.1.2020"
             img={Img1}
           />
+
+          <ImgRight 
+            title="Our chef tips for a great and healthy breakfast"
+            auth="Author"
+            date="14.1.2020"
+            img={Img2}
+          />
+
+          <ImgRight 
+            title="Prepare a simple and delicious breads"
+            auth="Author"
+            date="14.1.2020"
+            img={Img3}
+          />
         </div>
       </div>
     </div>
