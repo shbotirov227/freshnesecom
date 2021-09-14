@@ -1,0 +1,50 @@
+.ImgLeft {
+    background-image: url(../../assets/images/ImgSection.png);
+    background-repeat: no-repeat;
+    padding: 25px;
+    width: 470px;
+    height: 400px;
+    box-sizing: border-box;
+    .img-btn {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6a983c;
+        background: #f4f8ec;
+        border-radius: 12px;
+        padding: 1px 10px;
+        outline: none;
+        border: none;
+    }
+    .img-text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: #ffffff;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 230px;
+        margin-bottom: 10px;
+    }
+    .bottom {
+        display: flex;
+        align-items: center;
+        .img-image {
+            margin-right: 10px;
+        }
+        .img-auth {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: #FFFFFF;
+        }
+        .date {
+            margin-left: 15px;
+        }
+    }
+}

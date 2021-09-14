@@ -1,0 +1,35 @@
+.ImgSection {
+    margin-bottom: 130px;
+    .left {
+        width: 50%;
+    }
+    .top {
+        margin-bottom: 35px;
+    }
+    .dispFlex {
+        display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+    }
+    .img {
+        margin-bottom: 25px;
+    }
+    .text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #151515;
+        margin: 10px 0 15px 0;
+    }
+    .author {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        /* C1/A */
+        color: #151515;
+    }
+}

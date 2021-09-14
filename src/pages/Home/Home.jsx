@@ -2,6 +2,7 @@ import CardBlock from '../../containers/CardBlock';
 import Carousel from '../../containers/Carousel';
 import Header from '../../containers/Header'
 import HomeCards from '../../containers/HomeCards';
+import ImgSection from '../../containers/ImgSection/ImgSection';
 
 import './Home.scss';
 
@@ -12,6 +13,7 @@ const Home = () => {
             <HomeCards />
             <Carousel />
             <CardBlock />
+            <ImgSection />
         </div>
     )
 }
