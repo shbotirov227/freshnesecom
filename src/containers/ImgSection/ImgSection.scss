@@ -1,15 +1,23 @@
 .ImgSection {
-    margin-bottom: 130px;
     .left {
-        width: 50%;
+        width: 29%;
     }
+    .right {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
     .top {
         margin-bottom: 35px;
     }
     .dispFlex {
         display: flex;
-        // align-items: center;
-        // justify-content: space-between;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .rightSection {
+        width: 60%;
     }
     .img {
         margin-bottom: 25px;
@@ -27,9 +35,8 @@
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: normal;
-        font-size: 12px;
+        font-size: 15px;
         line-height: 16px;
-        /* C1/A */
         color: #151515;
     }
 }

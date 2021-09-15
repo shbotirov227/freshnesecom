@@ -1,0 +1,28 @@
+.ImgRight {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    // flex-direction: column;
+
+    .nmadir {
+        margin-right: 50px;
+    }
+
+    .imgRight-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #151515;
+    }
+
+    .imgRight-auth {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 16px;
+        color: #151515;
+    }
+}

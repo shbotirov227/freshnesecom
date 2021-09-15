@@ -1,5 +1,6 @@
 import CardBlock from '../../containers/CardBlock';
 import Carousel from '../../containers/Carousel';
+import Footer from '../../containers/Footer';
 import Header from '../../containers/Header'
 import HomeCards from '../../containers/HomeCards';
 import ImgSection from '../../containers/ImgSection/ImgSection';
@@ -14,6 +15,7 @@ const Home = () => {
             <Carousel />
             <CardBlock />
             <ImgSection />
+            <Footer />
         </div>
     )
 }

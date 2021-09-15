@@ -20,7 +20,8 @@ const ImgSection = () => {
       <div className="dispFlex">
         <ImgLeft />
 
-        <div className="ImgRight">
+        <div className="right">
+
           <div className="left">
             <img className="img" src={Image2} alt="" />
               <SmallBtn title="Vegetable"/>
@@ -31,6 +32,7 @@ const ImgSection = () => {
               </div>
           </div>
 
+          <div className="rightSection">
           <ImgRight 
             title="Salat is kinda good start to your morning routines"
             auth="Author"
@@ -51,6 +53,7 @@ const ImgSection = () => {
             date="14.1.2020"
             img={Img3}
           />
+          </div>
         </div>
       </div>
     </div>
