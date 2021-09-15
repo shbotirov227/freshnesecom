@@ -2,18 +2,20 @@
 import Card from '../../components/Card'
 import Links from '../../components/Links/Links';
 import TopCard from '../../components/TopCard/TopCard';
-import './HomeCards.module.scss';
+import './HomeCards.scss';
 
 const HomeCards = () => {
     return (
         <div className="HomeCards container">
             <Links 
                 linksTitle="Category menu"
-                link1="Bakery"
-                link2="Fruit and vegetables"
-                link3="Meat and fish"
-                link4="Drinks"
-                link5="Kitchen"
+                link={[
+                    "Bakery",
+                    "Fruit and vegetables",
+                    "Meat and fish",
+                    "Drinks",
+                    "Kitchen"
+                ]}
                 btnTitle="More categories"
             />
             <TopCard />
@@ -21,11 +23,13 @@ const HomeCards = () => {
             <div className="bottom">
                 <Links
                     linksTitle="Best selling products"
-                    link1="Kitchen"
-                    link2="Meat and fish"
-                    link3="Special nutrition"
-                    link4="Pharmacy"
-                    link5="Baby"
+                    link={[
+                        "Kitchen",
+                        "Meat and fish",
+                        "Special nutrition",
+                        "Pharmacy",
+                        "Baby"
+                    ]}
                     btnTitle="More products"
                 />
 
@@ -58,11 +62,13 @@ const HomeCards = () => {
             <div className="bottom">
                 <Links
                     linksTitle="Best from Farmers"
-                    link1="Carrots"
-                    link2="Tomatoes"
-                    link3="Potatoes"
-                    link4="Chicken"
-                    link5="Pork"
+                    link={[
+                        "Carrots",
+                        "Tomatoes",
+                        "Potatoes",
+                        "Chicken",
+                        "Pork"
+                    ]}
                     btnTitle="More products"
                 />
 

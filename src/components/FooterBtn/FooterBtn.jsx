@@ -1,5 +1,5 @@
 
-import './FooterBtn.module.scss'
+import './FooterBtn.scss'
 
 const FooterBtn = ({ title }) => {
   return (

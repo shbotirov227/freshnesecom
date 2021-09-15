@@ -1,7 +1,7 @@
 import { Breadcrumbs, Typography, Link } from '@material-ui/core';
 
 import Header from '../../containers/Header'
-import './Category.module.scss';
+import './Category.scss';
 
 const Category = () => {
     return (

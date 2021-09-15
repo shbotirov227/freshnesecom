@@ -1,5 +1,5 @@
 import { ArrowRight } from "../../assets/icons/icons";
-import "./ButtonDefault.module.scss";
+import "./ButtonDefault.scss";
 
 const ButtonDefault = ({ text, btnTitle }) => {
   return (

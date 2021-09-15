@@ -1,3 +1,4 @@
+
 import {
 Logo,
 User,
@@ -5,7 +6,7 @@ Basket,
 Search
 } from '../../assets/icons/icons';
 
-import './HeaderTop.module.scss';
+import './HeaderTop.scss';
 
 const HeaderTop = () => {
 return (

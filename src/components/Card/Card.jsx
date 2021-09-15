@@ -1,7 +1,7 @@
 
 import Img from '../../assets/images/Rectangle.png';
 
-import './Card.module.scss';
+import './Card.scss';
 
 const Card = ({ cardTitle, cardText, cardPrice, cardBtn, cardRate, iconRate }) => {
     return (

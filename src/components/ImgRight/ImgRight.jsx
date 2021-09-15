@@ -1,4 +1,5 @@
-import "./ImgRight.module.scss";
+
+import "./ImgRight.scss";
 
 const ImgRight = ({ title, auth, date, img }) => {
   return (

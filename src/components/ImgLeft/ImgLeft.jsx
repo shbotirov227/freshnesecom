@@ -2,7 +2,7 @@
 import Icon from '../../assets/images/ImgSectionIcon.png';
 import SmallBtn from '../SmallBtn/SmallBtn';
 
-import "./ImgLeft.module.scss";
+import "./ImgLeft.scss";
 
 const ImgLeft = () => {
   return (

@@ -6,7 +6,7 @@ import Auth2 from '../../assets/images/Auth2.png';
 import Auth3 from '../../assets/images/Auth3.png';
 import Auth4 from '../../assets/images/Auth4.png';
 
-import './Carousel.module.scss';
+import './Carousel.scss';
 
 const Carousel = () => {
         return (
