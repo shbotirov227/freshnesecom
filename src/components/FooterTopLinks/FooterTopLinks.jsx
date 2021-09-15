@@ -1,10 +1,10 @@
 
+import './FooterTopLinks.scss';
 import { Link } from 'react-router-dom';
-import './FooterTopLiks.scss';
 
 const FooterTopLiks = ({ title, link1, link2, link3, link4, link5, link6, link7 }) => {
     return (
-        <div className="FooterTopLiks">
+        <div className="FooterTopLinks">
             <h4 className="footerTopLink-title">{title}</h4>
             <Link to="#" className="footerTopLink-link">{link1}</Link>
             <Link to="#" className="footerTopLink-link">{link2}</Link>

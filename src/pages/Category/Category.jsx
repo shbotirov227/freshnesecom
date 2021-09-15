@@ -1,10 +1,25 @@
+import { Breadcrumbs, Typography, Link } from '@material-ui/core';
 
-import './Category.scss';
+import Header from '../../containers/Header'
+import './Category.module.scss';
 
 const Category = () => {
     return (
         <div className="Category">
-            <h1>Category</h1>
+            <Header />
+
+            <Breadcrumbs aria-label="breadcrumb">
+
+                <Link color="inherit" href="/">
+                    Home
+                </Link>
+
+                <Link color="inherit" href="/getting-started/installation/">
+                    Core
+                </Link>
+                <Typography color="textPrimary">Breadcrumb</Typography>
+
+            </Breadcrumbs>
         </div>
     )
 }

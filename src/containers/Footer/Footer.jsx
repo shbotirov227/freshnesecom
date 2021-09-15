@@ -1,11 +1,12 @@
-import FooterTop from '../../components/FooterTop/FooterTop';
+import FooterBottom from '../../components/FooterBottom';
+import FooterTop from '../../components/FooterTop';
 import './Footer.scss';
 
 const Footer = () => {
     return (
-        <div className="Footer">
-            <h1>Footer</h1>
+        <div className="Footer container">
             <FooterTop />
+            <FooterBottom />
         </div>
     )
 }

@@ -1,3 +1,3 @@
-import FooterTopLiks from "./FooterTopLiks";
+import FooterTopLiks from "./FooterTopLinks";
 
 export default FooterTopLiks;
