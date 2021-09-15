@@ -1,7 +1,7 @@
 
-import ButtonDefault from '../ButtonDefault';
 import FooterBtn from '../FooterBtn';
-import './FooterBottom.scss';
+
+import './FooterBottom.module.scss';
 
 const FooterBottom = () => {
     return (

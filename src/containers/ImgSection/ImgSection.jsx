@@ -8,7 +8,7 @@ import Img1 from '../../assets/images/img1.png';
 import Img2 from '../../assets/images/img2.png';
 import Img3 from '../../assets/images/img3.png';
 
-import './ImgSection.scss';
+import './ImgSection.module.scss';
 
 const ImgSection = () => {
   return (

@@ -1,6 +1,7 @@
 
-import { NavLink } from 'react-router-dom';
-import './HeaderBottom.scss';
+// import { NavLink } from 'react-router-dom';
+
+import './HeaderBottom.module.scss';
 
 const HeaderBottom = () => {
     return (

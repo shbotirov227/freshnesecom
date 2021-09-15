@@ -1,5 +1,5 @@
 
-import './CarouselCard.scss';
+import './CarouselCard.module.scss';
 
 const CarouselCard = ({ carouselCardText, carouselCardAuthor, CarouselCardImg }) => {
     return (

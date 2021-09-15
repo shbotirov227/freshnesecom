@@ -1,6 +1,7 @@
 
 import { ArrowRight } from '../../assets/icons/icons';
-import './TopCard.scss';
+
+import './TopCard.module.scss';
 
 const TopCard = () => {
     return (

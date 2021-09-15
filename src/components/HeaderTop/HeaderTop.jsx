@@ -5,7 +5,7 @@ Basket,
 Search
 } from '../../assets/icons/icons';
 
-import './HeaderTop.scss';
+import './HeaderTop.module.scss';
 
 const HeaderTop = () => {
 return (

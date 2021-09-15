@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import { ArrowRight } from '../../assets/icons/icons';
 
-import './Links.scss';
+import './Links.module.scss';
 
 const Links = ({ linksTitle, link1, link2, link3, link4, link5, btnTitle }) => {
     return (

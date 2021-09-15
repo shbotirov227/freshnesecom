@@ -5,7 +5,7 @@ import Header from '../../containers/Header'
 import HomeCards from '../../containers/HomeCards';
 import ImgSection from '../../containers/ImgSection/ImgSection';
 
-import './Home.scss';
+import './Home.module.scss';
 
 const Home = () => {
     return (

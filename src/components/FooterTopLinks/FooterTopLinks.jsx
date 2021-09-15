@@ -1,6 +1,7 @@
 
-import './FooterTopLinks.scss';
 import { Link } from 'react-router-dom';
+
+import './FooterTopLinks.module.scss';
 
 const FooterTopLiks = ({ title, link1, link2, link3, link4, link5, link6, link7 }) => {
     return (

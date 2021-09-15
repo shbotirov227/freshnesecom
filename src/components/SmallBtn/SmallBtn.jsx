@@ -1,5 +1,5 @@
 
-import './SmallBtn.scss';
+import './SmallBtn.module.scss';
 
 const SmallBtn = ({ title }) => {
   return (

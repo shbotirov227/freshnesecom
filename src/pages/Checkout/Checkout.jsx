@@ -1,5 +1,5 @@
 
-import './Checkout.scss';
+import './Checkout.module.scss';
 
 const Checkout = () => {
     return (

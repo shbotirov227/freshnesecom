@@ -1,7 +1,7 @@
 import ButtonDefault from "../../components/ButtonDefault";
 import Card from "../../components/Card";
 
-import "./CardBlock.scss";
+import "./CardBlock.module.scss";
 
 const CardBlock = () => {
   return (

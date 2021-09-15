@@ -1,5 +1,5 @@
 
-import './Detail.scss';
+import './Detail.module.scss';
 
 const Detail = () => {
     return (

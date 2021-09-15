@@ -1,7 +1,7 @@
 
 import FooterTopLinks from '../FooterTopLinks';
 
-import './FooterTop.scss';
+import './FooterTop.module.scss';
 
 const FooterTop = () => {
     return (
