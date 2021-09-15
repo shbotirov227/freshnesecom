@@ -59,5 +59,5 @@ export {
     User,
     Basket,
     Search,
-    ArrowRight,
+    ArrowRight
 };
