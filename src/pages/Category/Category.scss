@@ -1,3 +1,99 @@
 .Category {
-    
+    .category-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        color: #151515;
+        margin: 25px 0;
+    }
+
+    .breadcrumbItems {
+        margin-top: 25px;
+    }
+
+    .radio-section {
+        background: #F9F9F9;
+        border: 1px solid #D1D1D1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        width: 240px;
+        display: flex;
+    }
+
+    .checkbox-item {
+        background: #F9F9F9;
+        border: 1px solid #D1D1D1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding: 2px 20px;
+
+        select {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: #151515;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .line {
+            width: 1px;
+            height: 20px;
+            background-color: #D1D1D1;
+            margin: 0 25px 0 35px;
+            border-radius: 12px;
+            border: 1px solid #D1D1D1;
+            transform: rotate(90deg);
+        }
+    }
+
+    .check {
+        margin-right: 16px;
+    }
+
+    .radio-btn {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #151515;
+        outline: none;
+        border: none;
+        border: 1px solid #D1D1D1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding: 0 5px;
+    }
+
+    .selectedItems {
+        .selectedTitle {
+            margin-right: 12px;
+        }
+        .selectedBtn {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: #6A983C;
+            padding: 1px 10px 1px 10px;
+            outline: none;
+            border: none;
+            background: #F4F8EC;
+            border-radius: 12px;
+            margin-right: 12px;
+            cursor: pointer;
+        }
+    }
+
+    .categorycard-section {
+        width: 78%;
+    }
 }
