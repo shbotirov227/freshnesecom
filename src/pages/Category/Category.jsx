@@ -70,7 +70,7 @@ const Category = () => {
 
             <div className="checkbox-item check">
 
-              <FormControlLabel control={ <Checkbox color="primary" onChange={handleChangeCheckbox} inputProps={{ "aria-label": "secondary checkbox" }} /> } checked label="Filtre" />
+              <FormControlLabel control={ <Checkbox color="primary" onChange={handleChangeCheckbox} inputProps={{ "aria-label": "secondary checkbox" }} /> } label="Filtre" />
               <button className="radio-btn">12</button>
 
               <span className="line"></span>
