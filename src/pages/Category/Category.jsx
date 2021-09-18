@@ -14,7 +14,7 @@ import Header from "../../containers/Header";
 import CategoryLink from "../../components/CategoryLink";
 import CategoryRating from "../../components/CategoryRating";
 import CategoryCard from "../../components/CategoryCard";
-import { X } from "../../assets/icons/icons";
+import { ArrowDown, X, GridIcon, ListIcon } from "../../assets/icons/icons";
 
 import "./Category.scss";
 import CategoryFooter from "../../containers/CategoryFooter";
@@ -32,31 +32,42 @@ const Category = () => {
     setChecked(event.target.checked);
   };
 
+  // function changeComponent () {
+  //   return this.className = 'hidden' ? 'hidden' : 'show';
+  // }
+
   return (
     <div className="Category">
       <Header />
       <div className="container">
         <div className="mb-5">
-
           <Breadcrumbs aria-label="breadcrumb" className="breadcrumbItems">
+
             <Link color="inherit" href="/">
-              Home
+              Homepage
             </Link>
 
-            <Link color="inherit" href="/getting-started/installation/">
-              Core
-            </Link>
-            <Typography color="textPrimary">Breadcrumb</Typography>
+            <Typography color="textPrimary">Fruit and vegetables </Typography>
           </Breadcrumbs>
 
           <div className="d-flex align-center justify-content-between">
             <h3 className="category-title">Fruit and vegetables</h3>
 
-            <div>
-              <span>Grid view</span>
-              <span>List view</span>
-              <span>Products</span>
+            <div className="d-flex align-items-center">
+              <button className="categoryTopBtn">
+                <GridIcon /> Grid view
+              </button>
+
+              <button className="categoryTopBtn">
+                <span className="hoverSty"><ListIcon /></span> List view
+              </button>
+
+              <button className="categoryTopBtn">
+                <span className="categoryTopBtn-icon">117</span> Products
+              </button>
             </div>
+
+
           </div>
 
           <div className="d-flex w-100">
@@ -143,15 +154,13 @@ const Category = () => {
               <X />
             </button>
             <button className="selectedBtn">
-              <span className="mr-5">Selected Filtre </span>
+              <span className="mr-5">Selected Filtre</span>
               <X />
             </button>
           </div>
-
         </div>
 
         <div className="d-flex justify-content-between">
-          
           <div className="d-block">
             <CategoryLink
               className="d-flex justify-content-between"
@@ -172,9 +181,7 @@ const Category = () => {
               <CategoryRadio />
               <CategoryRating />
             </div>
-
           </div>
-
 
           <div className="categorycard-section">
             <CategoryCard />
@@ -183,11 +190,34 @@ const Category = () => {
             <CategoryCard />
             <CategoryCard />
           </div>
-
-        </div>
-          <CategoryFooter />
         </div>
 
+        <div className="d-block mt-5">
+          <div className="d-flex align-items-center justify-content-between">
+            <div className="d-flex align-items-center">
+              <span className="CategoryFooter-products">Page:</span>
+              <span className="CategoryFooter-pageNum">1</span>
+              <span className="CategoryFooter-pageNum">2</span>
+              <span className="CategoryFooter-pageNum">3</span>
+              <span className="CategoryFooter-pageNum">4</span>
+            </div>
+
+            <button className={`CategoryFooter-btn`}>
+              Show more products
+              <span className="ms-3">
+                <ArrowDown />
+              </span>
+            </button>
+
+            <div className="d-flex align-items-center">
+              <span className="CategoryFooter-backgroundBtn">336</span>
+              <span className="CategoryFooter-products">Products</span>
+            </div>
+          </div>
+        </div>
+
+        <CategoryFooter />
+      </div>
     </div>
   );
 };

@@ -9,12 +9,15 @@ import Img2 from '../../assets/images/img2.png';
 import Img3 from '../../assets/images/img3.png';
 
 import './ImgSection.scss';
+import { Link } from 'react-router-dom';
 
 const ImgSection = () => {
   return (
     <div className="ImgSection container">
       <div className="top">
-        <ButtonDefault text="Read our Blog posts" btnTitle="Go to Blog"/>
+        <Link to="/blog">
+          <ButtonDefault text="Read our Blog posts" btnTitle="Go to Blog"/>
+        </Link>
       </div>
 
       <div className="dispFlex">

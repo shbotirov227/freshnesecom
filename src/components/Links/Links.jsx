@@ -7,7 +7,7 @@ import './Links.scss';
 const Links = ({ linksTitle, link, btnTitle }) => {
     return (
         <div className="Links">
-            <h2 className="links-title">{linksTitle}</h2>
+            <h5 className="links-title">{linksTitle}</h5>
 
             <div className="links-category">
                 {

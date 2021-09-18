@@ -1,19 +1,24 @@
 .CategoryCard {
-    width: 100%;
+    width: 960px;
     height: 330px;
     background: #FFFFFF;
-    // border: 1px solid #D1D1D1;
+    border: 1px solid #D1D1D1;
     box-sizing: border-box;
     border-radius: 12px;
     margin-bottom: 35px;
+    margin-left: 150px;
+    overflow: hidden;
+
     
     &:last-child {
         margin-bottom: 0;
     }
 
     .categoryCardImg {
-        width: 370px;
-        height: 330px;
+        width: 360px;
+        height: 328px;
+        border-bottom-left-radius: 12px;
+        border-top-left-radius: 12px;
     }
 
     .categoryCardTitle {

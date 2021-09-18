@@ -3,13 +3,14 @@
     border: 1px solid #F1F1F1;
     box-sizing: border-box;
     border-radius: 12px;
-    padding: 25px 35px 40px 25px;
+    padding: 25px 35px 70px 25px;
     width: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
+    cursor: pointer;
 
     .carouselCard-text {
         font-family: 'Poppins';
@@ -34,6 +35,6 @@
 
     .carouselCard-img {
         position: absolute;
-        bottom: -25px;
+        bottom: 10px;
     }
 }

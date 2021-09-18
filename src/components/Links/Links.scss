@@ -1,21 +1,27 @@
 .Links {
     width: 20%;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 
+    .links-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #151515;
+        display: block;
+        margin-bottom: 25px;
+    }
     .links-category {
         display: flex;
         justify-content: center;
         flex-direction: column;
         text-align: left;
         margin-top: 16px;
-
-        .links-title {
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 27px;
-            color: #151515;
-        }
 
         .link {
             display: inline-block;

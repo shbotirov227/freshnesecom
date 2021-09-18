@@ -1,0 +1,22 @@
+.DetailImg {
+    position: relative;
+    margin-bottom: 55px !important;
+    .detailImgRate {
+        background: #F4F8EC;
+        border-radius: 12px;
+        padding: 5px 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6A983C;
+    }
+
+    .detailImgItems {
+        position: absolute;
+        z-index: 1;
+        top: 25px;
+        left: 30px;
+    }
+}

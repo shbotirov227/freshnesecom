@@ -110,6 +110,57 @@ const ArrowDown = () => {
     )
 }
 
+const GridIcon = () => {
+    return (
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.333 1.33331H2.66634C1.92996 1.33331 1.33301 1.93027 1.33301 2.66665V13.3333C1.33301 14.0697 1.92996 14.6666 2.66634 14.6666H13.333C14.0694 14.6666 14.6663 14.0697 14.6663 13.3333V2.66665C14.6663 1.93027 14.0694 1.33331 13.333 1.33331Z" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.33301 8H14.6663" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 1.33331V14.6666" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    )
+}
+
+const ListIcon = () => {
+    return (
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.333 1.33331H2.66634C1.92996 1.33331 1.33301 1.93027 1.33301 2.66665V13.3333C1.33301 14.0697 1.92996 14.6666 2.66634 14.6666H13.333C14.0694 14.6666 14.6663 14.0697 14.6663 13.3333V2.66665C14.6663 1.93027 14.0694 1.33331 13.333 1.33331Z" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.33301 4.66663H14.6663" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.33301 8H14.6663" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.33301 11.3333H14.6663" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    )
+}
+
+const PlusIcon = () => {
+    return (
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.1608 7H1.49414" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel"/>
+            <path d="M6.82812 12.3334V1.66676" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel"/>
+        </svg>
+    )
+}
+
+const DetailLikeIcon = () => {
+    return (
+        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.70094 2.76016C9.33746 2.12365 10.2008 1.76605 11.1009 1.76605C12.0011 1.76605 12.8644 2.12365 13.5009 2.76016C14.1375 3.39668 14.4951 4.25999 14.4951 5.16016C14.4951 6.06034 14.1375 6.92364 13.5009 7.56016L12.6276 8.4335L7.8276 13.2335L3.0276 8.4335L2.15427 7.56016C1.51775 6.92364 1.16016 6.06034 1.16016 5.16016C1.16016 4.25999 1.51775 3.39668 2.15427 2.76016C2.79079 2.12365 3.65409 1.76605 4.55427 1.76605C5.45444 1.76605 6.31775 2.12365 6.95427 2.76016L7.8276 3.6335L8.70094 2.76016Z" stroke="#E6704B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    )
+}
+
+const CompareIcon = () => {
+    return (
+        <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.16211 1.83322H2.49544C1.75906 1.83322 1.16211 2.43018 1.16211 3.16655V5.83322C1.16211 6.5696 1.75906 7.16655 2.49544 7.16655H5.16211C5.89849 7.16655 6.49544 6.5696 6.49544 5.83322V3.16655C6.49544 2.43018 5.89849 1.83322 5.16211 1.83322Z" stroke="#E6704B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5.16211 9.83322H2.49544C1.75906 9.83322 1.16211 10.4302 1.16211 11.1666V13.8332C1.16211 14.5696 1.75906 15.1666 2.49544 15.1666H5.16211C5.89849 15.1666 6.49544 14.5696 6.49544 13.8332V11.1666C6.49544 10.4302 5.89849 9.83322 5.16211 9.83322Z" stroke="#E6704B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.4961 11.1664H8.49609" stroke="#E6704B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.1628 13.8332H8.49609" stroke="#E6704B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.1628 5.83322H8.49609" stroke="#E6704B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.4961 3.16644H8.49609" stroke="#E6704B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    )
+}
+
 export {
     Logo,
     User,
@@ -121,5 +172,10 @@ export {
     WhiteStar,
     LikeIcon,
     ArrowBtn,
-    ArrowDown
+    ArrowDown,
+    GridIcon,
+    ListIcon,
+    PlusIcon,
+    DetailLikeIcon,
+    CompareIcon
 };

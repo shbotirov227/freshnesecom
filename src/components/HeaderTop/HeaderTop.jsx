@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import {
 Logo,
 User,
@@ -25,7 +26,7 @@ return (
     </div>
 
     <div className="Bottom">
-        <Logo />
+        <Link to="/"><Logo /></Link>
 
         <div className="select-option">
             <select name="" id="">
