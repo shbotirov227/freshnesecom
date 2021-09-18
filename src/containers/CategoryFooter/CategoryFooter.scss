@@ -1,0 +1,57 @@
+.CategoryFooter {
+    margin-top: 80px !important;
+    &-btn {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: #FFFFFF;
+        background: #6A983C;
+        border: 2px solid #46760A;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding: 12px 20px;
+    }
+    &-backgroundBtn {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6A983C;
+        padding: 3px 10px 1px 10px;
+        background: #F4F8EC;
+        border-radius: 12px;
+        margin-right: 5px;
+    }
+
+    &-products {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #A9A9A9;
+    }
+
+    &-pageNum {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #151515;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: all ease 0.5s;
+
+        &:hover {
+            color: #6A983C;
+        }
+    }
+    
+    &-footer {
+        margin-top: 80px;
+    }
+}

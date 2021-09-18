@@ -1,0 +1,66 @@
+.CategoryRating {
+    margin-top: 50px;
+
+    &-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #151515;
+        margin-bottom: 20px;
+    }
+
+    .min {
+    }
+    
+    .inputField {
+        border-radius: 12px;
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    .price {
+        margin-right: 110px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #151515;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .priceBtn {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: #FFFFFF;
+        padding: 13px 16px;
+        background: #6A983C;
+        border: 2px solid #46760A;
+        box-sizing: border-box;
+        border-radius: 12px;
+        margin-right: 35px;
+
+        &:last-child {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            color: #A9A9A9;
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 6px 12px;
+            border: none;
+        }
+    }
+}

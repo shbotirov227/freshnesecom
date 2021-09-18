@@ -12,15 +12,17 @@ const Links = ({ linksTitle, link, btnTitle }) => {
             <div className="links-category">
                 {
                     link.map((item) => {
-                        return <Link to="#" className="link">{item}</Link>
+                        return <Link to="/category" className="link">{item}</Link>
                     })
                 }
             </div>
 
-            <button className="links-btn">
-                {btnTitle}
-                <span className="arrow-right"><ArrowRight /></span>
-            </button>
+            <div className="mt-5">
+                <Link to="/category" className="links-btn">
+                    {btnTitle}
+                    <span className="arrow-right"><ArrowRight /></span>
+                </Link>
+            </div>
 
         </div>
     )
