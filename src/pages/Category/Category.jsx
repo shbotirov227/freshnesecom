@@ -43,7 +43,7 @@ const Category = () => {
         <div className="mb-5">
           <Breadcrumbs aria-label="breadcrumb" className="breadcrumbItems">
 
-            <Link color="inherit" href="/">
+            <Link color="inherit" href="/" className="text-decoration-none">
               Homepage
             </Link>
 
@@ -66,8 +66,6 @@ const Category = () => {
                 <span className="categoryTopBtn-icon">117</span> Products
               </button>
             </div>
-
-
           </div>
 
           <div className="d-flex w-100">

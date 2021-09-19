@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-import { Breadcrumbs, Typography } from "@material-ui/core";
+import { Breadcrumbs, Typography, Link } from "@material-ui/core";
 import { Rating } from "@mui/material";
 
 import Header from "../../containers/Header";
@@ -29,11 +29,11 @@ const Detail = () => {
       <Header />
       <div className="container">
         <Breadcrumbs aria-label="breadcrumb" className="breadcrumbItems mt-4">
-          <Link color="inherit" href="/">
+          <Link color="inherit" href="/" className="text-decoration-none" style={{color: '#A9A9A9'}}>
             Homepage
           </Link>
 
-          <Link color="inherit" href={`/category`}>
+          <Link color="inherit" href="/category" className="text-decoration-none" style={{color: '#A9A9A9'}}>
             Fruit and vegetables
           </Link>
           <Typography color="textPrimary">Carrots from Tomissy Farm</Typography>
@@ -142,12 +142,12 @@ const Detail = () => {
                     </select>
                     </div>
 
-                    <Link to="/checkout" className="addButtons-btn">
+                    <NavLink to="/checkout" className="addButtons-btn">
                     <span className="me-3">
                         <PlusIcon />
                     </span>
                     Add to cart
-                    </Link>
+                    </NavLink>
                 </div>
 
               <div className="d-flex">

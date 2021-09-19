@@ -16,12 +16,14 @@ const ImgSection = () => {
     <div className="ImgSection container">
       <div className="top">
         <Link to="/blog">
-          <ButtonDefault text="Read our Blog posts" btnTitle="Go to Blog"/>
+          <ButtonDefault text="Read our Blog posts" btnTitle="Go to Blog" link="/blog"/>
         </Link>
       </div>
 
       <div className="dispFlex">
-        <ImgLeft />
+        <div className="imgLeftImage">
+          <ImgLeft imgLeftText="Our chef tips for a great and tasty dinner ready in 20 minutes" imgLeftAuth="Author" imgLeftDate="17. 6. 2020" imgLeftRateTitle="Dinner tips" />
+        </div>
 
         <div className="right">
 

@@ -1,0 +1,43 @@
+.BlogCard {
+    margin-bottom: 35px;
+
+    .blogCardTag {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6A983C;
+        padding: 1px 10px;
+        background: #F4F8EC;
+        border-radius: 12px;
+        display: inline-block;
+        width: 13%;
+    }
+
+    .blogCardImg {
+        width: 300px;
+        margin-bottom: 25px;
+        border-radius: 12px;
+    }
+
+    .blogCardTitle {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #151515;
+        margin-bottom: 16px;
+        max-width: 250px;
+    }
+
+    .blogCardAuth {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #151515;
+    }
+}

@@ -1,11 +1,9 @@
 .ImgLeft {
-    background-image: url(../../assets/images/ImgSection.png);
-    background-repeat: no-repeat;
     padding: 25px;
-    // width: 470px;
-    width: 50%;
+    width: 100%;
     height: 400px;
     box-sizing: border-box;
+
     .img-btn {
         font-family: "Poppins";
         font-style: normal;
@@ -29,6 +27,7 @@
         justify-content: flex-end;
         padding-top: 230px;
         margin-bottom: 10px;
+        max-width: 400px;
     }
     .bottom {
         display: flex;

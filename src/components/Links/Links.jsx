@@ -4,7 +4,7 @@ import { ArrowRight } from '../../assets/icons/icons';
 
 import './Links.scss';
 
-const Links = ({ linksTitle, link, btnTitle }) => {
+const Links = ({ linksTitle, link, btnTitle, styleContent }) => {
     return (
         <div className="Links">
             <h5 className="links-title">{linksTitle}</h5>
@@ -12,17 +12,21 @@ const Links = ({ linksTitle, link, btnTitle }) => {
             <div className="links-category">
                 {
                     link.map((item) => {
-                        return <Link to="/category" className="link">{item}</Link>
+                        return <Link to="/category" className="link" style={{styleContent}}>{item}</Link>
                     })
                 }
             </div>
 
-            <div className="mt-5">
-                <Link to="/category" className="links-btn">
-                    {btnTitle}
-                    <span className="arrow-right"><ArrowRight /></span>
-                </Link>
-            </div>
+            {
+                btnTitle ? (
+                    <div className="mt-5">
+                        <Link to="/category" className="links-btn">
+                            {btnTitle}
+                            <span className="arrow-right"><ArrowRight /></span>
+                        </Link>
+                    </div>
+                ) : undefined
+            }
 
         </div>
     )

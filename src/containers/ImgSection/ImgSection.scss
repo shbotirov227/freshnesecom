@@ -16,6 +16,13 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+        .imgLeftImage {
+            width: 50%;
+            background-image: url('../../assets/images/ImgSection.png');
+            background-image: url(../../assets/images/ImgSection.png);
+            background-repeat: no-repeat;
+        }
     }
     .rightSection {
         width: 60%;

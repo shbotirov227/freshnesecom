@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import {
 Logo,
 User,
@@ -19,9 +19,9 @@ return (
             <a href="mailto:info@freshnesecom.com" className="email">info@freshnesecom.com</a>
         </div>
         <div className="links">
-            <a href="/blog">Blog</a>
-            <a href="/about">About Us</a>
-            <a href="/careers">Careers</a>
+            <NavLink to="/blog">Blog</NavLink>
+            <NavLink to="/about">About Us</NavLink>
+            <NavLink to="/careers">Careers</NavLink>
         </div>
     </div>
 
