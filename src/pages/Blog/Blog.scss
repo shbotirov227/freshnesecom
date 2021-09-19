@@ -1,5 +1,6 @@
 .Blog {
     min-width: 100%;
+
     &-main {
         .topImages {
             margin-bottom: 100px;
@@ -17,6 +18,7 @@
                 border-radius: 12px;
                 height: 400px;
             }
+
             .blogBackground2 {
                 background-image: url('../../assets/images/BlogImgBackgroundTop2.png');
                 background-repeat: no-repeat;
@@ -37,7 +39,7 @@
             color: #151515;
             margin: 25px 0;
         }
-    
+
         .blogTopBtn {
             border: none;
             outline: none;
@@ -51,11 +53,11 @@
             color: #A9A9A9;
             margin-left: 25px;
             transition: all ease 0.5s;
-    
+
             &:hover {
                 color: #151515;
             }
-    
+
             &-icon {
                 font-family: 'Poppins';
                 font-style: normal;
@@ -69,11 +71,11 @@
             }
         }
 
-        
+
 
         .emailSection {
             margin-top: 50px;
-            
+
             &-title {
                 font-family: 'Poppins';
                 font-style: normal;
@@ -82,6 +84,7 @@
                 line-height: 27px;
                 color: #151515;
             }
+
             &-text {
                 font-family: 'Open Sans';
                 font-style: normal;
@@ -92,6 +95,7 @@
                 margin: 10px 0 25px 0;
                 width: 290px;
             }
+
             &-email {
                 background: #F9F9F9;
                 border: 1px solid #D1D1D1;
@@ -113,6 +117,7 @@
                     background-color: transparent;
                 }
             }
+
             &-btn {
                 font-family: 'Poppins';
                 font-style: normal;
@@ -134,6 +139,67 @@
 
         .blogSmImg-right {
             width: 80%;
+        }
+
+        .pagesSection {
+            margin: 80px 0;
+            
+            .BlogFooter {
+                &-btn {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #FFFFFF;
+                    background: #6A983C;
+                    border: 2px solid #46760A;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    padding: 12px 20px;
+                    cursor: pointer;
+                }
+    
+                &-backgroundBtn {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #6A983C;
+                    padding: 3px 10px 1px 10px;
+                    background: #F4F8EC;
+                    border-radius: 12px;
+                    margin-right: 5px;
+                    cursor: pointer;
+                }
+    
+                &-products {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #A9A9A9;
+                    cursor: pointer;
+                }
+    
+                &-pageNum {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #151515;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    transition: all ease 0.5s;
+    
+                    &:hover {
+                        color: #6A983C;
+                    }
+                }
+            }
         }
     }
 }

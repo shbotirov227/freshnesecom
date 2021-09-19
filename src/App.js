@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { Home, Category, Detail, Checkout, Blog } from "./pages";
+import { Home, Category, Detail, Checkout, Blog, BlogDetail } from "./pages";
 
 import "./assets/styles/main.scss";
 
@@ -14,6 +14,7 @@ function App() {
           <Route exact path="/categoryGrid" component={Checkout} />
           <Route exact path="/detail" component={Detail} />
           <Route exact path="/blog" component={Blog} />
+          <Route exact path="/blog-detail" component={BlogDetail} />
           <Route exact path="/checkout" component={Checkout} />
         </Switch>
       </Router>
