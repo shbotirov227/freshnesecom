@@ -1,0 +1,30 @@
+.Checkout {
+    .checkoutPage {
+        &-left {
+            width: 50%;
+            .checkoutTitle {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 33px;
+                color: #151515;
+            }
+
+            .checkoutSpan {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: #A9A9A9;
+            }
+
+            
+        }
+
+        &-right {
+
+        }
+    }
+}

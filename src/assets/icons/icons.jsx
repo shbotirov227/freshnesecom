@@ -161,6 +161,15 @@ const CompareIcon = () => {
     )
 }
 
+const BackIcon = () => {
+    return (
+        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 3.5H8.66667C9.02029 3.5 9.35943 3.64048 9.60948 3.89052C9.85952 4.14057 10 4.47971 10 4.83333V13.5" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.33246 5.5L1.4258 3.56C1.41287 3.54813 1.40254 3.53371 1.39548 3.51764C1.38841 3.50158 1.38477 3.48422 1.38477 3.46667C1.38477 3.44912 1.38841 3.43176 1.39548 3.41569C1.40254 3.39962 1.41287 3.3852 1.4258 3.37333L3.33246 1.5" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    )
+}
+
 export {
     Logo,
     User,
@@ -177,5 +186,6 @@ export {
     ListIcon,
     PlusIcon,
     DetailLikeIcon,
-    CompareIcon
+    CompareIcon,
+    BackIcon
 };

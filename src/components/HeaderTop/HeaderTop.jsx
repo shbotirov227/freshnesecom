@@ -42,8 +42,8 @@ return (
         </div>
 
         <div className="icons">
-            <span className="user-icon"><User /></span>
-            <Basket />
+            <Link to="/checkout"><span className="user-icon"><User /></span></Link>
+            <Link to="/checkout"><Basket /></Link>
         </div>
     </div>
 </div>
