@@ -7,7 +7,7 @@ import './Card.scss';
 const Card = ({ cardTitle, cardText, cardPrice, cardBtn, cardRate, iconRate }) => {
     return (
         <div className="Card">
-            <Link to="">
+            <Link to="/category">
                 {
                     iconRate ? <span className="iconRate">{iconRate}</span> : undefined
                 }

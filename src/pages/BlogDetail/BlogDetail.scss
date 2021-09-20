@@ -1,0 +1,58 @@
+.BlogDetail {
+
+    &-top {
+        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('../../assets/images/BlogDetailTopImg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        min-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+        margin: 65px 0 100px 0;
+        border-radius: 12px;
+
+        .titles{ 
+            padding-top: 320px;
+        }
+        .blogDetailTopTitle {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 140%;
+            color: #FFFFFF;
+            width: 570px;
+            margin-left: 50px;
+        }
+        .date {
+            display: block;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+
+        .dateTitle {
+            display: block;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: #A9A9A9;
+            margin-bottom: 10px;
+        }
+    }
+
+    .blogDetailButtons {
+        margin-top: 100px;
+    }
+
+    .blogDetailCards {
+        margin: 40px 0 115px 0;
+    }
+}
