@@ -1,0 +1,23 @@
+.Order {
+    &-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: #151515;
+        margin-bottom: 5px;
+    }
+
+    &-span {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #A9A9A9;
+        margin-bottom: 40px;
+    }
+
+
+}
