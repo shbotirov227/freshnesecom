@@ -187,12 +187,8 @@
         transition: all ease 0.5s;
 
         body {
-            position: absolute;
+            position: fixed;
             height: 100vh;
-            overflow: hidden;
-        }
-        
-        .Checkout {
             overflow: hidden;
         }
         

@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 import Footer from "../Footer";
 // import { ArrowDown } from "../../assets/icons/icons";
 // import CardBlock from "../CardBlock";
