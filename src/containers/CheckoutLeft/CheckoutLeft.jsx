@@ -1,16 +1,21 @@
+import React from 'react';
+import OrderCard from '../../components/OrderCard';
 import FedEx from '../../assets/images/icons/FedEx.svg';
 import DHL from '../../assets/images/icons/DHL.svg';
 import VisaCard from '../../assets/images/icons/VisaCard.svg';
 import PayPal from '../../assets/images/icons/PayPal.svg';
 import Bitcoin from '../../assets/images/icons/Bitcoin.svg';
 import SafeIcon from '../../assets/images/icons/SafeIcon.svg';
+import { ModalClose } from '../../assets/icons/icons';
 
 import "./CheckoutLeft.scss";
 
 const CheckoutLeft = () => {
+
+  const [checked, setChecked] = React.useState(false);
+
   return (
     <div className="checkoutPage-left">
-      <form action="#">
         <h3 className="checkoutTitle mb-1">Billing info</h3>
 
         <div className="d-flex align-items-center justify-content-between mb-5">
@@ -427,11 +432,11 @@ const CheckoutLeft = () => {
             <input
               type="checkbox"
               name=""
-              id="reciept"
+              id="reciept1"
               style={{ cursor: "pointer" }}
             />
             <label
-              htmlFor="reciept"
+              htmlFor="reciept1"
               className="checkboxLabel"
               style={{ cursor: "pointer" }}
             >
@@ -446,11 +451,11 @@ const CheckoutLeft = () => {
             <input
               type="checkbox"
               name=""
-              id="reciept"
+              id="reciept2"
               style={{ cursor: "pointer" }}
             />
             <label
-              htmlFor="reciept"
+              htmlFor="reciept2"
               className="checkboxLabel"
               style={{ cursor: "pointer" }}
             >
@@ -471,7 +476,37 @@ const CheckoutLeft = () => {
             </label>
           </div>
 
-          <button className="confirmationBtn">Complete order</button>
+          <button onClick={() => setChecked(true)} className="confirmationBtn">Complete order</button>
+
+          {
+            checked ? (
+              <div className="Modal">
+                <div className="Modal-inner">
+                  <div className="d-flex align-items-center justify-content-between mb-5">
+                    <h2 className="modalTitle">Shopping cart</h2>
+                    <button onClick={() => setChecked(false)} className="modalClose">
+                      <span className="me-1">Close</span>
+                      <ModalClose />
+                    </button>
+                  </div>
+
+                  <div className="modalOrderCard">
+                    <OrderCard orderWidth />
+                    <OrderCard orderWidth />
+                  </div>
+
+                  <span className="modalSubtotal">Subtotal</span>
+                  <h4 className="modalTotalPrice">73.98 USD</h4>
+                </div>
+
+                <div className="modalShopping d-flex align-items-center justify-content-between">
+                    <span className="modalBtnTitle">Continue shopping</span>
+                    <button onClick={() => setChecked(false)} className="modalBtn">Go to Checkout</button>
+                </div>
+              </div>
+            ) : undefined
+          }
+
 
           <img src={SafeIcon} alt="" className="d-block mt-5 mb-3" />
           <span className="labelElement d-block">All your data are safe</span>
@@ -485,7 +520,6 @@ const CheckoutLeft = () => {
             Copyright © 2020 Freshnesecom
           </span>
         </div>
-      </form>
     </div>
   );
 };

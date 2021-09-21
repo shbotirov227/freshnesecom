@@ -170,6 +170,45 @@ const BackIcon = () => {
     )
 }
 
+const OrderLikeIcon = () => {
+    return (
+        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.65559 1.44505C7.13297 0.967657 7.78045 0.699463 8.45559 0.699463C9.13072 0.699463 9.7782 0.967657 10.2556 1.44505C10.733 1.92244 11.0012 2.56992 11.0012 3.24505C11.0012 3.92018 10.733 4.56766 10.2556 5.04505L9.60059 5.70005L6.00059 9.30004L2.40058 5.70005L1.74558 5.04505C1.26819 4.56766 1 3.92018 1 3.24505C1 2.56992 1.26819 1.92244 1.74558 1.44505C2.22297 0.967657 2.87045 0.699463 3.54558 0.699463C4.22072 0.699463 4.86819 0.967657 5.34558 1.44505L6.00059 2.10005L6.65559 1.44505Z" stroke="#E6704B" stroke-linecap="round" stroke-linejoin="bevel"/>
+        </svg>
+    )
+}
+
+const OrderCompireIcon = () => {
+    return (
+        <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.75 1H1.75C1.19772 1 0.75 1.44772 0.75 2V4C0.75 4.55228 1.19772 5 1.75 5H3.75C4.30228 5 4.75 4.55228 4.75 4V2C4.75 1.44772 4.30228 1 3.75 1Z" stroke="#E6704B" stroke-linecap="round" stroke-linejoin="bevel"/>
+            <path d="M3.75 7H1.75C1.19772 7 0.75 7.44772 0.75 8V10C0.75 10.5523 1.19772 11 1.75 11H3.75C4.30228 11 4.75 10.5523 4.75 10V8C4.75 7.44772 4.30228 7 3.75 7Z" stroke="#E6704B" stroke-linecap="round" stroke-linejoin="bevel"/>
+            <path d="M9.25 7.99997H6.25" stroke="#E6704B" stroke-linecap="round" stroke-linejoin="bevel"/>
+            <path d="M8.25 10H6.25" stroke="#E6704B" stroke-linecap="round" stroke-linejoin="bevel"/>
+            <path d="M8.25 4H6.25" stroke="#E6704B" stroke-linecap="round" stroke-linejoin="bevel"/>
+            <path d="M9.25 1.99997H6.25" stroke="#E6704B" stroke-linecap="round" stroke-linejoin="bevel"/>
+        </svg>
+    )
+}
+
+const RemoveIcon = () => {
+    return (
+        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.18031 7.18004L0.820312 0.820038" stroke="#151515" stroke-linecap="round" stroke-linejoin="bevel"/>
+            <path d="M7.18031 0.820038L0.820312 7.18004" stroke="#151515" stroke-linecap="round" stroke-linejoin="bevel"/>
+        </svg>
+    )
+}
+
+const ModalClose = () => {
+    return (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.3606 18.36L5.64062 5.63995" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel"/>
+            <path d="M18.3606 5.63995L5.64062 18.36" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel"/>
+        </svg>
+    )
+}
+
 export {
     Logo,
     User,
@@ -187,5 +226,9 @@ export {
     PlusIcon,
     DetailLikeIcon,
     CompareIcon,
-    BackIcon
+    BackIcon,
+    OrderLikeIcon,
+    OrderCompireIcon,
+    RemoveIcon,
+    ModalClose
 };

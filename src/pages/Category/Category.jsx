@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Breadcrumbs,
   Typography,
@@ -14,7 +14,8 @@ import Header from "../../containers/Header";
 import CategoryLink from "../../components/CategoryLink";
 import CategoryRating from "../../components/CategoryRating";
 import CategoryCard from "../../components/CategoryCard";
-import { ArrowDown, X, GridIcon, ListIcon } from "../../assets/icons/icons";
+import Card from '../../components/Card';
+import { ArrowDown, X, GridIcon, ListIcon, BlackStar, WhiteStar } from "../../assets/icons/icons";
 
 import "./Category.scss";
 import CategoryFooter from "../../containers/CategoryFooter";
@@ -32,9 +33,7 @@ const Category = () => {
     setChecked(event.target.checked);
   };
 
-  // function changeComponent () {
-  //   return this.className = 'hidden' ? 'hidden' : 'show';
-  // }
+  const [isGrid, setIsGrid] = useState(false);
 
   return (
     <div className="Category">
@@ -54,11 +53,11 @@ const Category = () => {
             <h3 className="category-title">Fruit and vegetables</h3>
 
             <div className="d-flex align-items-center">
-              <button className="categoryTopBtn">
+              <button onClick={() => setIsGrid(true)} className="categoryTopBtn">
                 <GridIcon /> Grid view
               </button>
 
-              <button className="categoryTopBtn">
+              <button onClick={() => setIsGrid(false)} className="categoryTopBtn">
                 <span className="hoverSty"><ListIcon /></span> List view
               </button>
 
@@ -182,11 +181,112 @@ const Category = () => {
           </div>
 
           <div className="categorycard-section">
-            <CategoryCard />
-            <CategoryCard />
-            <CategoryCard />
-            <CategoryCard />
-            <CategoryCard />
+          
+            {
+              isGrid ? (
+                <div className="d-flex align-items-start justify-content-between flex-wrap ms-5">
+                  <Card
+                    cardStar
+                    cardClassName="me-4 mb-5"
+                    cardTitle="Product Title"
+                    cardText="Space for a small product description"
+                    cardPrice="3.26 USD"
+                    cardBtn="Buy now"
+                    cardRate="48.56"
+                    iconRate="- 36 %"
+                  />
+
+                  <Card
+                    cardClassName="me-4 mb-5"
+                    cardTitle="Product Title"
+                    cardText="Space for a small product description"
+                    cardPrice="3.26 USD"
+                    cardBtn="Buy now"
+                    cardRate="48.56"
+                    iconRate="- 36 %"
+                  />
+
+                  <Card
+                    cardStar
+                    cardClassName="mb-5"
+                    cardTitle="Product Title"
+                    cardText="Space for a small product description"
+                    cardPrice="0.28 USD"
+                    cardBtn="Buy now"
+                    cardRate="48.56"
+                  />
+
+                  <Card
+                    cardClassName="me-4 mb-5 mt-5"
+                    cardTitle="Product Title"
+                    cardText="Space for a small product description"
+                    cardPrice="36.99 USD"
+                    iconRate="- 36 %"
+                    cardBtn="Buy now"
+                    cardRate="48.56"
+                  />
+
+                  <Card
+                    cardStar
+                    cardClassName="me-4 mb-5 mt-5"
+                    cardTitle="Product Title"
+                    cardText="Space for a small product description"
+                    cardPrice="36.99 USD"
+                    cardRate="48.56"
+                    iconRate="- 36 %"
+                    cardBtn="Buy now"
+                  />
+
+                  <Card
+                    cardStar
+                    cardClassName="mb-5 mt-5"
+                    cardTitle="Product Title"
+                    cardText="Space for a small product description"
+                    cardPrice="36.99 USD"
+                    cardBtn="Buy now"
+                  />
+
+                  <Card
+                    cardStar
+                    cardClassName="me-4 mb-5 mt-5"
+                    cardTitle="Product Title"
+                    cardText="Space for a small product description"
+                    cardPrice="36.99 USD"
+                    cardRate="48.56"
+                    iconRate="- 36 %"
+                    cardBtn="Buy now"
+                  />
+
+                  <Card
+                    cardStar
+                    cardClassName="me-4 mb-5 mt-5"
+                    cardTitle="Product Title"
+                    cardText="Space for a small product description"
+                    cardPrice="36.99 USD"
+                    cardBtn="Buy now"
+                  />
+
+                  <Card
+                    cardClassName="mb-5 mt-5"
+                    cardTitle="Product Title"
+                    cardText="Space for a small product description"
+                    cardPrice="36.99 USD"
+                    cardRate="48.56"
+                    iconRate="- 36 %"
+                    cardBtn="Buy now"
+                  />
+                </div>
+              ) : (
+                <div>
+                  <CategoryCard />
+                  <CategoryCard />
+                  <CategoryCard />
+                  <CategoryCard />
+                  <CategoryCard />
+                </div>
+              )
+            }
+            
           </div>
         </div>
 
@@ -200,7 +300,7 @@ const Category = () => {
               <span className="CategoryFooter-pageNum">4</span>
             </div>
 
-            <button className={`CategoryFooter-btn`}>
+            <button onClick={() => setIsGrid(true)} className={`CategoryFooter-btn`}>
               Show more products
               <span className="ms-3">
                 <ArrowDown />

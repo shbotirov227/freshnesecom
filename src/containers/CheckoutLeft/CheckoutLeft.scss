@@ -1,0 +1,275 @@
+.checkoutPage-left {
+    width: 50%;
+    
+    .checkoutTitle {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: #151515;
+    }
+
+    .checkoutSpan {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #A9A9A9;
+    }
+
+    .labelElement {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #151515;
+        margin-bottom: 5px;
+    }
+
+    .inputElement {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #A9A9A9;
+        padding: 12px 20px;
+        width: 335px;
+        background: #F9F9F9;
+        border: 1px solid #D1D1D1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        outline: none;
+    }
+
+    .formInputs {
+        margin-bottom: 35px;
+    }
+
+    .checkboxElement {
+        background: #F9F9F9;
+        border: 1px solid #D1D1D1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding: 12px 20px;
+        // width: 245px;
+        margin-bottom: 35px;
+
+        &.check2 {
+            width: 690px;
+            margin-bottom: 15px;
+        }
+
+        .checkboxLabel {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #151515;
+            margin-left: 10px;
+        }
+    }
+
+    .fedEx-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #151515;
+    }
+
+    .fedEx-price {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6A983C;
+    }
+
+    .radioSection {
+        margin-bottom: 65px;
+
+        .radioElement {
+            background: #F9F9F9;
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+            border-radius: 12px;
+            padding: 15px 20px;
+
+            .fedEx-title {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: #151515;
+            }
+
+            .fedEx-price {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: #6A983C;
+            }
+        }
+    }
+
+    .CreditCards {
+        background: #FFFFFF;
+        border: 1px solid #D1D1D1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .textareaSection {
+        .textarea {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #A9A9A9;
+            resize: none;
+            background: #F9F9F9;
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+            border-radius: 12px;
+            width: 100%;
+            height: 110px;
+            padding: 10px 20px;
+            margin-bottom: 65px;
+            outline: none;
+        }
+    }
+
+    .confirmation {
+        .confirmationBtn {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: right;
+            color: #FFFFFF;
+            padding: 17px 20px;
+            background: #6A983C;
+            border: 2px solid #46760A;
+            box-sizing: border-box;
+            border-radius: 12px;
+            outline: none;
+        }
+    }
+
+    .Modal {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 32px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+        width: 530px;
+        position: fixed;
+        top: 20px;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        // overflow-y: scroll;
+        // overflow-x: hidden;
+        box-sizing: border-box;
+        transition: all ease 0.5s;
+
+        body {
+            position: absolute;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .Checkout {
+            overflow: hidden;
+        }
+        
+        &-inner {
+            padding: 30px 35px;
+        }
+        .modalTitle {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 39px;
+            color: #151515;
+        }
+
+        .modalClose {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: #D1D1D1;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+
+        .modalOrderCard {
+            margin-bottom: 135px;
+        }
+
+        .modalSubtotal {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .modalTotalPrice {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 39px;
+            color: #151515;
+        }
+
+        .modalShopping {
+            padding-top: 15px;
+            border-top: 1px solid #EBEBEB;
+            padding: 30px 35px;
+
+            .modalBtnTitle {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 22px;
+                color: #151515;
+            }
+
+            .modalBtn {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 22px;
+                color: #FFFFFF;
+                padding: 12px 20px;
+                background: #6A983C;
+                border: 2px solid #46760A;
+                box-sizing: border-box;
+                border-radius: 12px;
+            }
+        }
+    }
+}

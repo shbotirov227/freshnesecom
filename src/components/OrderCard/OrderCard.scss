@@ -1,0 +1,126 @@
+.OrderCard {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F9F9F9;
+
+    &.orderWidth {
+        width: 500px;
+    }
+
+    .titleOrder {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #151515;
+    }
+
+    .iconTitle {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #A9A9A9;
+    }
+
+    .farmValue {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #151515;
+    }
+
+    .addButtons {
+        // width: 85%;
+        // padding: 16px;
+
+        &-priceItems {
+            margin-right: 90px;
+
+            .addButtons-price {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 27px;
+                color: #6A983C;
+            }
+
+            .addButtons-smBtn {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                text-decoration-line: line-through;
+                color: #A9A9A9;
+            }
+        }
+
+        &-select {
+            background: #F9F9F9;
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+            border-radius: 12px;
+            margin-right: 25px;
+            padding: 5px 20px;
+            width: 120px;
+            height: 35px;
+
+            input {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                color: #5c5c5c;
+                box-sizing: border-box;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                width: 50px;
+                border-right: 2px solid #D1D1D1;
+                margin-right: 5px;
+                text-align: center;
+            }
+
+            &-line {
+                border: 1px solid #D1D1D1;
+                transform: rotate(90deg);
+                width: 3px;
+                height: 20px;
+                margin: 0 16px;
+                background-color: #F9F9F9;
+            }
+
+            select {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: #151515;
+                background-color: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+
+        &-btn {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            color: #FFFFFF;
+            background: #6A983C;
+            border: 2px solid #46760A;
+            box-sizing: border-box;
+            border-radius: 12px;
+            padding: 15px 16px;
+        }
+    }
+}

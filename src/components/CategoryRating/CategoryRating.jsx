@@ -1,39 +1,16 @@
 import * as React from "react";
-import { Checkbox, Box, Stack, Rating, Slider, TextField   } from '@mui/material';
-import StarIcon from "@mui/icons-material/Star";
+import { Checkbox, Box, Rating, Slider, TextField   } from '@mui/material';
 
 import "./CategoryRating.scss";
-
-function valuetext(value) {
-  return `${value}°C`;
-}
 
 const minDistance = 10;
 
 const CategoryRating = () => {
-  const [value, setValue] = React.useState(2);
-  const [hover, setHover] = React.useState(2);
-
   const [checked, setChecked] = React.useState(true);
+
   const handleChange = (event) => {
     setChecked(event.target.checked);
   };
-
-  const [RangeValue, setRangeValue] = React.useState([20, 37]);
-  const handleChangeRange = (event, newValue) => {
-    setValue(newValue);
-  };
-
-
-
-
-
-
-
-
-
-
-
 
   const [value1, setValue1] = React.useState([20, 37]);
 
@@ -48,32 +25,6 @@ const CategoryRating = () => {
       setValue1([value1[0], Math.max(newValue[1], value1[0] + minDistance)]);
     }
   };
-
-  const [value2, setValue2] = React.useState([20, 37]);
-
-  // const handleChange2 = (event, newValue, activeThumb) => {
-  //   if (!Array.isArray(newValue)) {
-  //     return;
-  //   }
-
-  //   if (newValue[1] - newValue[0] < minDistance) {
-  //     if (activeThumb === 0) {
-  //       const clamped = Math.min(newValue[0], 100 - minDistance);
-  //       setValue2([clamped, clamped + minDistance]);
-  //     } else {
-  //       const clamped = Math.max(newValue[1], minDistance);
-  //       setValue2([clamped - minDistance, clamped]);
-  //     }
-  //   } else {
-  //     setValue2(newValue);
-  //   }
-  // };
-
-
-
-
-
-
 
 
   return (
@@ -113,7 +64,6 @@ const CategoryRating = () => {
                 value={value1}
                 onChange={handleChange1}
                 valueLabelDisplay="auto"
-                getAriaValueText={valuetext}
                 disableSwap
               />
             </Box>
