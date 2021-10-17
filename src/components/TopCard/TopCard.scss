@@ -3,14 +3,19 @@
     align-items: center;
     justify-content: right;
     width: 80%;
+
     .topcard-bg {
         padding: 50px 230px 35px 45px;
         background-color: #F4F8EC;
         border-radius: 15px;
         background-image: url(../../assets/images/Group.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
         &:nth-child(1) {
             margin-right: 65px;
         }
+
         .topcard-title {
             font-family: 'Poppins';
             font-style: normal;
@@ -19,6 +24,7 @@
             line-height: 18px;
             color: #6A983C;
         }
+
         .topcard-name {
             font-family: 'Poppins';
             font-style: normal;
@@ -28,6 +34,7 @@
             color: #151515;
             margin: 10px 0 100px 0;
         }
+
         .topcard-btn {
             border: 2px solid #92C064;
             box-sizing: border-box;
@@ -41,9 +48,39 @@
             padding: 15px;
             background-color: transparent;
             cursor: pointer;
+
             .topcard-arrow {
                 margin-left: 15px;
             }
         }
     }
+}
+
+@media screen and (max-width: '960px') {
+
+    .TopCard {
+        width: 80%;
+        .topcard-bg {
+            padding: 20px 100px 15px 25px;
+            max-width: 500px;
+            max-height: 250px;
+            .topcard-btn {  
+                font-size: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px;
+            }
+    
+            .topcard-title {
+                font-size: 10px;
+            }
+
+            .topcard-name {
+                font-size: 20px;
+                margin: 10px 0 60px 0;
+            }
+        }
+    }
+
 }

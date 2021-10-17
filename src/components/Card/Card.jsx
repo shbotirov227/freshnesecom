@@ -12,7 +12,7 @@ const Card = ({ cardTitle, cardText, cardPrice, cardBtn, cardRate, iconRate, car
                 {
                     iconRate ? <span className="iconRate">{iconRate}</span> : undefined
                 }
-                <img src={Img} alt="" />
+                <img src={Img} alt="" className="card-img" />
                 <h5 className="card-title">{cardTitle}</h5>
                 <span className="card-text">{cardText}</span>
 

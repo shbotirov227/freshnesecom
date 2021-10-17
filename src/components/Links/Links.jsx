@@ -19,7 +19,7 @@ const Links = ({ linksTitle, link, btnTitle, styleContent }) => {
 
             {
                 btnTitle ? (
-                    <div className="mt-5">
+                    <div className="btn-link">
                         <Link to="/category" className="links-btn">
                             {btnTitle}
                             <span className="arrow-right"><ArrowRight /></span>

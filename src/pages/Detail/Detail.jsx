@@ -9,6 +9,7 @@ import ButtonDefault from "../../components/ButtonDefault";
 import Card from "../../components/Card";
 import Footer from "../../containers/Footer";
 import DetailImage from "../../components/DetailImg/DetailImg";
+
 import {
   CompareIcon,
   DetailLikeIcon,
@@ -19,24 +20,24 @@ import "./Detail.scss";
 import VitaminItem from "../../components/VitaminItem/VitaminItem";
 
 const Detail = () => {
-  const [checked, setChecked] = React.useState(true);
-  const handleChange = (event) => {
-    setChecked(event.target.checked);
-  };
+  // const [checked, setChecked] = React.useState(true);
+  // const handleChange = (event) => {
+  //   setChecked(event.target.checked);
+  // };
 
   return (
     <div className="Detail">
       <Header />
       <div className="container">
         <Breadcrumbs aria-label="breadcrumb" className="breadcrumbItems mt-4">
-          <Link color="inherit" href="/" className="text-decoration-none" style={{color: '#A9A9A9'}}>
+          <Link color="inherit" href="/" className="breadcrumb text-decoration-none" style={{color: '#A9A9A9'}}>
             Homepage
           </Link>
 
-          <Link color="inherit" href="/category" className="text-decoration-none" style={{color: '#A9A9A9'}}>
+          <Link color="inherit" href="/category" className="breadcrumb text-decoration-none" style={{color: '#A9A9A9'}}>
             Fruit and vegetables
           </Link>
-          <Typography color="textPrimary">Carrots from Tomissy Farm</Typography>
+          <Typography color="textPrimary" className="breadcrumb">Carrots from Tomissy Farm</Typography>
         </Breadcrumbs>
 
         <div className="Detail-imgSection d-flex">
@@ -54,9 +55,9 @@ const Detail = () => {
             <div className="right-top">
               <h3 className="rightGeneralTitle">Carrots from Tomissy Farm</h3>
 
-              <div className="d-flex align-items-center justify-content-start">
-                <Rating name="half-rating" defaultValue={5} precision={4.5} />
-                <span className="detailRatingTitle">(1 customer review)</span>
+              <div className="stars d-flex align-items-center justify-content-start">
+                <Rating className="stars" name="half-rating" defaultValue={5} precision={4.5} />
+                <span className="detailRatingTitle stars">(1 customer review)</span>
               </div>
 
               <p className="rightGeneralText">

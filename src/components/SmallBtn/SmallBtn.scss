@@ -11,3 +11,9 @@
     outline: none;
     border: none;
 }
+
+@media screen and (max-width: '960px') {
+    .smBtn {
+        font-size: 10px;
+    }
+}

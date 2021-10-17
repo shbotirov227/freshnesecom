@@ -20,3 +20,21 @@
         left: 30px;
     }
 }
+
+@media screen and (max-width: '960px') {
+    .DetailImg {
+        img {
+            width: 400px;
+            height: 300px;
+        }
+        .detailImgRate {
+            font-size: 8px;
+            padding: 0 7px;
+        }
+
+        .detailImgItems {
+            top: 15px;
+            left: 15px;
+        }
+    }
+}

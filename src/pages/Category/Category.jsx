@@ -15,7 +15,7 @@ import CategoryLink from "../../components/CategoryLink";
 import CategoryRating from "../../components/CategoryRating";
 import CategoryCard from "../../components/CategoryCard";
 import Card from '../../components/Card';
-import { ArrowDown, X, GridIcon, ListIcon, BlackStar, WhiteStar } from "../../assets/icons/icons";
+import { ArrowDown, X, GridIcon, ListIcon } from "../../assets/icons/icons";
 
 import "./Category.scss";
 import CategoryFooter from "../../containers/CategoryFooter";
@@ -24,15 +24,6 @@ import CategoryRadio from "../../components/CategoryRadio";
 const Category = () => {
   const [value, setValue] = React.useState("female");
   const [checked, setChecked] = React.useState(true);
-
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
-
-  const handleChangeCheckbox = (event) => {
-    setChecked(event.target.checked);
-  };
-
   const [isGrid, setIsGrid] = useState(false);
 
   return (
@@ -42,11 +33,11 @@ const Category = () => {
         <div className="mb-5">
           <Breadcrumbs aria-label="breadcrumb" className="breadcrumbItems">
 
-            <Link color="inherit" href="/" className="text-decoration-none">
+            <Link color="inherit" href="/" className="text-decoration-none breadcrumb">
               Homepage
             </Link>
 
-            <Typography color="textPrimary">Fruit and vegetables </Typography>
+            <Typography color="textPrimary" className="breadcrumb">Fruit and vegetables </Typography>
           </Breadcrumbs>
 
           <div className="d-flex align-center justify-content-between">
@@ -75,7 +66,7 @@ const Category = () => {
                   row
                   name="gender1"
                   value={value}
-                  onChange={handleChange}
+                  onChange={(e) => setValue(e.target.value)}
                 >
                   <FormControlLabel
                     value="female"
@@ -96,7 +87,7 @@ const Category = () => {
                 control={
                   <Checkbox
                     color="primary"
-                    onChange={handleChangeCheckbox}
+                    onChange={(e) => setChecked(e.target.checked)}
                     inputProps={{ "aria-label": "secondary checkbox" }}
                   />
                 }
@@ -110,7 +101,7 @@ const Category = () => {
                 control={
                   <Checkbox
                     color="primary"
-                    onChange={handleChangeCheckbox}
+                    onChange={(e) => setChecked(e.target.checked)}
                     inputProps={{ "aria-label": "secondary checkbox" }}
                   />
                 }
@@ -124,7 +115,7 @@ const Category = () => {
                 control={
                   <Checkbox
                     color="primary"
-                    onChange={handleChangeCheckbox}
+                    onChange={(e) => setChecked(e.target.checked)}
                     inputProps={{ "aria-label": "secondary checkbox" }}
                   />
                 }
@@ -300,7 +291,7 @@ const Category = () => {
               <span className="CategoryFooter-pageNum">4</span>
             </div>
 
-            <button onClick={() => setIsGrid(true)} className={`CategoryFooter-btn`}>
+            <button onClick={() => setIsGrid(!isGrid)} className={`CategoryFooter-btn`}>
               Show more products
               <span className="ms-3">
                 <ArrowDown />

@@ -22,3 +22,11 @@
         margin-right: 50px;
     }
 }
+
+@media screen and (max-width: '960px') {
+    .HeaderBottom {
+        select {
+            font-size: 11px;
+        }
+    }
+}

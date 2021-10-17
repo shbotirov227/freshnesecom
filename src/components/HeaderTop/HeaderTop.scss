@@ -4,12 +4,10 @@
     justify-content: space-between;
     box-sizing: border-box;
     padding: 16px 0;
-    // opacity: 0.05;
     border-bottom: 1px solid #D1D1D1;
     margin-bottom: 40px;
 
     .top {
-
         .tel,
         .email,
         .chat-us {
@@ -99,6 +97,53 @@
     .icons {
         .user-icon {
             margin-right: 45px;
+        }
+    }
+}
+
+
+@media screen and (max-width: '960px') {
+    .HeaderTop {
+        .top {
+            .tel,
+            .email,
+            .chat-us {
+                font-size: 10px;
+            }
+        }
+        .links a {
+            font-size: 10px;
+        }
+    }
+    .Bottom {
+        .HeadLogo {
+            svg {
+                width: 155px;
+            }
+        }
+        .select-option {
+            padding: 5px 10px;
+            width: 400px;
+            select {
+                font-size: 13px;
+            }
+
+            input {
+                font-size: 13px;
+            }
+        }
+        .icons {
+            .user-icon {
+                margin-right: 25px;
+                svg {
+                    width: 20px;
+                }
+            }
+            .basket-icon {
+                svg {
+                    width: 20px;
+                }
+            }
         }
     }
 }

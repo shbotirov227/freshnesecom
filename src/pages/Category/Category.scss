@@ -45,12 +45,12 @@
     }
 
     .radio-section {
+        display: flex;
         background: #F9F9F9;
         border: 1px solid #D1D1D1;
         box-sizing: border-box;
         border-radius: 12px;
         width: 240px;
-        display: flex;
     }
 
     .checkbox-item {
@@ -184,6 +184,22 @@
 
             &:hover {
                 color: #6A983C;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: '960px') {
+    .Category {
+        .breadcrumb {
+            font-size: 15px;
+        }
+        .category-title {
+            font-size: 25px;
+        }
+        .selectedItems {
+            .selectedTitle {
+                font-size: 14px;
             }
         }
     }

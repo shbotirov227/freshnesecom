@@ -8,9 +8,7 @@ const ButtonDefault = ({ text, btnTitle, link }) => {
       <h4 className="title">{text}</h4>
       <Link to={link} className="btn">
         {btnTitle}
-        <span className="arrow">
-          <ArrowRight />
-        </span>
+        <span className="arrow"><ArrowRight /></span>
       </Link>
     </div>
   );

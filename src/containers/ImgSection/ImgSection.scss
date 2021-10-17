@@ -48,3 +48,48 @@
         color: #151515;
     }
 }
+
+@media screen and (max-width: '960px') {
+    .ImgSection {
+        margin-bottom: 50px !important;
+        .dispFlex {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .rightSection {
+            width: 45%;
+            flex-direction: column;
+            
+            img {
+                position: relative;
+                left: 70px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+        .imgLeftImage {
+            background-position: cover;
+            height: 400px;
+            background-size: cover;
+            object-fit: contain;
+            width: 60% !important;
+            overflow: hidden !important;
+        }
+        .left {
+            width: 45%;
+            margin-left: 50px;
+            .text {
+                font-size: 15px;
+            }
+            .author {
+                font-size: 12px;
+            }
+            img {
+                width: 250px;
+                margin-bottom: 10px;
+                overflow: hidden !important;
+            }
+        }
+    }
+}

@@ -7,18 +7,20 @@ import './HomeCards.scss';
 const HomeCards = () => {
     return (
         <div className="HomeCards container">
-            <Links 
-                linksTitle="Category menu"
-                link={[
-                    "Bakery",
-                    "Fruit and vegetables",
-                    "Meat and fish",
-                    "Drinks",
-                    "Kitchen"
-                ]}
-                btnTitle="More categories"
-            />
-            <TopCard />
+            <div className="res d-flex align-items-center justify-content-between w-100">
+                <Links 
+                    linksTitle="Category menu"
+                    link={[
+                        "Bakery",
+                        "Fruit and vegetables",
+                        "Meat and fish",
+                        "Drinks",
+                        "Kitchen"
+                    ]}
+                    btnTitle="More categories"
+                />
+                <TopCard />
+            </div>
 
             <div className="bottom">
                 <Links
