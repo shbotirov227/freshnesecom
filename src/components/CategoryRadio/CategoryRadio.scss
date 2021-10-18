@@ -19,3 +19,32 @@
         color: #151515;
     }
 }
+
+@media screen and (max-width: '960px') {
+    .CategoryRadio {
+        span {
+            font-size: 12px;
+            input[type=checkbox] {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .PrivateSwitchBase-input {
+            width: 5px;
+            height: 5px;
+        }
+        &-title {
+            font-size: 13px;
+        }
+
+        &-checkbox {
+            font-size: 12px;
+        }
+
+        span {
+            svg {
+                width: 20px;
+            }
+        }
+    }
+}

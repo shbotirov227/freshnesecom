@@ -7,12 +7,7 @@ import {
 import "./CategoryRadio.scss";
 
 const CategoryRadio = () => {
-  const [value, setValue] = React.useState("female");
   const [checked, setChecked] = React.useState(true);
-
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
 
   const handleChangeCheckbox = (event) => {
     setChecked(event.target.checked);

@@ -268,6 +268,20 @@
         }
     }
 
+    .detailCard {
+        .Card {
+            margin-right: 70px;
+        }
+    }
+
+    .carouselIcon {
+        display: none;
+        img {
+            display: none;
+
+        }
+    }
+
     &-imgSection {
         margin: 45px 0 90px 0;
     }
@@ -278,18 +292,115 @@
         .breadcrumb {
             font-size: 14px;
         }
+
+        &-imgSection {
+            margin-bottom: 0;
+        }
+
         &-imgSection-right {
             .right-top {
                 .rightGeneralTitle {
                     font-size: 19px;
                 }
+
                 .stars {
-                    font-size: 15px;
+                    font-size: 13px;
                 }
+
                 .rightGeneralText {
                     font-size: 12px;
                 }
+
+                .maxWidth {
+                    .rightGeneralItemsTitle {
+                        font-size: 11px;
+                    }
+
+                    .rightGeneralItemsValue {
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                }
+
+                .addButtons {
+                    height: 70px;
+                    width: 100%;
+
+                    &-priceItems {
+                        width: 100%;
+                        position: relative;
+                        bottom: 10px;
+                        margin-right: 0;
+
+                        .addButtons-price {
+                            font-size: 15px;
+                            display: block;
+                            height: 30px;
+                            width: 80px;
+                            margin-right: 0;
+                        }
+
+                        .addButtons-smBtn {
+                            font-size: 10px;
+                        }
+                    }
+
+                    &-select {
+                        height: 35px;
+                        width: 30%;
+                        margin-right: 30px;
+                    }
+
+                    &-btn {
+                        height: 35px;
+                        font-size: 10px;
+                        display: flex;
+                        align-items: center;
+                        width: 80%;
+                    }
+                }
+
+                .detailCompare {
+                    font-size: 11px;
+
+                    svg {
+                        width: 15px;
+                    }
+                }
+
+                .descriptionMar {
+                    margin-top: 30px;
+
+                    .description {
+                        font-size: 15px;
+                    }
+                }
             }
+
+            .right-bottom {
+                margin-top: 30px;
+
+                &-title {
+                    font-size: 14px !important;
+                }
+
+                &-text {
+                    font-size: 12px !important;
+                }
+
+                .vitamins {
+                    .borderBottom {
+                        .vitamins-title {
+                            font-size: 12px;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .detailCard {
+            margin-bottom: 70px;
         }
     }
 }

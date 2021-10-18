@@ -126,7 +126,7 @@
     }
 
     .categorycard-section {
-        width: 100%;
+        width: 100% !important;
     }
 
     .css-1ri6ub7-MuiPaper-root-MuiCard-root {
@@ -191,6 +191,25 @@
 
 @media screen and (max-width: '960px') {
     .Category {
+
+        .categorycard-section {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            float: left;
+            margin-right: 200px;
+            
+            .categoryCard-list {
+                // width: 20%;
+            }
+        }
+
+        .container {
+            .category-title {
+                font-size: 23px;
+            }
+        }
         .breadcrumb {
             font-size: 15px;
         }
@@ -200,6 +219,27 @@
         .selectedItems {
             .selectedTitle {
                 font-size: 14px;
+            }
+        }
+
+        .categoryTopBtn {
+            font-size: 11px;
+            svg {
+                width: 15px;
+                height: 15px;
+            }
+            &-icon {
+                font-size: 10px;
+            }
+        }
+
+        .radio-section {
+            .checkbox-item {
+                height: 20px;
+                .MuiTypography-root .MuiTypography-body1 .MuiFormControlLabel-label .css-ahj2mt-MuiTypography-root {
+                    font-size: 10px;
+                    height: 20px;
+                }
             }
         }
     }

@@ -268,7 +268,7 @@ const Category = () => {
                   />
                 </div>
               ) : (
-                <div>
+                <div className="categoryCard-list">
                   <CategoryCard />
                   <CategoryCard />
                   <CategoryCard />

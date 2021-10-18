@@ -18,7 +18,10 @@
 }
 
 @media screen and (max-width: '960px') {
-   .FooterBottom { 
+   .FooterBottom {
+      .footerBottom-title {
+         font-size: 15px;
+      }
       .footerCopyright {
          font-size: 12px;
       }
