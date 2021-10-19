@@ -149,7 +149,7 @@ const Category = () => {
         </div>
 
         <div className="d-flex justify-content-between">
-          <div className="d-block">
+          <div className="d-block" style={{width: '17%'}}>
             <CategoryLink
               className="d-flex justify-content-between"
               title="Categories"
@@ -175,10 +175,10 @@ const Category = () => {
           
             {
               isGrid ? (
-                <div className="d-flex align-items-start justify-content-between flex-wrap ms-5">
+                <div className="categoryCard-grid">
                   <Card
                     cardStar
-                    cardClassName="me-4 mb-5"
+                    // cardClassName="me-4 mb-5"
                     cardTitle="Product Title"
                     cardText="Space for a small product description"
                     cardPrice="3.26 USD"
@@ -188,7 +188,7 @@ const Category = () => {
                   />
 
                   <Card
-                    cardClassName="me-4 mb-5"
+                    // cardClassName="me-4 mb-5"
                     cardTitle="Product Title"
                     cardText="Space for a small product description"
                     cardPrice="3.26 USD"
@@ -208,7 +208,7 @@ const Category = () => {
                   />
 
                   <Card
-                    cardClassName="me-4 mb-5 mt-5"
+                    // cardClassName="me-4 mb-5 mt-5"
                     cardTitle="Product Title"
                     cardText="Space for a small product description"
                     cardPrice="36.99 USD"
@@ -219,7 +219,7 @@ const Category = () => {
 
                   <Card
                     cardStar
-                    cardClassName="me-4 mb-5 mt-5"
+                    // cardClassName="me-4 mb-5 mt-5"
                     cardTitle="Product Title"
                     cardText="Space for a small product description"
                     cardPrice="36.99 USD"
@@ -230,7 +230,7 @@ const Category = () => {
 
                   <Card
                     cardStar
-                    cardClassName="mb-5 mt-5"
+                    // cardClassName="mb-5 mt-5"
                     cardTitle="Product Title"
                     cardText="Space for a small product description"
                     cardPrice="36.99 USD"
@@ -239,7 +239,7 @@ const Category = () => {
 
                   <Card
                     cardStar
-                    cardClassName="me-4 mb-5 mt-5"
+                    // cardClassName="me-4 mb-5 mt-5"
                     cardTitle="Product Title"
                     cardText="Space for a small product description"
                     cardPrice="36.99 USD"
@@ -250,7 +250,7 @@ const Category = () => {
 
                   <Card
                     cardStar
-                    cardClassName="me-4 mb-5 mt-5"
+                    // cardClassName="me-4 mb-5 mt-5"
                     cardTitle="Product Title"
                     cardText="Space for a small product description"
                     cardPrice="36.99 USD"
@@ -258,7 +258,7 @@ const Category = () => {
                   />
 
                   <Card
-                    cardClassName="mb-5 mt-5"
+                    // cardClassName="mb-5 mt-5"
                     cardTitle="Product Title"
                     cardText="Space for a small product description"
                     cardPrice="36.99 USD"

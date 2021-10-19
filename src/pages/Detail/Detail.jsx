@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-
+import Slider from "react-slick";
 import { Breadcrumbs, Typography, Link } from "@material-ui/core";
 import { Rating } from "@mui/material";
 
@@ -8,8 +8,11 @@ import Header from "../../containers/Header";
 import ButtonDefault from "../../components/ButtonDefault";
 import Card from "../../components/Card";
 import Footer from "../../containers/Footer";
-import DetailImage from "../../components/DetailImg/DetailImg";
+import DetailImage from "../../components/DetailImg";
+import VitaminItem from "../../components/VitaminItem";
 
+import LeftIcon from "../../assets/images/icons/LeftArrow.svg";
+import RightIcon from "../../assets/images/icons/RightArrow.svg";
 import {
   CompareIcon,
   DetailLikeIcon,
@@ -17,11 +20,7 @@ import {
 } from "../../assets/icons/icons";
 
 import "./Detail.scss";
-import VitaminItem from "../../components/VitaminItem/VitaminItem";
-import Slider from "react-slick";
 
-import LeftIcon from "../../assets/images/icons/LeftArrow.svg";
-import RightIcon from "../../assets/images/icons/RightArrow.svg";
 
 const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
   <span className="carouselIcon"><img src={LeftIcon} alt="nextArrow" {...props} /></span>
@@ -53,10 +52,6 @@ class Detail extends Component {
       prevArrow: <SlickArrowLeft />,
       nextArrow: <SlickArrowRight />
     };
-    // const [checked, setChecked] = React.useState(true);
-    // const handleChange = (event) => {
-    //   setChecked(event.target.checked);
-    // };
   
     return (
       <div className="Detail">
@@ -258,7 +253,7 @@ class Detail extends Component {
           />
   
           <div className="d-flex align-items-center justify-content-between detailCard">
-            <Slider {...settings} className="container">
+            <Slider {...settings} className="container" style={{padding: '0'}}>
               <Card
                 cardTitle="Product Title"
                 cardText="Space for a small product description"

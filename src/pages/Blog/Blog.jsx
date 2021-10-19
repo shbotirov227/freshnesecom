@@ -25,12 +25,12 @@ const Blog = () => {
       <Header />
         <div className="Blog-main container">
             <Breadcrumbs aria-label="breadcrumb" className="breadcrumbItems mt-4">
-                <Link color="inherit" href="/" className="text-decoration-none">Homepage</Link>
-                <Link color="inherit" href="/category" className="text-decoration-none">Fruit and vegetables</Link>
-                <Typography color="textPrimary">Product title</Typography>
+                <Link color="inherit" href="/" className="text-decoration-none breadcrumb">Homepage</Link>
+                <Link color="inherit" href="/category" className="text-decoration-none breadcrumb">Fruit and vegetables</Link>
+                <Typography color="textPrimary" className="breadcrumb">Product title</Typography>
             </Breadcrumbs>
 
-            <div className="d-flex align-center justify-content-between mb-5">
+            <div className="d-flex align-center justify-content-between top-titles">
                 <h3 className="blog-title">Fruit and vegetables</h3>
 
                 <div className="d-flex align-items-center">

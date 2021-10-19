@@ -21,7 +21,7 @@ import "./CategoryCard.scss";
 const CategoryCard = () => {
   return (
     <div className="CategoryCard">
-      <Link to="/detail">
+      {/* <Link to="/detail"> */}
         <Card
           sx={{ maxWidth: 345 }}
           className="d-flex justify-content-between categoryCard"
@@ -43,7 +43,7 @@ const CategoryCard = () => {
                 >
                   Product title
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" className="categoryCard-text">
                   Space for a small product description
                 </Typography>
 
@@ -53,33 +53,33 @@ const CategoryCard = () => {
                 <BlackStar />
                 <WhiteStar />
 
-                <div className="mt-4 d-flex titles">
+                <div className="mt-3 d-flex titles">
                   <div className="title1">
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      className="mb-3 titleSty"
+                      className="titleSty"
                     >
                       Fresheness
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      className="mb-3 titleSty"
+                      className="titleSty"
                     >
                       Farm
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      className="mb-3 titleSty"
+                      className="titleSty"
                     >
                       Delivery
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      className="mb-3 titleSty"
+                      className="titleSty"
                     >
                       Stock
                     </Typography>
@@ -89,28 +89,28 @@ const CategoryCard = () => {
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      className="mb-3 titleSty"
+                      className="titleSty"
                     >
                       New (Extra fresh)
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      className="mb-3 titleSty"
+                      className="titleSty"
                     >
                       Grocery Tarm Fields
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      className="mb-3 titleSty"
+                      className="titleSty"
                     >
                       Europe
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      className="mb-3 titleSty"
+                      className="titleSty"
                     >
                       320 pcs
                     </Typography>
@@ -119,7 +119,7 @@ const CategoryCard = () => {
               </CardContent>
             </div>
 
-            <div className="textBlock">
+            <div className="textBlock textBlock2">
               <div className="ps-2 mb-3">
                 <Typography
                   gutterBottom
@@ -177,7 +177,7 @@ const CategoryCard = () => {
             </div>
           </div>
         </Card>
-      </Link>
+      {/* </Link> */}
     </div>
   );
 };

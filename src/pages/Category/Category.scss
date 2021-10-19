@@ -127,6 +127,26 @@
 
     .categorycard-section {
         width: 100% !important;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .categoryCard-grid {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-left: 130px;
+            
+            .categoryCard-list {
+                margin-left: 10px;
+            }
+
+
+            .Card {
+                margin-bottom: 50px;
+            }
+        }
     }
 
     .css-1ri6ub7-MuiPaper-root-MuiCard-root {
@@ -192,16 +212,50 @@
 @media screen and (max-width: '960px') {
     .Category {
 
+        .radio-section {
+            height: 40px;
+            label {
+                span {
+                    font-size: 14px;
+                    svg {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+
+        }
+        .checkbox-item {
+            height: 40px;
+            label {
+                span {
+                    font-size: 14px;
+                    svg {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+            .radio-btn {
+                font-size: 10px;
+            }
+        }
+
         .categorycard-section {
-            width: 100%;
             display: flex;
             align-items: flex-start;
-            justify-content: flex-start;
-            float: left;
-            margin-right: 200px;
+            justify-content: space-between;
             
             .categoryCard-list {
-                // width: 20%;
+                margin-left: 120px;
+            }
+
+            .categoryCard-grid {
+                width: 85%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin-left: 120px;
             }
         }
 
@@ -233,13 +287,10 @@
             }
         }
 
-        .radio-section {
-            .checkbox-item {
-                height: 20px;
-                .MuiTypography-root .MuiTypography-body1 .MuiFormControlLabel-label .css-ahj2mt-MuiTypography-root {
-                    font-size: 10px;
-                    height: 20px;
-                }
+        .CategoryFooter {
+            &-btn {
+                font-size: 12px;
+                padding: 10px 15px;
             }
         }
     }

@@ -1,5 +1,11 @@
 .BlogCard {
     margin-bottom: 35px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    &:hover {
+        box-shadow: 10px 15px 10px 10px #888888;
+    }
 
     .blogCardTag {
         font-family: 'Poppins';
@@ -16,7 +22,7 @@
     }
 
     .blogCardImg {
-        width: 300px;
+        width: 305px;
         margin-bottom: 25px;
         border-radius: 12px;
     }
@@ -39,5 +45,20 @@
         font-size: 12px;
         line-height: 16px;
         color: #151515;
+    }
+}
+
+@media screen and (max-width: '960px') {
+    .BlogCard {
+        // width: 100%;
+        .blogCardImg {
+            width: 290px;
+            margin-bottom: 15px;
+        }
+
+        .blogCardTitle {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
     }
 }

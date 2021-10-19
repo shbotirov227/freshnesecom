@@ -96,26 +96,97 @@
         font-size: 15px;
         line-height: 16px;
         color: #A9A9A9;
-
+        margin-bottom: 20px;
     }
     .smallTit {
         font-size: 13px;
     }
 
     .textBlock {
-        padding: 50px 20px 20px 50px;
+        padding: 30px 20px 20px 50px;
     }
 }
 
 @media screen and (max-width: '960px') {
     .CategoryCard {
-        max-width: 500px;
+        box-sizing: border-box;
+        max-width: 638px;
         height: 250px;
-        margin-left: 20px;
+        margin-left: 0;
 
         .categoryCardImg {
-            width: 100%;
+            width: 325px;
             height: 250px;
+            
+            img {
+                border-bottom-left-radius: 12px;
+                border-top-left-radius: 12px;
+            }
+        }
+
+        .categoryCardTitle {
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .categoryCard-text {
+            font-size: 11px;
+            margin-bottom: 5px;
+        }
+
+        .categoryCardBtn {
+            font-size: 10px;
+            min-height: 20px;
+            max-width: 100%;
+            display: flex;
+            padding: 5px 5px;
+            margin-top: 0;
+
+            span {
+                svg {
+                    width: 9px;
+                    height: 9px;
+                }
+            }
+        }
+
+        .categoryCardBtn2 {
+            font-size: 10px;
+            padding: 5px 5px;
+
+        }
+
+        .MuiCardContent-root {
+            font-size: 10px;
+        }
+
+        .title1 {
+            margin-top: 0;
+        }
+        .titleSty {
+            font-size: 11px;
+            margin-bottom: 5px;
+        }
+
+
+        .price {
+            font-size: 10px;
+            margin-top: 0;
+        }
+
+        .textBlock {
+            padding: 10px 10px 10px 15px;
+            width: 32%;
+
+            svg {
+                width: 12px;
+                height: 12px;
+                margin-top: 0;
+            }
+
+            &.textBlock2 {
+                width: 30%;
+            }
         }
     }
 }

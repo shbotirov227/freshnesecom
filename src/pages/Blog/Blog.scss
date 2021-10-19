@@ -30,48 +30,51 @@
             }
         }
 
-        .blog-title {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 48px;
-            color: #151515;
-            margin: 25px 0;
-        }
+        .top-titles {
+            margin-bottom: 50px;
 
-        .blogTopBtn {
-            border: none;
-            outline: none;
-            cursor: pointer;
-            background-color: transparent;
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 16px;
-            color: #A9A9A9;
-            margin-left: 25px;
-            transition: all ease 0.5s;
-
-            &:hover {
-                color: #151515;
-            }
-
-            &-icon {
+            .blog-title {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 12px;
-                line-height: 18px;
-                color: #6A983C;
-                background: #F4F8EC;
-                border-radius: 12px;
-                padding: 1px 10px;
+                font-size: 32px;
+                line-height: 48px;
+                color: #151515;
+                margin: 25px 0;
             }
+
+            .blogTopBtn {
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background-color: transparent;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: #A9A9A9;
+                margin-left: 25px;
+                transition: all ease 0.5s;
+
+                &:hover {
+                    color: #151515;
+                }
+
+                &-icon {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #6A983C;
+                    background: #F4F8EC;
+                    border-radius: 12px;
+                    padding: 1px 10px;
+                }
+            }
+
         }
-
-
 
         .emailSection {
             margin-top: 50px;
@@ -143,7 +146,7 @@
 
         .pagesSection {
             margin: 80px 0;
-            
+
             .BlogFooter {
                 &-btn {
                     font-family: 'Poppins';
@@ -159,7 +162,7 @@
                     padding: 12px 20px;
                     cursor: pointer;
                 }
-    
+
                 &-backgroundBtn {
                     font-family: 'Poppins';
                     font-style: normal;
@@ -173,7 +176,7 @@
                     margin-right: 5px;
                     cursor: pointer;
                 }
-    
+
                 &-products {
                     font-family: 'Open Sans';
                     font-style: normal;
@@ -183,7 +186,7 @@
                     color: #A9A9A9;
                     cursor: pointer;
                 }
-    
+
                 &-pageNum {
                     font-family: 'Open Sans';
                     font-style: normal;
@@ -194,10 +197,54 @@
                     margin-left: 10px;
                     cursor: pointer;
                     transition: all ease 0.5s;
-    
+
                     &:hover {
                         color: #6A983C;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: '960px') {
+    .Blog {
+        &-main {
+            .breadcrumb {
+                font-size: 15px;
+            }
+
+            .top-titles {
+                margin-bottom: 20px;
+
+                .blog-title {
+                    font-size: 23px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .blogSmImg-left {
+                margin-right: 30px;
+                .Links {
+                    width: 100%;
+                }
+            }
+
+            .emailSection {
+                &-email {
+                    text-align: end;
+                }
+
+                &-text {
+                    font-size: 12px;
+                    max-width: 216px;
+                }
+            }
+
+            .pagesSection {
+                .BlogFooter-btn {
+                    font-size: 12px;
+                    padding: 10px 15px;
                 }
             }
         }
