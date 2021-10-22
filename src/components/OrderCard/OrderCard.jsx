@@ -9,7 +9,7 @@ const OrderCard = ({ orderWidth }) => {
     return (
         <div className={`OrderCard ${orderWidth ? 'orderWidth': undefined}`}>
             
-            <div className="d-flex mt-5">
+            <div className="d-flex cards">
                     <img src={OrderImg} alt="" width="100" height="70" className="me-3"/>
 
                 <div className="">

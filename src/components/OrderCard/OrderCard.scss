@@ -6,6 +6,10 @@
         width: 500px;
     }
 
+    .cards {
+        margin-top: 40px;
+    }
+
     .titleOrder {
         font-family: 'Poppins';
         font-style: normal;
@@ -121,6 +125,22 @@
             box-sizing: border-box;
             border-radius: 12px;
             padding: 15px 16px;
+        }
+    }
+}
+
+@media screen and (max-width: '960px') {
+    .OrderCard {
+        &.orderWidth {
+            width: 440px;
+        }
+        .cards {
+            margin-top: 20px;
+        }
+
+
+        .addButtons {
+            margin-right: 0;
         }
     }
 }

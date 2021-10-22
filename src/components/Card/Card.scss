@@ -4,8 +4,12 @@
     box-sizing: border-box;
     border-radius: 12px;
     padding: 15px;
-    // margin-top: 130px;
+    transition: all ease 0.3s;
     position: relative;
+
+    &:hover {
+        box-shadow: 10px 15px 10px 10px #8888;
+    }
 
     .card-title {
         font-family: 'Poppins';
@@ -91,6 +95,11 @@
         flex-wrap: wrap;
         align-items: flex-start;
         padding: 10px;
+        transition: all ease 0.3s;
+
+        &:hover {
+            box-shadow: 10px 15px 10px 10px #8888;
+        }
         
         .card-img {
             width: 100%;

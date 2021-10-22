@@ -1,6 +1,6 @@
 .checkoutPage-left {
     width: 50%;
-    
+
     .checkoutTitle {
         font-family: 'Poppins';
         font-style: normal;
@@ -55,11 +55,11 @@
         box-sizing: border-box;
         border-radius: 12px;
         padding: 12px 20px;
-        // width: 245px;
+        width: 62%;
         margin-bottom: 35px;
 
         &.check2 {
-            width: 690px;
+            width: 83%;
             margin-bottom: 15px;
         }
 
@@ -129,6 +129,21 @@
         border-radius: 12px;
         padding: 20px;
         margin-bottom: 15px;
+
+        .cardNumber {
+            width: 100%;
+        }
+
+        .expiration {
+            display: flex;
+
+            #cardDate {
+                width: 130px;
+            }
+            #cardCvc {
+                width: 130px;
+            }
+        }
     }
 
     .textareaSection {
@@ -191,10 +206,11 @@
             height: 100vh;
             overflow: hidden;
         }
-        
+
         &-inner {
             padding: 30px 35px;
         }
+
         .modalTitle {
             font-family: 'Poppins';
             font-style: normal;
@@ -265,6 +281,106 @@
                 border: 2px solid #46760A;
                 box-sizing: border-box;
                 border-radius: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: '960px') {
+    .checkoutPage-left {
+
+        .checkoutTitle {
+            font-size: 20px;
+        }
+
+        .checkoutSpan {
+            font-size: 11px;
+        }
+
+        .inputElement {
+            width: 210px;
+        }
+
+        .checkboxElement {
+            width: 100%;
+        }
+
+        .CreditCards {
+            #cardNumber {
+                width: 100%;
+            }
+
+            .expirationItems {
+                display: flex;
+                flex-direction: column;
+
+                #cardHolder {
+                    width: 106%;
+                }
+                .expiration {
+                    display: flex;
+                    margin-top: 1.5em;
+
+                    #cardDate {
+                        width: 194px;
+                    }
+                    #cardCvc {
+                        width: 194px;
+                    }
+                }
+            }
+        }
+
+        .textareaSection {
+            .textarea {
+                margin-bottom: 40px;
+                
+            }
+        }
+
+        .confirmation {
+            .checkboxElement {
+                width: 100%;
+
+                &.check2 {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+
+                .checkboxLabel {
+                    font-size: 12px;
+                    margin-left: 20px;
+                }
+            }
+
+            .confirmationBtn {
+                font-size: 12px;
+                padding: 10px 15px;
+            }
+        }
+
+        .checkboxLabel {
+            font-size: 13px;
+        }
+
+        .Modal {
+            box-sizing: border-box;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            .modalTitle {
+                font-size: 20px;
+            }
+
+            .modalOrderCard {
+                margin-bottom: 80px;
+            }
+
+            .modalShopping {
+                .modalBtn {
+                    font-size: 14px;
+                    padding: 10px 15px;
+                }
             }
         }
     }

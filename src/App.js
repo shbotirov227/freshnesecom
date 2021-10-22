@@ -11,7 +11,6 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/category" component={Category} />
-          <Route exact path="/categoryGrid" component={Checkout} />
           <Route exact path="/detail" component={Detail} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/blog-detail" component={BlogDetail} />

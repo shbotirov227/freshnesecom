@@ -14,8 +14,8 @@ const Checkout = () => {
             <Header />
             <div className="container">
             <Breadcrumbs aria-label="breadcrumb" className="breadcrumbItems mt-4 mb-5">
-                <Link color="inherit" href="/" className="text-decoration-none">Homepage</Link>
-                <Typography color="textPrimary">Checkout page</Typography>
+                <Link color="inherit" href="/" className="text-decoration-none breadcrumb">Homepage</Link>
+                <Typography className="breadcrumb" color="textPrimary">Checkout page</Typography>
             </Breadcrumbs>
 
                 <div className="checkoutPage d-flex justify-content-between">

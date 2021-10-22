@@ -23,24 +23,10 @@ const CheckoutLeft = () => {
           <span className="checkoutSpan">Step 1 of 5</span>
         </div>
 
-        <div
-          className="formInputs d-flex align-items-center justify-content-between"
-          style={{ width: "100%" }}
-        >
+        <div className="formInputs d-flex align-items-center justify-content-between" style={{ width: "100%" }}>
           <div>
-            <label
-              htmlFor="firstName"
-              className="labelElement"
-              style={{ display: "block" }}
-            >
-              First Name
-            </label>
-            <input
-              type="text"
-              id="firstName"
-              placeholder="First Name"
-              className="inputElement"
-            />
+            <label htmlFor="firstName" className="labelElement" style={{ display: "block" }}>First Name</label>
+            <input type="text" id="firstName" placeholder="First Name" className="inputElement" />
           </div>
 
           <div>
@@ -175,7 +161,7 @@ const CheckoutLeft = () => {
           </div>
         </div>
 
-        <div className="checkboxElement" style={{ width: "35%" }}>
+        <div className="checkboxElement">
           <input
             type="checkbox"
             name=""
@@ -265,103 +251,43 @@ const CheckoutLeft = () => {
           <div className="d-flex align-items-center justify-content-between mb-5">
             <div className="d-flex align-items-center">
               <input type="radio" name="" id="credit" className="me-3" />
-              <label
-                htmlFor="credit"
-                className="fedEx-title"
-                style={{ cursor: "pointer" }}
-              >
-                Credit card
-              </label>
+              <label htmlFor="credit" className="fedEx-title" style={{ cursor: "pointer" }}>Credit card</label>
             </div>
 
             <img src={VisaCard} alt="" style={{ cursor: "pointer" }} />
           </div>
 
-          <div className="mb-4">
-            <label
-              htmlFor="cardNumber"
-              className="labelElement"
-              style={{ display: "block", width: "100%" }}
-            >
-              Card number
-            </label>
-            <input
-              type="text"
-              id="cardNumber"
-              placeholder="Card number"
-              className="inputElement"
-              style={{ width: "660px" }}
-            />
+          <div className="mb-4 w-100">
+            <label htmlFor="cardNumber" className="labelElement" style={{ display: "block", width: "100%" }}>Card number</label>
+            <input type="text" id="cardNumber" placeholder="Card number" className="inputElement"/>
           </div>
 
-          <div className="d-flex">
+          <div className="expirationItems" style={{display: 'flex'}}>
             <div className="me-4">
-              <label
-                htmlFor="cardHolder"
-                className="labelElement"
-                style={{ display: "block", width: "100%" }}
-              >
-                Card holder
-              </label>
-              <input
-                type="text"
-                id="cardHolder"
-                placeholder="Card holder"
-                className="inputElement"
-                style={{ width: "350px" }}
-              />
+              <label htmlFor="cardHolder"className="labelElement"style={{ display: "block", width: "100%" }}>Card holder</label>
+              <input type="text" id="cardHolder" placeholder="Card holder" className="inputElement"/>
             </div>
 
-            <div className="me-4">
-              <label
-                htmlFor="cardDate"
-                className="labelElement"
-                style={{ display: "block" }}
-              >
-                Expiration date
-              </label>
-              <input
-                type="datetime-local"
-                id="cardDate"
-                placeholder="DD/MM/YY"
-                className="inputElement"
-                style={{ width: "130px" }}
-              />
-            </div>
+            <div className="expiration">
+              <div className="me-4">
+                  <label htmlFor="cardDate" className="labelElement" style={{ display: "block" }}>Expiration date</label>
+                  <input type="datetime-local" id="cardDate" placeholder="DD/MM/YY" className="inputElement"/>
+                </div>
 
-            <div>
-              <label
-                htmlFor="cardCvc"
-                className="labelElement"
-                style={{ display: "block" }}
-              >
-                CVC
-              </label>
-              <input
-                type="text"
-                id="cardCvc"
-                placeholder="CVC"
-                className="inputElement"
-                style={{ width: "130px" }}
-              />
+                <div>
+                  <label htmlFor="cardCvc" className="labelElement" style={{ display: "block" }}>CVC</label>
+                  <input type="text" id="cardCvc" placeholder="CVC" className="inputElement"/>
+                </div>
             </div>
           </div>
+        
         </div>
 
         <div className="radioSection">
-          <div
-            className="radioElement d-flex align-items-center justify-content-between mb-4"
-            style={{ cursor: "pointer" }}
-          >
+          <div className="radioElement d-flex align-items-center justify-content-between mb-4"style={{ cursor: "pointer" }}>
             <div className="d-flex align-center">
               <input type="radio" name="payment" id="paypal" className="me-3" />
-              <label
-                htmlFor="paypal"
-                className="fedEx-title"
-                style={{ cursor: "pointer" }}
-              >
-                PayPal
-              </label>
+              <label htmlFor="paypal" className="fedEx-title" style={{ cursor: "pointer" }}>PayPal</label>
             </div>
 
             <img src={PayPal} alt="" />
@@ -372,19 +298,8 @@ const CheckoutLeft = () => {
             style={{ cursor: "pointer" }}
           >
             <div className="d-flex align-center">
-              <input
-                type="radio"
-                name="payment"
-                id="bitcoin"
-                className="me-3"
-              />
-              <label
-                htmlFor="bitcoin"
-                className="fedEx-title"
-                style={{ cursor: "pointer" }}
-              >
-                Bitcoin
-              </label>
+              <input type="radio" name="payment" id="bitcoin" className="me-3"/>
+              <label htmlFor="bitcoin" className="fedEx-title" style={{ cursor: "pointer" }}>Bitcoin</label>
             </div>
 
             <img src={Bitcoin} alt="" />
@@ -394,24 +309,13 @@ const CheckoutLeft = () => {
         <div className="textareaSection">
           <h3 className="checkoutTitle mb-1">Additional informations</h3>
           <div className="d-flex align-items-center justify-content-between mb-5">
-            <span className="checkoutSpan">
-              Need something else? We will make it for you!
-            </span>
+            <span className="checkoutSpan">Need something else? We will make it for you!</span>
             <span className="checkoutSpan">Step 4 of 5</span>
           </div>
 
           <div>
-            <label className="labelElement d-block" id="textarea">
-              Order notes
-            </label>
-            <textarea
-              name=""
-              id="textarea"
-              className="textarea"
-              cols="30"
-              rows="10"
-              placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."
-            ></textarea>
+            <label className="labelElement d-block" id="textarea">Order notes</label>
+            <textarea name="" id="textarea" className="textarea" cols="30" rows="10" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."></textarea>
           </div>
         </div>
 
@@ -425,54 +329,19 @@ const CheckoutLeft = () => {
             <span className="checkoutSpan">Step 5 of 5</span>
           </div>
 
-          <div
-            className="checkboxElement check2 d-flex align-items-center"
-            style={{ width: "83%" }}
-          >
-            <input
-              type="checkbox"
-              name=""
-              id="reciept1"
-              style={{ cursor: "pointer" }}
-            />
-            <label
-              htmlFor="reciept1"
-              className="checkboxLabel"
-              style={{ cursor: "pointer" }}
-            >
+          <div className="checkboxElement check2 d-flex align-items-center">
+            <input type="checkbox" name="" id="reciept1" style={{ cursor: "pointer" }}/>
+            <label htmlFor="reciept1" className="checkboxLabel" style={{ cursor: "pointer" }}>
               I agree with sending an Marketing and newsletter emails. No spam,
               promissed!
             </label>
           </div>
-          <div
-            className="checkboxElement d-flex align-items-center"
-            style={{ cursor: "pointer", width: "62%" }}
-          >
-            <input
-              type="checkbox"
-              name=""
-              id="reciept2"
-              style={{ cursor: "pointer" }}
-            />
-            <label
-              htmlFor="reciept2"
-              className="checkboxLabel"
-              style={{ cursor: "pointer" }}
-            >
-              I agree with our{" "}
-              <span
-                className="text-decoration-underline"
-                style={{ cursor: "pointer" }}
-              >
-                terms and conditions
-              </span>{" "}
-              and{" "}
-              <span
-                className="text-decoration-underline"
-                style={{ cursor: "pointer" }}
-              >
-                privacy policy.
-              </span>
+          <div className="checkboxElement d-flex align-items-center" style={{ cursor: "pointer" }}>
+            <input type="checkbox" name="" id="reciept2" style={{ cursor: "pointer" }}/>
+            <label htmlFor="reciept2" className="checkboxLabel" style={{ cursor: "pointer" }}>I agree with our
+              <span className="text-decoration-underline" style={{ cursor: "pointer" }}><a href="/checkout">  terms and conditions  </a></span> 
+                and
+              <span className="text-decoration-underline" style={{ cursor: "pointer" }}><a href="/checkout">  privacy policy.</a></span>
             </label>
           </div>
 

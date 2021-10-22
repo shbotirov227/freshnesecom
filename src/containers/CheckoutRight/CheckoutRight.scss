@@ -99,3 +99,22 @@
         color: #6A983C;
     }
 }
+
+@media screen and (max-width: '960px') {
+    .Order {
+        padding: 25px 15px;
+        &-title {
+            font-size: 20px;
+        }
+
+        &-span {
+            font-size: 11px;
+            margin-bottom: 20px;
+        }
+
+        .orderRightBtn {
+            margin-left: 20px;
+            padding-bottom: 15px;
+        }
+    }
+}
