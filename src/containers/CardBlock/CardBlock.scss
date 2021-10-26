@@ -18,8 +18,16 @@
     }
 }
 
-@media screen and (max-width: '960px') {
+@media screen and (max-width: 960px) {
     .CardBlock {
         margin-bottom: 100px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .CardBlock {
+        .Card {
+            // margin-right: 20px;
+        }
     }
 }

@@ -15,12 +15,37 @@
     }
 }
 
-@media screen and (max-width: '960px') {
+@media screen and (max-width: 960px) {
     .HomeCards {
         .bottom {
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
+
+            .cardsWrapper {
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .HomeCards {
+        .bottom {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            // flex-wrap: wrap;
+
+            .Card {
+                margin-left: 20px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
         }
     }
 }

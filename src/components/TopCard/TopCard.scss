@@ -56,8 +56,7 @@
     }
 }
 
-@media screen and (max-width: '960px') {
-
+@media screen and (max-width: 960px) {
     .TopCard {
         width: 80%;
         .topcard-bg {
@@ -82,5 +81,36 @@
             }
         }
     }
+}
 
+@media screen and (max-width: 768px) {
+    .TopCard {
+        width: 80%;
+        .topcard-bg {
+            padding: 25px 45px 25px 20px;
+            max-width: 500px;
+            max-height: 250px;
+
+            &:nth-child(1) {
+                margin-right: 55px;
+            }
+
+            .topcard-btn {  
+                font-size: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px;
+            }
+    
+            .topcard-title {
+                font-size: 10px;
+            }
+
+            .topcard-name {
+                font-size: 20px;
+                margin: 10px 0 60px 0;
+            }
+        }
+    }
 }

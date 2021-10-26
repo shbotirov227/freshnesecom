@@ -61,7 +61,6 @@
         }
 
         .cardRate {
-
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 600;
@@ -88,7 +87,7 @@
     }
 }
 
-@media screen and (max-width: '960px') {
+@media screen and (max-width: 960px) {
     .Card {
         width: 200px;
         display: flex;
@@ -126,6 +125,35 @@
             top: 20px;
             left: 20px;
             padding: 1px 7px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Card {
+        width: 170px;
+
+        .card-title {
+            margin-bottom: 0;
+        }
+
+        .card-text {
+            margin-bottom: 0;
+        }
+
+        .card-prices {
+            margin-top: 0;
+            .card-price {
+                font-size: 11px;
+            }
+            .card-btn {
+                font-size: 10px;
+                padding: 3px 8px;
+            }
+
+            .cardRate {
+                font-size: 10px;
+            }
         }
     }
 }

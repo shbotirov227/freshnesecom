@@ -4,7 +4,7 @@ import { Home, Category, Detail, Checkout, Blog, BlogDetail } from "./pages";
 
 import "./assets/styles/main.scss";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Router>

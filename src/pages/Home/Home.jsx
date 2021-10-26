@@ -1,4 +1,4 @@
-import { useMediaQuery } from 'react-responsive';
+// import { useMediaQuery } from 'react-responsive';
 
 import CardBlock from '../../containers/CardBlock';
 import Carousel from '../../containers/Carousel';

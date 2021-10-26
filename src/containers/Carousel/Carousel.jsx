@@ -37,11 +37,22 @@ export default class Carousel extends Component {
       centerMode: true,
       infinite: true,
       centerPadding: "100px",
-      slidesToShow: 3,
+      slidesToShow: 2.5,
       speed: 500,
       autoplay: true,
       prevArrow: <SlickArrowLeft />,
-      nextArrow: <SlickArrowRight />
+      nextArrow: <SlickArrowRight />,
+
+      responsive: [
+        {
+          breakpoint: 768,
+          settingsRes: {
+            slidesToShow: 2,
+            centerMode: false,
+            centerPadding: '30px'
+          }
+        }
+      ]
     };
 
     return (

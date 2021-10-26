@@ -20,7 +20,6 @@
         .imgLeftImage {
             width: 50%;
             background-image: url('../../assets/images/ImgSection.png');
-            background-image: url(../../assets/images/ImgSection.png);
             background-repeat: no-repeat;
         }
     }
@@ -49,7 +48,7 @@
     }
 }
 
-@media screen and (max-width: '960px') {
+@media screen and (max-width: 960px) {
     .ImgSection {
         margin-bottom: 50px !important;
         .dispFlex {
@@ -89,6 +88,34 @@
                 width: 250px;
                 margin-bottom: 10px;
                 overflow: hidden !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ImgSection {
+        .dispFlex {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .imgLeftImage {
+                // width: 100% !important;
+                // height: 100% !important;
+                // overflow: hidden;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                margin-bottom: 50px;
+            }
+
+            .left {
+
+            }
+
+            .right {
+
             }
         }
     }
