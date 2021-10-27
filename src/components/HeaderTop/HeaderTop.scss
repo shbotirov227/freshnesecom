@@ -7,6 +7,8 @@
     border-bottom: 1px solid #D1D1D1;
     margin-bottom: 40px;
 
+    
+
     .top {
         .tel,
         .email,
@@ -46,6 +48,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .mobileStyle {
+        display: flex;
+        width: 65%;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     .select-option {
         background: #F9F9F9;
@@ -158,41 +167,41 @@
             }
 
             .tel {
-                margin: 0 10px;
+                margin: 0 20px;
             }
         }
         .links a {
             font-size: 10px;
 
             &:nth-child(2) {
-                margin: 0 10px;
+                margin: 0 25px;
             }
         }
     }
     .Bottom {
         .HeadLogo {
             svg {
-                width: 100px;
+                width: 150px;
             }
         }
         .select-option {
             padding: 5px 10px;
-            width: 245px;
+            width: 50%;
             select {
-                font-size: 10px;
+                font-size: 12px;
 
             }
             .line {
-                margin: 0 7px;
+                margin: 0 15px;
             }
 
             input {
-                font-size: 10px;
+                font-size: 12px;
             }
         }
         .icons {
             .user-icon {
-                margin-right: 15px;
+                margin-right: 25px;
                 svg {
                     width: 20px;
                 }
@@ -200,8 +209,83 @@
             .basket-icon {
                 
                 svg {
-                    width: 15px;
+                    width: 20px;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .HeaderTop {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .top {
+            .tel,
+            .email,
+            .chat-us {
+                font-size: 10px;
+            }
+    
+            .tel {
+                margin: 0 15px;
+            }
+    
+            .chat-us {
+                color: #6A983C;
+            }
+
+        }
+        .links {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+        }
+    }
+
+    .Bottom {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .mobileStyle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 30px;
+            flex-direction: column;
+        }
+
+        .select-option {
+            padding: 10px 15px;
+            width: 100%;
+    
+            select {
+                font-size: 15px;
+            }
+    
+            .line {
+
+            }
+    
+            input {
+                font-size: 14px;
+                width: 45%;
+            }
+        }
+    
+        .icons {
+            display: flex;
+            margin-left: 20px;
+            .user-icon {
+                margin-right: 15px;
             }
         }
     }

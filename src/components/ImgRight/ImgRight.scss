@@ -27,7 +27,7 @@
     }
 }
 
-@media screen and (max-width: '960px') {
+@media screen and (max-width: 960px) {
     .ImgRight {
         width: 100%;
         flex-direction: column;
@@ -40,6 +40,22 @@
         }
         .imgRight-auth {
             font-size: 11px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ImgRight {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        text-align: right;
+        align-items: center;
+        // width: 87%;
+
+        .nmadir {
+            margin-right: 0;
+            // margin-left: 50px;
         }
     }
 }

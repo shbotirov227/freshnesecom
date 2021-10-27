@@ -110,8 +110,23 @@
                 margin-bottom: 50px;
             }
 
-            .left {
+            .rightSection {
+                width: 100%;
+                box-sizing: border-box;
 
+                img {
+                    position: static;
+                    margin-left: 30px;
+                }
+            }
+
+            .left {
+                margin-left: 0;
+                width: 100%;
+
+                .text {
+                    width: 80%;
+                }
             }
 
             .right {

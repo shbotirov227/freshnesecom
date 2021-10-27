@@ -1,36 +1,38 @@
-import { useMediaQuery } from 'react-responsive';
-
+// import { useMediaQuery } from 'react-responsive';
 import { Link, NavLink } from 'react-router-dom';
+
+// import MobileMenuBarIcon from '../../assets/images/icons/menu-bar.png';
+// import MobileCloseIcon from '../../assets/images/icons/delete.svg';
 import {
-Logo,
-User,
-Basket,
-Search
+    Logo,
+    User,
+    Basket,
+    Search,
 } from '../../assets/icons/icons';
 
 import './HeaderTop.scss';
 
-const Desktop = ({ children }) => {
-  const isDesktop = useMediaQuery({ minWidth: 992 })
-  return isDesktop ? children : null
-}
-const Tablet = ({ children }) => {
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
-  return isTablet ? children : null
-}
-const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
-  return isMobile ? children : null
-}
-const Default = ({ children }) => {
-  const isNotMobile = useMediaQuery({ minWidth: 768 })
-  return isNotMobile ? children : null
-}
+// const Desktop = ({ children }) => {
+//   const isDesktop = useMediaQuery({ minWidth: 992 })
+//   return isDesktop ? children : null
+// }
+// const Tablet = ({ children }) => {
+//   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
+//   return isTablet ? children : null
+// }
+// const Mobile = ({ children }) => {
+//   const isMobile = useMediaQuery({ maxWidth: 767 })
+//   return isMobile ? children : null
+// }
+// const Default = ({ children }) => {
+//   const isNotMobile = useMediaQuery({ minWidth: 768 })
+//   return isNotMobile ? children : null
+// }
 
 const HeaderTop = () => {
 return (
 <div className="container">
-    <Desktop>
+    {/* <Desktop> */}
         <div className="HeaderTop">
             <div className="top">
                 <span className="chat-us">Chat with us</span>
@@ -47,27 +49,31 @@ return (
         <div className="Bottom">
             <Link to="/"><Logo /></Link>
 
-            <div className="select-option">
-                <select name="" id="">
-                    <option value="">All categories</option>
-                    <option value="option1">Option1</option>
-                    <option value="option2">Option2</option>
-                    <option value="option3">Option3</option>
-                    <option value="option4">Option4</option>
-                </select>
-                <span className="line"></span>
-                <input type="text" placeholder="Search Products, categories ..." />
-                <Search />
-            </div>
+            <div className="mobileStyle">
+                <div className="select-option">
 
-            <div className="icons">
-                <Link to="/checkout"><span className="user-icon"><User /></span></Link>
-                <Link to="/checkout"><Basket /></Link>
+
+                    <select name="" id="">
+                        <option value="">All categories</option>
+                        <option value="option1">Option1</option>
+                        <option value="option2">Option2</option>
+                        <option value="option3">Option3</option>
+                        <option value="option4">Option4</option>
+                    </select>
+                    <span className="line"></span>
+                    <input type="text" placeholder="Search Products, categories ..." />
+                    <Search />
+                </div>
+
+                <div className="icons">
+                    <Link to="/checkout"><span className="user-icon"><User /></span></Link>
+                    <Link to="/checkout"><Basket /></Link>
+                </div>
             </div>
         </div>
-    </Desktop>
+    {/* </Desktop> */}
 
-    <Tablet>
+    {/* <Tablet> 
         <div className="HeaderTop">
             <div className="top">
                 <span className="chat-us">Chat with us</span>
@@ -104,7 +110,7 @@ return (
         </div>
     </Tablet>
 
-    <Mobile>
+    <Mobile> 
         <div className="HeaderTop">
             <div className="top">
                 <span className="chat-us">Chat with us</span>
@@ -139,7 +145,7 @@ return (
                 <Link to="/checkout"><Basket /></Link>
             </div>
         </div>
-    </Mobile>
+    </Mobile> */}
 </div>
 )
 }

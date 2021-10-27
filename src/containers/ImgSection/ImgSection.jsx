@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 import ButtonDefault from '../../components/ButtonDefault';
 import SmallBtn from '../../components/SmallBtn/SmallBtn';
@@ -9,7 +10,6 @@ import Img2 from '../../assets/images/img2.png';
 import Img3 from '../../assets/images/img3.png';
 
 import './ImgSection.scss';
-import { Link } from 'react-router-dom';
 
 const ImgSection = () => {
   return (
@@ -29,12 +29,14 @@ const ImgSection = () => {
 
           <div className="left">
             <img className="img" src={Image2} alt="" />
-              <SmallBtn title="Vegetable"/>
-              <h3 className="text">Which vegetable your family will love and want’s eat each day</h3>
-              <div>
-                <span className="author">Author</span>
-                <span className="author">15. 6. 2020</span>
-              </div>
+            <SmallBtn title="Vegetable"/>
+            <h3 className="text">Which vegetable your family will love and want’s eat each day</h3>
+
+            <div>
+              <span className="author">Author</span>
+              <span className="author">15. 6. 2020</span>
+            </div>
+
           </div>
 
           <div className="rightSection">
