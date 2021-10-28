@@ -155,3 +155,12 @@
         }
     }
 }
+
+@media screen and (max-width: 960px) {
+    .Links {
+        // display: none;
+        .links-category {
+            display: flex;
+        }
+    }
+}

@@ -6,6 +6,13 @@
     margin-top: 65px !important;
     box-sizing: border-box;
 
+    .res {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+    }
+
     .bottom {
         width: 100%;
         display: flex;
@@ -45,6 +52,34 @@
                 &:first-child {
                     margin-left: 0;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .HomeCards {
+        margin-top: 70px !important;
+
+        .res {
+            align-items: center;
+            justify-content: center;
+
+            .Links {
+                display: none;
+            }
+        }
+        .bottom {
+            margin-top: 70px;
+            flex-wrap: wrap;
+            margin-left: 0;
+            
+            .Links {
+                display: none;
+            }
+
+            .Card {
+              margin-left: 0;
             }
         }
     }

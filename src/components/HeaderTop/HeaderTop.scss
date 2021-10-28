@@ -4,10 +4,8 @@
     justify-content: space-between;
     box-sizing: border-box;
     padding: 16px 0;
-    border-bottom: 1px solid #D1D1D1;
+    border-bottom: 1px solid #d1d1d1;
     margin-bottom: 40px;
-
-    
 
     .top {
         .tel,
@@ -26,7 +24,7 @@
         }
 
         .chat-us {
-            color: #6A983C;
+            color: #6a983c;
         }
     }
 
@@ -36,7 +34,7 @@
         font-weight: normal;
         font-size: 12px;
         line-height: 16px;
-        color: #6A983C;
+        color: #6a983c;
 
         &:nth-child(2) {
             margin: 40px;
@@ -54,11 +52,17 @@
         width: 65%;
         justify-content: space-between;
         align-items: center;
+
+        .mobileBtnStylesBlock {
+            .mobileNavBtn {
+                display: none;
+            }
+        }
     }
 
     .select-option {
-        background: #F9F9F9;
-        border: 1px solid #D1D1D1;
+        background: #f9f9f9;
+        border: 1px solid #d1d1d1;
         box-sizing: border-box;
         border-radius: 12px;
         padding: 10px 15px;
@@ -70,19 +74,19 @@
         select {
             border: none;
             outline: none;
-            font-family: 'Poppins';
+            font-family: "Poppins";
             font-style: normal;
             font-weight: bold;
             font-size: 15px;
             line-height: 22px;
             color: #151515;
-            background-color: #F9F9F9;
+            background-color: #f9f9f9;
         }
 
         .line {
             width: 2px;
             height: 20px;
-            background-color: #D1D1D1;
+            background-color: #d1d1d1;
             // transform: rotate(90deg);
             border-radius: 10px;
             margin: 0 30px;
@@ -90,15 +94,15 @@
         }
 
         input {
-            font-family: 'Open Sans';
+            font-family: "Open Sans";
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 19px;
-            color: #A9A9A9;
+            color: #a9a9a9;
             border: none;
             outline: none;
-            background-color: #F9F9F9;
+            background-color: #f9f9f9;
             width: 60%;
         }
     }
@@ -109,7 +113,6 @@
         }
     }
 }
-
 
 @media screen and (max-width: 960px) {
     .HeaderTop {
@@ -189,7 +192,6 @@
             width: 50%;
             select {
                 font-size: 12px;
-
             }
             .line {
                 margin: 0 15px;
@@ -207,7 +209,6 @@
                 }
             }
             .basket-icon {
-                
                 svg {
                     width: 20px;
                 }
@@ -229,15 +230,14 @@
             .chat-us {
                 font-size: 10px;
             }
-    
+
             .tel {
                 margin: 0 15px;
             }
-    
-            .chat-us {
-                color: #6A983C;
-            }
 
+            .chat-us {
+                color: #6a983c;
+            }
         }
         .links {
             margin-top: 20px;
@@ -261,32 +261,64 @@
             width: 100%;
             margin-top: 30px;
             flex-direction: column;
+
+            .mobileBtnStylesBlock {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 20px;
+
+                .mobileNavBtn {
+                    display: block;
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+
+                    svg {
+                        width: 27px;
+                        height: 27px;
+                    }
+                }
+            }
         }
 
         .select-option {
             padding: 10px 15px;
             width: 100%;
-    
+
             select {
                 font-size: 15px;
             }
-    
-            .line {
 
+            .line {
             }
-    
+
             input {
                 font-size: 14px;
                 width: 45%;
             }
         }
-    
+
         .icons {
             display: flex;
             margin-left: 20px;
-            .user-icon {
-                margin-right: 15px;
+
+            svg {
+                width: 25px;
+                height: 25px;
             }
+
+            .user-icon {
+                margin-right: 35px;
+            }
+        }
+    }
+
+    
+    .visible {
+        .HeaderBottom {
+            display: block;
         }
     }
 }

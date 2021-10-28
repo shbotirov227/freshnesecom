@@ -71,3 +71,9 @@
         }
     }
 }
+
+@media screen and (max-width: 375px) {
+    .CarouselCard {
+        min-width: 100%;
+    }
+}

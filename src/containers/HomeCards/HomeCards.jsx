@@ -7,7 +7,7 @@ import './HomeCards.scss';
 const HomeCards = () => {
     return (
         <div className="HomeCards container">
-            <div className="res d-flex align-items-start justify-content-between w-100">
+            <div className="res">
                 <Links 
                     linksTitle="Category menu"
                     link={[

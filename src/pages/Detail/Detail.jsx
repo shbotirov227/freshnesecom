@@ -98,59 +98,31 @@ class Detail extends Component {
                   <div className="d-flex justify-content-between">
                     <div className="me-5">
                       <span className="rightGeneralItemsTitle d-block">SKU:</span>
-                      <span className="rightGeneralItemsTitle d-block">
-                        Category:
-                      </span>
-                      <span className="rightGeneralItemsTitle d-block">
-                        Stock:
-                      </span>
+                      <span className="rightGeneralItemsTitle d-block">Category:</span>
+                      <span className="rightGeneralItemsTitle d-block">Stock:</span>
                       <span className="rightGeneralItemsTitle d-block">Farm</span>
                     </div>
   
                     <div className="">
-                      <span className="rightGeneralItemsValue d-block">
-                        76645
-                      </span>
-                      <span className="rightGeneralItemsValue d-block">
-                        Vegetables
-                      </span>
-                      <span className="rightGeneralItemsValue d-block">
-                        In Stock
-                      </span>
-                      <span className="rightGeneralItemsValue d-block">
-                        Grocery Tarm Fields
-                      </span>
+                      <span className="rightGeneralItemsValue d-block">76645</span>
+                      <span className="rightGeneralItemsValue d-block">Vegetables</span>
+                      <span className="rightGeneralItemsValue d-block">In Stock</span>
+                      <span className="rightGeneralItemsValue d-block">Grocery Tarm Fields</span>
                     </div>
                   </div>
                   <div className="d-flex justify-content-between">
                     <div className="me-5">
-                      <span className="rightGeneralItemsTitle d-block">
-                        Freshness:
-                      </span>
-                      <span className="rightGeneralItemsTitle d-block">
-                        Buy by:
-                      </span>
-                      <span className="rightGeneralItemsTitle d-block">
-                        Delivery:
-                      </span>
-                      <span className="rightGeneralItemsTitle d-block">
-                        Delivery area
-                      </span>
+                      <span className="rightGeneralItemsTitle d-block">Freshness:</span>
+                      <span className="rightGeneralItemsTitle d-block">Buy by:</span>
+                      <span className="rightGeneralItemsTitle d-block">Delivery:</span>
+                      <span className="rightGeneralItemsTitle d-block">Delivery area</span>
                     </div>
   
                     <div>
-                      <span className="rightGeneralItemsValue d-block">
-                        1 days old
-                      </span>
-                      <span className="rightGeneralItemsValue d-block">
-                        pcs, kgs, box, pack
-                      </span>
-                      <span className="rightGeneralItemsValue d-block">
-                        in 2 days
-                      </span>
-                      <span className="rightGeneralItemsValue d-block">
-                        Czech republic
-                      </span>
+                      <span className="rightGeneralItemsValue d-block">1 days old</span>
+                      <span className="rightGeneralItemsValue d-block">pcs, kgs, box, pack</span>
+                      <span className="rightGeneralItemsValue d-block">in 2 days</span>
+                      <span className="rightGeneralItemsValue d-block">Czech republic</span>
                     </div>
                   </div>
                 </div>

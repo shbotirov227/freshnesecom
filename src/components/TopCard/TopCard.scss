@@ -114,3 +114,34 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .TopCard {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        // order: 1;
+
+        .topcard-bg {
+            &:nth-child(1) {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .TopCard {
+        width: 100%;
+
+        .topcard-bg {
+            width: 100%;
+            &:nth-child(1) {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

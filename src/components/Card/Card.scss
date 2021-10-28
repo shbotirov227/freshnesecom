@@ -157,3 +157,10 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .Card {
+        width: 46%;
+        margin-left: 0;
+    }
+}
