@@ -193,11 +193,11 @@ class Detail extends Component {
                       will lend sweetness, texture and colour to an enormous number of
                       recipes.
                   </p>
-                  <h5 className="right-bottom-title">Full of Vitamins!</h5>
                 </div>
   
   
                 <div className="vitamins">
+                  <h5 className="right-bottom-title">Full of Vitamins!</h5>
                   <div className="borderBottom d-flex align-items-center">
                       <span className="vitamins-title">Vitamins</span>
                       <span className="vitamins-title">Quantity</span>

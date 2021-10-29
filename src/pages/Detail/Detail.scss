@@ -1,405 +1,547 @@
 .Detail {
-    width: 100%;
+	width: 100%;
 
-    .detailCard {
-        margin: 40px 0 140px 0;
-    }
+	.detailCard {
+		margin: 40px 0 140px 0;
+	}
 
-    &-imgSection-left {
-        width: 50%;
-    }
+	&-imgSection-left {
+		width: 50%;
+	}
 
-    &-imgSection-right {
-        width: 50%;
+	&-imgSection-right {
+		width: 50%;
 
-        .rightGeneralTitle {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 140%;
-            color: #151515;
-            margin-bottom: 10px;
-        }
+		.rightGeneralTitle {
+			font-family: "Poppins";
+			font-style: normal;
+			font-weight: 600;
+			font-size: 32px;
+			line-height: 140%;
+			color: #151515;
+			margin-bottom: 10px;
+		}
 
-        .rightGeneralText {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 17px;
-            line-height: 23px;
-            color: #151515;
-            max-width: 570px;
-            margin: 45px 0 40px 0;
-        }
+		.rightGeneralText {
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 17px;
+			line-height: 23px;
+			color: #151515;
+			max-width: 570px;
+			margin: 45px 0 40px 0;
+		}
 
-        .detailRatingTitle {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 13px;
-            line-height: 16px;
-            color: #A9A9A9;
-            margin-left: 10px;
-        }
+		.detailRatingTitle {
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 16px;
+			color: #a9a9a9;
+			margin-left: 10px;
+		}
 
-        .rightGeneralItemsTitle {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 19px;
-            color: #A9A9A9;
-            margin-bottom: 15px;
-        }
+		.rightGeneralItemsTitle {
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 19px;
+			color: #a9a9a9;
+			margin-bottom: 15px;
+		}
 
-        .rightGeneralItemsValue {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 19px;
-            color: #151515;
-            margin-bottom: 15px;
-            cursor: pointer;
-            transition: all ease 0.5;
+		.rightGeneralItemsValue {
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 19px;
+			color: #151515;
+			margin-bottom: 15px;
+			cursor: pointer;
+			transition: all ease 0.5;
 
-            &:hover {
-                text-decoration-line: underline;
-                color: #6A983C;
-                // transition: all ease 0.5;
-            }
-        }
+			&:hover {
+				text-decoration-line: underline;
+				color: #6a983c;
+				// transition: all ease 0.5;
+			}
+		}
 
-        .maxWidth {
-            max-width: 550px;
-            margin-bottom: 40px;
-        }
+		.maxWidth {
+			max-width: 550px;
+			margin-bottom: 40px;
+		}
 
-        .addButtons {
-            width: 85%;
-            margin-bottom: 25px;
-            border: 1px solid #F5F5F5;
-            box-sizing: border-box;
-            border-radius: 12px;
-            padding: 16px;
+		.addButtons {
+			width: 85%;
+			margin-bottom: 25px;
+			border: 1px solid #f5f5f5;
+			box-sizing: border-box;
+			border-radius: 12px;
+			padding: 16px;
 
-            &-priceItems {
-                margin-right: 90px;
+			&-priceItems {
+				margin-right: 90px;
 
-                .addButtons-price {
-                    font-family: 'Poppins';
+				.addButtons-price {
+					font-family: "Poppins";
+					font-style: normal;
+					font-weight: 600;
+					font-size: 26px;
+					line-height: 39px;
+					color: #6a983c;
+				}
+
+				.addButtons-smBtn {
+					font-family: Poppins;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 12px;
+					line-height: 18px;
+					display: flex;
+					align-items: flex-end;
+					text-decoration-line: line-through;
+					color: #a9a9a9;
+				}
+			}
+
+			&-select {
+				background: #f9f9f9;
+				border: 1px solid #d1d1d1;
+				box-sizing: border-box;
+				border-radius: 12px;
+				margin-right: 25px;
+				padding: 5px 20px;
+
+				input {
+					font-family: "Open Sans";
+					font-style: normal;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 19px;
+					color: #5c5c5c;
+					box-sizing: border-box;
+					background-color: transparent;
+					border: none;
+					outline: none;
+					width: 50px;
+					border-right: 2px solid #d1d1d1;
+					margin-right: 20px;
+					text-align: center;
+				}
+
+				&-line {
+					border: 1px solid #d1d1d1;
+					transform: rotate(90deg);
+					width: 3px;
+					height: 20px;
+					margin: 0 16px;
+					background-color: #f9f9f9;
+				}
+
+				select {
+					font-family: "Poppins";
+					font-style: normal;
+					font-weight: 600;
+					font-size: 12px;
+					line-height: 18px;
+					color: #151515;
+					background-color: transparent;
+					border: none;
+					outline: none;
+				}
+			}
+
+			&-btn {
+				font-family: "Poppins";
+				font-style: normal;
+				font-weight: bold;
+				font-size: 15px;
+				line-height: 22px;
+				color: #ffffff;
+				background: #6a983c;
+				border: 2px solid #46760a;
+				box-sizing: border-box;
+				border-radius: 12px;
+				padding: 15px 16px;
+			}
+		}
+
+		.detailCompare {
+			font-family: "Poppins";
+			font-style: normal;
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 22px;
+			color: #151515;
+			margin-right: 50px;
+		}
+
+		.descriptionMar {
+			margin-top: 70px;
+			border-bottom: 1px solid #f5f5f5;
+
+			.description {
+				font-family: "Poppins";
+				font-style: normal;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 27px;
+				color: #151515;
+				padding: 16px 30px 16px 20px;
+				margin-right: 15px;
+				cursor: pointer;
+				transition: all ease 0.5s;
+				border-bottom: 1px solid transparent;
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&:hover {
+					border-bottom: 1px solid #6a983c;
+				}
+
+				&-num {
+					font-family: "Poppins";
+					font-style: normal;
+					font-weight: 600;
+					font-size: 12px;
+					line-height: 18px;
+					color: #6a983c;
+					background: #f4f8ec;
+					border-radius: 12px;
+					padding: 1px 10px;
+				}
+			}
+		}
+
+		.right-bottom {
+			margin: 50px 0 35px 0;
+
+			.right-bottom-title {
+				font-family: "Poppins";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 15px;
+				line-height: 22px;
+				color: #151515;
+			}
+
+			.right-bottom-text {
+				font-family: "Open Sans";
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 19px;
+				color: #151515;
+			}
+
+			.vitamins {
+				margin-top: 25px;
+
+                .right-bottom-title {
+                    font-family: "Poppins";
                     font-style: normal;
-                    font-weight: 600;
-                    font-size: 26px;
-                    line-height: 39px;
-                    color: #6A983C;
-                }
-
-                .addButtons-smBtn {
-                    font-family: Poppins;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 12px;
-                    line-height: 18px;
-                    display: flex;
-                    align-items: flex-end;
-                    text-decoration-line: line-through;
-                    color: #A9A9A9;
-                }
-            }
-
-            &-select {
-                background: #F9F9F9;
-                border: 1px solid #D1D1D1;
-                box-sizing: border-box;
-                border-radius: 12px;
-                margin-right: 25px;
-                padding: 5px 20px;
-
-                input {
-                    font-family: 'Open Sans';
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 14px;
-                    line-height: 19px;
-                    color: #5c5c5c;
-                    box-sizing: border-box;
-                    background-color: transparent;
-                    border: none;
-                    outline: none;
-                    width: 50px;
-                    border-right: 2px solid #D1D1D1;
-                    margin-right: 20px;
-                    text-align: center;
-                }
-
-                &-line {
-                    border: 1px solid #D1D1D1;
-                    transform: rotate(90deg);
-                    width: 3px;
-                    height: 20px;
-                    margin: 0 16px;
-                    background-color: #F9F9F9;
-                }
-
-                select {
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 12px;
-                    line-height: 18px;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 22px;
                     color: #151515;
-                    background-color: transparent;
-                    border: none;
-                    outline: none;
-                }
-            }
-
-            &-btn {
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: bold;
-                font-size: 15px;
-                line-height: 22px;
-                color: #FFFFFF;
-                background: #6A983C;
-                border: 2px solid #46760A;
-                box-sizing: border-box;
-                border-radius: 12px;
-                padding: 15px 16px;
-            }
-        }
-
-        .detailCompare {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: bold;
-            font-size: 15px;
-            line-height: 22px;
-            color: #151515;
-            margin-right: 50px;
-        }
-
-        .descriptionMar {
-            margin-top: 70px;
-            border-bottom: 1px solid #F5F5F5;
-
-            .description {
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 27px;
-                color: #151515;
-                padding: 16px 30px 16px 20px;
-                margin-right: 15px;
-                cursor: pointer;
-                transition: all ease 0.5s;
-                border-bottom: 1px solid transparent;
-
-                &:first-child {
-                    padding-left: 0;
+                    margin-bottom: 25px;
                 }
 
-                &:hover {
-                    border-bottom: 1px solid #6A983C;
-                }
+				.borderBottom {
+					width: 100%;
+					border-bottom: 1px solid #f5f5f5;
 
-                &-num {
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 12px;
-                    line-height: 18px;
-                    color: #6A983C;
-                    background: #F4F8EC;
-                    border-radius: 12px;
-                    padding: 1px 10px;
-                }
-            }
-        }
+					.vitamins-title {
+						width: 100%;
+						font-family: "Poppins";
+						font-style: normal;
+						font-weight: 600;
+						font-size: 12px;
+						line-height: 18px;
+						color: #151515;
+						padding: 10px 0;
+						margin-right: 180px;
+					}
+				}
+			}
+		}
+	}
 
+	.detailCard {
+		.Card {
+			margin-right: 70px;
+		}
+	}
 
-        .right-bottom {
-            margin: 50px 0 35px 0;
+	.carouselIcon {
+		display: none;
+		img {
+			display: none;
+		}
+	}
 
-            .right-bottom-title {
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 15px;
-                line-height: 22px;
-                color: #151515;
-            }
-
-            .right-bottom-text {
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 19px;
-                color: #151515;
-            }
-
-            .vitamins {
-                margin-top: 25px;
-
-                .borderBottom {
-                    width: 100%;
-                    border-bottom: 1px solid #F5F5F5;
-
-                    .vitamins-title {
-                        width: 100%;
-                        font-family: 'Poppins';
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 12px;
-                        line-height: 18px;
-                        color: #151515;
-                        padding: 10px 0;
-                        margin-right: 180px;
-                    }
-                }
-
-
-            }
-        }
-    }
-
-    .detailCard {
-        .Card {
-            margin-right: 70px;
-        }
-    }
-
-    .carouselIcon {
-        display: none;
-        img {
-            display: none;
-
-        }
-    }
-
-    &-imgSection {
-        margin: 45px 0 90px 0;
-    }
+	&-imgSection {
+		margin: 45px 0 90px 0;
+	}
 }
 
-@media screen and (max-width: '960px') {
-    .Detail {
-        .breadcrumb {
-            font-size: 14px;
-        }
+@media screen and (max-width: 960px) {
+	.Detail {
+		.breadcrumb {
+			font-size: 14px;
+		}
 
-        &-imgSection {
-            margin-bottom: 0;
-        }
+		&-imgSection {
+			margin-bottom: 0;
+		}
 
-        &-imgSection-right {
-            .right-top {
-                .rightGeneralTitle {
-                    font-size: 19px;
-                }
+		&-imgSection-right {
+			.right-top {
+				.rightGeneralTitle {
+					font-size: 19px;
+				}
 
-                .stars {
-                    font-size: 13px;
-                }
+				.stars {
+					font-size: 13px;
+				}
 
-                .rightGeneralText {
-                    font-size: 12px;
-                }
+				.rightGeneralText {
+					font-size: 12px;
+				}
 
-                .maxWidth {
-                    .rightGeneralItemsTitle {
-                        font-size: 11px;
-                    }
+				.maxWidth {
+					.rightGeneralItemsTitle {
+						font-size: 11px;
+					}
 
-                    .rightGeneralItemsValue {
-                        font-size: 12px;
-                        font-weight: 600;
-                    }
-                }
+					.rightGeneralItemsValue {
+						font-size: 12px;
+						font-weight: 600;
+					}
+				}
 
-                .addButtons {
-                    height: 70px;
-                    width: 100%;
+				.addButtons {
+					height: 70px;
+					width: 100%;
 
-                    &-priceItems {
-                        width: 100%;
-                        position: relative;
-                        bottom: 10px;
-                        margin-right: 0;
+					&-priceItems {
+						width: 100%;
+						position: relative;
+						bottom: 10px;
+						margin-right: 0;
 
-                        .addButtons-price {
-                            font-size: 15px;
-                            display: block;
-                            height: 30px;
-                            width: 80px;
-                            margin-right: 0;
-                        }
+						.addButtons-price {
+							font-size: 15px;
+							display: block;
+							height: 30px;
+							width: 80px;
+							margin-right: 0;
+						}
 
-                        .addButtons-smBtn {
-                            font-size: 10px;
-                        }
-                    }
+						.addButtons-smBtn {
+							font-size: 10px;
+						}
+					}
 
-                    &-select {
-                        height: 35px;
-                        width: 30%;
-                        margin-right: 30px;
-                    }
+					&-select {
+						height: 35px;
+						width: 30%;
+						margin-right: 30px;
+					}
 
-                    &-btn {
-                        height: 35px;
-                        font-size: 10px;
+					&-btn {
+						height: 35px;
+						font-size: 10px;
+						display: flex;
+						align-items: center;
+						width: 80%;
+					}
+				}
+
+				.detailCompare {
+					font-size: 11px;
+
+					svg {
+						width: 15px;
+					}
+				}
+
+				.descriptionMar {
+					margin-top: 30px;
+
+					.description {
+						font-size: 15px;
+					}
+				}
+			}
+
+			.right-bottom {
+				margin-top: 30px;
+
+				&-title {
+					font-size: 14px !important;
+				}
+
+				&-text {
+					font-size: 12px !important;
+				}
+
+				.vitamins {
+					.borderBottom {
+						.vitamins-title {
+							font-size: 12px;
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.detailCard {
+			margin-bottom: 70px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.Detail {
+		.container {
+			.breadcrumb {
+				font-size: 13px;
+			}
+		}
+
+		&-imgSection {
+			margin-top: 40px;
+
+			&-left {
+				.DetailImg {
+					img {
+						width: 80%;
+						height: 80%;
+					}
+				}
+			}
+
+			&-right {
+				.right-top {
+					.descriptionMar {
+						.description {
+							font-size: 12px;
+							padding: 15px;
+						}
+					}
+
+					.addButtons {
+						.addButtons-priceItems {
+							width: 30%;
+							margin-right: 0;
+							.addButtons-price {
+								width: 100%;
+								font-size: 13px;
+								margin-right: 0;
+							}
+						}
+						.addButtons-select {
+							width: 40%;
+							// margin: 0 11px;
+							margin: 0 15px;
+						}
+
+						.addButtons-btn {
+							width: 45%;
+							padding: 10px;
+							font-size: 9px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.Detail {
+		.container {
+			.breadcrumb {
+			}
+		}
+
+		&-imgSection {
+			&-left {
+				height: 100%;
+				.DetailImg {
+					img {
+					}
+				}
+			}
+
+			&-right {
+				.right-top {
+					.maxWidth {
+						display: flex;
+						align-items: flex-start;
+						justify-content: flex-start;
+						flex-direction: column;
+					}
+					.descriptionMar {
+						position: relative;
+						left: -185px;
+						border-bottom: none;
                         display: flex;
                         align-items: center;
-                        width: 80%;
-                    }
-                }
+                        justify-content: space-between;
+						.description {
+							font-size: 13px;
+							margin-right: 0;
+						}
+					}
 
-                .detailCompare {
-                    font-size: 11px;
+					.addButtons {
+						.addButtons-priceItems {
+							.addButtons-price {
+							}
+						}
+						.addButtons-select {
+						}
 
-                    svg {
-                        width: 15px;
-                    }
-                }
+						.addButtons-btn {
+						}
+					}
+				}
 
-                .descriptionMar {
-                    margin-top: 30px;
+				.right-bottom {
+                    position: relative;
 
-                    .description {
-                        font-size: 15px;
-                    }
-                }
-            }
+					.right-bottom-title {
+						position: relative;
+						left: -170px;
+					}
 
-            .right-bottom {
-                margin-top: 30px;
+					.right-bottom-text {
+                        position: relative;
+						left: -170px;
+					}
 
-                &-title {
-                    font-size: 14px !important;
-                }
+                    .vitamins {
+                        position: relative;
+                        width: 340px;
+                        left: -170px;
 
-                &-text {
-                    font-size: 12px !important;
-                }
-
-                .vitamins {
-                    .borderBottom {
-                        .vitamins-title {
-                            font-size: 12px;
-                            margin-right: 0;
+                        .right-bottom-title {
+                            position: relative;
+                            left: 0;
                         }
                     }
-                }
-            }
-        }
-
-        .detailCard {
-            margin-bottom: 70px;
-        }
-    }
+				}
+			}
+		}
+	}
 }

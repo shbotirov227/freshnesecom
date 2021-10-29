@@ -20,7 +20,7 @@
     }
 }
 
-@media screen and (max-width: '960px') {
+@media screen and (max-width: 960px) {
     .FooterTopLinks {
         .footerTopLink-title {
             font-size: 15px
@@ -29,5 +29,12 @@
         .footerTopLink-link {
             font-size: 12px;
         }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .FooterTopLinks {
+        width: 43%;
+        margin-bottom: 30px;
     }
 }

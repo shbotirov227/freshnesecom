@@ -103,8 +103,21 @@ body {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: '960px') {
+@media screen and (max-width: 960px) {
     body {
+        max-width: 100%;
         overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        max-width: 100%;
     }
 }

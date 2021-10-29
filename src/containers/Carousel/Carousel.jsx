@@ -42,7 +42,7 @@ export default class Carousel extends Component {
 			centerPadding: "100px",
 			slidesToShow: 2.5,
 			speed: 500,
-			autoplay: true,
+			// autoplay: true,
 			prevArrow: <SlickArrowLeft />,
 			nextArrow: <SlickArrowRight />,
 

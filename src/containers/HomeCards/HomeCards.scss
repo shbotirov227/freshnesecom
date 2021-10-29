@@ -44,8 +44,8 @@
         .bottom {
             display: flex;
             align-items: flex-start;
-            justify-content: space-between;
-            // flex-wrap: wrap;
+            // justify-content: space-between;
+            flex-wrap: wrap;
 
             .Card {
                 margin-left: 20px;

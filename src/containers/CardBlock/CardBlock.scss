@@ -31,3 +31,17 @@
         }
     }
 }
+
+@media screen and (max-width: 375px) {
+    .CardBlock {
+
+        .cardBlock-bottom {
+            flex-wrap: wrap;
+            align-items: flex-start;
+            .Card {
+                margin-bottom: 20px;
+            }
+        }
+        
+    }
+}

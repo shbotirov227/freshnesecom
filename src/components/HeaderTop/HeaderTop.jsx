@@ -67,7 +67,7 @@ const HeaderTop = () => {
 							open ? <>
 								
 								{/* <HeaderBottom /> */}
-								<Links
+								{/* <Links
                     linksTitle="Best from Farmers"
                     link={[
                         "Carrots",
@@ -77,7 +77,7 @@ const HeaderTop = () => {
                         "Pork"
                     ]}
                     btnTitle="More products"
-                />
+                /> */}
 								
 							</> : undefined
 						}

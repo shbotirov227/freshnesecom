@@ -3,3 +3,13 @@
     justify-content: space-between;
     margin-bottom: 50px;
 }
+
+@media screen and (max-width: 375px) {
+    .FooterTop {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}

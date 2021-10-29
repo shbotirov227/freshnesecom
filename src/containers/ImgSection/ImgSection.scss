@@ -135,3 +135,60 @@
         }
     }
 }
+
+
+@media screen and (max-width: 375px) {
+    .ImgSection {
+        .dispFlex {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .imgLeftImage {
+                width: 100% !important;
+                height: 100% !important;
+                // overflow: hidden;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                margin-bottom: 50px;
+            }
+
+            .rightSection {
+                width: 100%;
+                box-sizing: border-box;
+
+                img {
+                    position: static;
+                    margin-left: 30px;
+                }
+            }
+
+            .left {
+                margin-left: 0;
+                width: 100%;
+
+                .text {
+                    width: 80%;
+                }
+            }
+
+            .right {
+                flex-direction: column;
+                .left {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    margin-bottom: 100px;
+                    text-align: left;
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
