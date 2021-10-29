@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {
   Breadcrumbs,
   Typography,
@@ -40,10 +41,10 @@ const Category = () => {
             <Typography color="textPrimary" className="breadcrumb">Fruit and vegetables </Typography>
           </Breadcrumbs>
 
-          <div className="d-flex align-center justify-content-between">
+          <div className="d-flex align-center justify-content-between categoryTopTitles">
             <h3 className="category-title">Fruit and vegetables</h3>
 
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center category-settings">
               <button onClick={() => setIsGrid(true)} className="categoryTopBtn">
                 <GridIcon /> Grid view
               </button>

@@ -32,11 +32,11 @@ const Blog = () => {
             <div className="d-flex align-center justify-content-between top-titles">
                 <h3 className="blog-title">Fruit and vegetables</h3>
 
-                <div className="d-flex align-items-center items">
+                {/* <div className="d-flex align-items-center items">
                     <button className="blogTopBtn"><GridIcon /> Grid view</button>
                     <button className="blogTopBtn"><span className="hoverSty"><ListIcon /></span>List view</button>
                     <button className="blogTopBtn"><span className="blogTopBtn-icon">117</span> Products</button>
-                </div>
+                </div> */}
             </div>
 
             <div className="width100">
