@@ -68,7 +68,7 @@
 			left: 5px;
 			top: 145px;
 		}
-        
+
 		.slick-next {
 			position: absolute;
 			right: 5px;
@@ -82,17 +82,17 @@
 }
 
 @media screen and (max-width: 375px) {
-    .Carousel {
-        .slick-prev {
+	.Carousel {
+		.slick-prev {
 			left: 15px;
 			top: 100px;
-            width: 27px;
+			width: 27px;
 		}
 
 		.slick-next {
 			right: 15px;
 			top: 100px;
-            width: 27px;
+			width: 27px;
 		}
-    }
+	}
 }

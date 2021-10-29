@@ -66,6 +66,9 @@
             }
         }
 
+        .mobileCarouselCards {
+            display: none;
+        }
     }
 
     &-middle {
@@ -74,6 +77,10 @@
 
         .left {
             width: 37%;
+
+            &-tags {
+                margin-bottom: 3rem;
+            }
 
             .blogDetailMidTitle {
                 font-family: 'Poppins';
@@ -137,7 +144,7 @@
     }
 }
 
-@media screen and (max-width: '960px') {
+@media screen and (max-width: 960px) {
     .BlogDetail {
         .breadcrumb {
             font-size: 15px;
@@ -186,6 +193,75 @@
             .BlogCards {
                 margin-right: 200px;
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .BlogDetail {
+        .breadcrumb {
+            font-size: 13px;
+        }
+
+        &-top {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+
+            .titles {
+                .dates {
+                    width: 30%;
+                }
+                .blogDetailTopTitle {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .BlogDetail {
+        &-top {
+            .titles {
+                flex-direction: column;
+                padding-top: 220px;
+                .dates {
+                    width: 100%;
+                }
+
+                .blogDetailTopTitle {
+                    font-size: 17px;
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        &-middle {
+            flex-direction: column;
+
+            .left {
+                width: 100%;
+                margin-bottom: 60px;
+                &-tags {
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .right {
+                width: 100%;
+            }
+        }
+
+        .blogDetailCards {
+            .blogDetailCarousel {
+                display: none;
+            }
+    
+            .mobileCarouselCards {
+                display: block;
             }
         }
     }

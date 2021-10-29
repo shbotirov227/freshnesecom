@@ -11,6 +11,10 @@
         font-size: 12px;
         line-height: 18px;
         color: #6A983C;
+
+        &:first-child {
+            margin-right: 1rem;
+        }
     }
 
     .detailImgItems {
@@ -42,5 +46,33 @@
 @media screen and (max-width: 768px) {
     .DetailImg {
         margin-bottom: 30px !important;
+
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .DetailImg {
+        margin-bottom: 30px !important;
+        width: 100%;
+
+        img {
+            width: 100% !important;
+            height: 200px !important;
+        }
+
+        .detailImgRate {
+            font-size: 6px;
+            padding: 0 7px;
+
+            &:first-child {
+                margin-right: 0.5rem;
+            }
+        }
+
+        .detailImgItems {
+            top: 5px;
+            left: 5px;
+        }
     }
 }

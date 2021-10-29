@@ -9,11 +9,11 @@ const App = () => {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Home} />                       {/* responsive full */}
           <Route exact path="/category" component={Category} />
-          <Route exact path="/detail" component={Detail} />
-          <Route exact path="/blog" component={Blog} />
-          <Route exact path="/blog-detail" component={BlogDetail} />
+          <Route exact path="/detail" component={Detail} />               {/* responsive full */}
+          <Route exact path="/blog" component={Blog} />                   {/* responsive full */}
+          <Route exact path="/blog-detail" component={BlogDetail} />      {/* responsive full */}
           <Route exact path="/checkout" component={Checkout} />
         </Switch>
       </Router>

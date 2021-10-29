@@ -43,8 +43,8 @@ class BlogDetail extends Component {
       className: "center",
       centerMode: true,
       infinite: true,
-      centerPadding: "100px",
-      slidesToShow: 3,
+      centerPadding: "70px",
+      slidesToShow: 2.6,
       speed: 500,
       autoplay: true,
       prevArrow: <SlickArrowLeft />,
@@ -72,7 +72,7 @@ class BlogDetail extends Component {
   
           <div className="BlogDetail-top">
             <div className="d-flex align-items-end justify-content-center titles">
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center dates">
                 <div className="me-5">
                   <span className="dateTitle">Date:</span>
                   <span className="dateTitle">Category:</span>
@@ -99,7 +99,7 @@ class BlogDetail extends Component {
                   <span className="blogDetailTag mb-2 me-2">Food</span>
                   <span className="blogDetailTag mb-2">Recepies</span>
               </div>
-              <div className="mb-5">
+              <div className="left-tags">
                   <span className="blogDetailTag me-2">Fresh</span>
                   <span className="blogDetailTag">Vegetable</span>
               </div>
@@ -163,7 +163,7 @@ class BlogDetail extends Component {
             <ButtonDefault text="Related topics" btnTitle="Button" link="/blog" />
           </div>
           <div className="d-flex justify-content-between align-items-center blogDetailCards">
-            <Slider {...settings} className="container" style={{padding: '0'}}>
+            <Slider {...settings} className="container blogDetailCarousel" style={{padding: '0'}}>
               <BlogCard
                 blogCardImg={BlogCardImg7}
                 blogCardTag="Tag"
@@ -196,6 +196,43 @@ class BlogDetail extends Component {
                 blogCardDate="15. 6. 2020"
               />
             </Slider>
+
+
+            <div className="mobileCarouselCards">
+              <BlogCard
+                blogCardImg={BlogCardImg7}
+                blogCardTag="Tag"
+                blogCardTitle="Space for your heding is here, write what you need"
+                blogCardAuth="Author"
+                blogCardDate="15. 6. 2020"
+              />
+    
+              <BlogCard
+                blogCardImg={BlogDetailCardImg1}
+                blogCardTag="Tag"
+                blogCardTitle="Space for your heding is here, write what you need"
+                blogCardAuth="Author"
+                blogCardDate="15. 6. 2020"
+              />
+    
+              <BlogCard
+                blogCardImg={BlogDetailCardImg2}
+                blogCardTag="Tag"
+                blogCardTitle="Space for your heding is here, write what you need"
+                blogCardAuth="Author"
+                blogCardDate="15. 6. 2020"
+              />
+    
+              <BlogCard
+                blogCardImg={BlogCardImg6}
+                blogCardTag="Tag"
+                blogCardTitle="Space for your heding is here, write what you need"
+                blogCardAuth="Author"
+                blogCardDate="15. 6. 2020"
+              />
+            </div>
+
+            
           </div>
         </div>
         <Footer />

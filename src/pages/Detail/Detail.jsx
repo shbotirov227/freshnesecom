@@ -225,7 +225,7 @@ class Detail extends Component {
           />
   
           <div className="d-flex align-items-center justify-content-between detailCard">
-            <Slider {...settings} className="container" style={{padding: '0'}}>
+            {/* <Slider {...settings} className="container" style={{padding: '0'}}> */}
               <Card
                 cardTitle="Product Title"
                 cardText="Space for a small product description"
@@ -255,7 +255,7 @@ class Detail extends Component {
                 cardPrice="1.12 USD"
                 cardBtn="Buy now"
               />
-            </Slider>
+            {/* </Slider> */}
           </div>
   
           <Footer />

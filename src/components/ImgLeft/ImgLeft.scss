@@ -74,8 +74,12 @@
         width: 100%;
 
         .img-text {
-            font-size: 25px;
-            padding-top: 240px;
+            font-size: 19px;
+            padding-top: 210px;
         }
     }
+}
+
+@media screen and (max-width: 375px) {
+    
 }

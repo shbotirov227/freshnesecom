@@ -14,7 +14,6 @@ import BlogCardImg4 from '../../assets/images/blogCardImg4.png';
 import BlogCardImg5 from '../../assets/images/blogCardImg5.png';
 import BlogCardImg6 from '../../assets/images/blogCardImg6.png';
 import BlogCardImg7 from '../../assets/images/blogCardImg7.png';
-
 import { ArrowBtn, GridIcon, ListIcon } from "../../assets/icons/icons";
 
 import "./Blog.scss";
@@ -33,7 +32,7 @@ const Blog = () => {
             <div className="d-flex align-center justify-content-between top-titles">
                 <h3 className="blog-title">Fruit and vegetables</h3>
 
-                <div className="d-flex align-items-center">
+                <div className="d-flex align-items-center items">
                     <button className="blogTopBtn"><GridIcon /> Grid view</button>
                     <button className="blogTopBtn"><span className="hoverSty"><ListIcon /></span>List view</button>
                     <button className="blogTopBtn"><span className="blogTopBtn-icon">117</span> Products</button>
@@ -75,7 +74,7 @@ const Blog = () => {
                             ]}
                         />
 
-                        <div className="mt-4">
+                        <div className="">
                             <Links
                                 styleContent="color: '#A9A9A9'"
                                 linksTitle="Category"
@@ -183,9 +182,7 @@ const Blog = () => {
             </div>
         </div>
 
-        <div className="">
-            <Footer />
-        </div>
+        <Footer />
     </div>
   );
 };

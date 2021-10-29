@@ -190,6 +190,9 @@
         .select-option {
             padding: 5px 10px;
             width: 50%;
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
             select {
                 font-size: 12px;
             }
@@ -276,8 +279,8 @@
                     background-color: transparent;
 
                     svg {
-                        width: 27px;
-                        height: 27px;
+                        width: 25px;
+                        height: 25px;
                     }
                 }
             }
@@ -286,13 +289,16 @@
         .select-option {
             padding: 10px 15px;
             width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
             select {
-                font-size: 15px;
+                font-size: 12px;
             }
 
             input {
-                font-size: 14px;
+                font-size: 12px;
                 width: 45%;
             }
         }

@@ -48,7 +48,7 @@
     }
 }
 
-@media screen and (max-width: '960px') {
+@media screen and (max-width: 960px) {
     .BlogCard {
         // width: 100%;
         .blogCardImg {
@@ -59,6 +59,39 @@
         .blogCardTitle {
             font-size: 15px;
             margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .BlogCard {
+        width: 50%;
+        .blogCardImg {
+            width: 100%;
+        }
+
+        .blogCardTitle {
+            font-size: 15px;
+            margin-bottom: 10px;
+            max-width: 100%;
+        }
+
+        .blogCardTag {
+            width: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .BlogCard {
+        width: 100%;
+
+        .blogCardImg {
+            width: 315px;
+        }
+
+        .blogCardTitle {
+            max-width: 100%;
         }
     }
 }

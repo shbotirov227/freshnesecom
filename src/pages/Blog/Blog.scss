@@ -138,6 +138,12 @@
         .blogSmImg-left {
             width: 23%;
             margin-right: 40px;
+
+            .Links {
+                &:first-child {
+                    margin-bottom: 2rem;
+                }
+            }
         }
 
         .blogSmImg-right {
@@ -207,7 +213,7 @@
     }
 }
 
-@media screen and (max-width: '960px') {
+@media screen and (max-width: 960px) {
     .Blog {
         &-main {
             .breadcrumb {
@@ -245,6 +251,98 @@
                 .BlogFooter-btn {
                     font-size: 12px;
                     padding: 10px 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Blog {
+        &-main {
+
+            .breadcrumb {
+                font-size: 13px;
+            }
+
+            .blogSmImg {
+                flex-direction: column;
+
+                &-left {
+                    order: 2;
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+
+                    .Links {
+                        width: 20%;
+                    }
+                }
+
+                &-right {
+                    order: 1;
+                    width: 100%;
+                } 
+            }
+
+            .emailSection {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Blog {
+
+        &-main {
+
+            .top-titles {
+                .blog-title {
+                    font-size: 20px;
+                    width: 100%;
+                }
+
+                .blogTopBtn {
+                    display: none;
+                }
+            }
+
+            .blogSmImg {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .blogSmImg-left {
+                    .Links {
+                        display: none;
+                    }
+                }
+
+                .blogSmImg-right {
+                    width: 100%;
+
+                    .BlogCard {
+                        width: 100%;
+                        .blogCardImg {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .topImages {
+                flex-direction: column;
+                width: 100%;
+    
+                .blogBackground1 {
+                    width: 100%;
+                    margin-bottom: 50px;
+                }
+    
+                .blogBackground2 {
+                    width: 100%;
                 }
             }
         }

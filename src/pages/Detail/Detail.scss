@@ -244,15 +244,15 @@
 			.vitamins {
 				margin-top: 25px;
 
-                .right-bottom-title {
-                    font-family: "Poppins";
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 15px;
-                    line-height: 22px;
-                    color: #151515;
-                    margin-bottom: 25px;
-                }
+				.right-bottom-title {
+					font-family: "Poppins";
+					font-style: normal;
+					font-weight: 500;
+					font-size: 15px;
+					line-height: 22px;
+					color: #151515;
+					margin-bottom: 25px;
+				}
 
 				.borderBottom {
 					width: 100%;
@@ -273,13 +273,7 @@
 			}
 		}
 	}
-
-	.detailCard {
-		.Card {
-			margin-right: 70px;
-		}
-	}
-
+	
 	.carouselIcon {
 		display: none;
 		img {
@@ -451,7 +445,6 @@
 						}
 						.addButtons-select {
 							width: 40%;
-							// margin: 0 11px;
 							margin: 0 15px;
 						}
 
@@ -471,20 +464,53 @@
 	.Detail {
 		.container {
 			.breadcrumb {
+				font-size: 10px;
 			}
 		}
 
 		&-imgSection {
+			flex-direction: column;
+
 			&-left {
-				height: 100%;
-				.DetailImg {
-					img {
-					}
-				}
+				order: 1;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 100%;
+				flex-wrap: wrap;
 			}
 
 			&-right {
+				width: 100%;
+				order: 2;
+				
 				.right-top {
+
+					.addButtons {
+						&-priceItems {
+							.addButtons-price {
+								width: 115% !important;
+							}
+						}
+
+						&-select {
+							margin: 0 8px !important;
+						}
+						
+						&-btn {
+							padding: 0 5px !important;
+						}
+					}
+
+
+					.rightGeneralTitle {
+						font-size: 18px;
+					}
+
+					.detailRatingTitle {
+						font-size: 12px;
+					}
+
 					.maxWidth {
 						display: flex;
 						align-items: flex-start;
@@ -492,55 +518,57 @@
 						flex-direction: column;
 					}
 					.descriptionMar {
-						position: relative;
-						left: -185px;
+						// position: relative;
+						// left: -185px;
 						border-bottom: none;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
 						.description {
 							font-size: 13px;
 							margin-right: 0;
 						}
 					}
 
-					.addButtons {
-						.addButtons-priceItems {
-							.addButtons-price {
+					.right-bottom {
+						// position: relative;
+
+						.right-bottom-title {
+							position: relative;
+							left: -170px;
+						}
+
+						.right-bottom-text {
+							position: relative;
+							left: -170px;
+						}
+
+						.vitamins {
+							position: relative;
+							width: 340px;
+							left: -170px;
+
+							.right-bottom-title {
+								position: relative;
+								left: 0;
 							}
 						}
-						.addButtons-select {
-						}
-
-						.addButtons-btn {
-						}
 					}
 				}
+			}
+		}
 
-				.right-bottom {
-                    position: relative;
+		.detailCard {
+			width: 100%;
+			flex-wrap: wrap;
+			// justify-content: flex-start;
+			display: flex;
+			align-items: flex-start !important;
 
-					.right-bottom-title {
-						position: relative;
-						left: -170px;
-					}
-
-					.right-bottom-text {
-                        position: relative;
-						left: -170px;
-					}
-
-                    .vitamins {
-                        position: relative;
-                        width: 340px;
-                        left: -170px;
-
-                        .right-bottom-title {
-                            position: relative;
-                            left: 0;
-                        }
-                    }
-				}
+			.Card {
+				// width: 300px;
+				margin-right: 0;
+				margin-bottom: 30px;
 			}
 		}
 	}

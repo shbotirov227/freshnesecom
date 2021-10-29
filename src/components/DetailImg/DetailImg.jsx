@@ -9,7 +9,7 @@ const DetailImg = ({ rate, rateTitle }) => {
             
             <div className="d-flex align-items-center detailImgItems">
                 {
-                    rate ? <span className="detailImgRate me-3">{rate}</span> : undefined
+                    rate ? <span className="detailImgRate">{rate}</span> : undefined
                 }
                 {
                     rateTitle ? <span className="detailImgRate">{rateTitle}</span> : undefined
