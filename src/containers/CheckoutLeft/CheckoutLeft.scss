@@ -27,6 +27,7 @@
         line-height: 18px;
         color: #151515;
         margin-bottom: 5px;
+        display: block;
     }
 
     .inputElement {
@@ -47,6 +48,10 @@
 
     .formInputs {
         margin-bottom: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .checkboxElement {
@@ -57,6 +62,11 @@
         padding: 12px 20px;
         width: 62%;
         margin-bottom: 35px;
+        cursor: pointer;
+
+        &.checkboxLast {
+            width: 40%;
+        }
 
         &.check2 {
             width: 83%;
@@ -96,11 +106,15 @@
         margin-bottom: 65px;
 
         .radioElement {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             background: #F9F9F9;
             border: 1px solid #D1D1D1;
             box-sizing: border-box;
             border-radius: 12px;
             padding: 15px 20px;
+            cursor: pointer;
 
             .fedEx-title {
                 font-family: 'Poppins';
@@ -109,6 +123,7 @@
                 font-size: 12px;
                 line-height: 18px;
                 color: #151515;
+                cursor: pointer;
             }
 
             .fedEx-price {
@@ -139,9 +154,11 @@
 
             #cardDate {
                 width: 130px;
+                // display: block;
             }
             #cardCvc {
                 width: 130px;
+                // display: block;
             }
         }
     }
@@ -286,7 +303,7 @@
     }
 }
 
-@media screen and (max-width: '960px') {
+@media screen and (max-width: 960px) {
     .checkoutPage-left {
 
         .checkoutTitle {
@@ -303,6 +320,10 @@
 
         .checkboxElement {
             width: 100%;
+
+            &.checkboxLast {
+                width: 100%;
+            }
         }
 
         .CreditCards {
@@ -367,6 +388,7 @@
             box-sizing: border-box;
             overflow-y: scroll;
             overflow-x: hidden;
+            z-index: 999;
 
             .modalTitle {
                 font-size: 20px;
@@ -385,3 +407,43 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .checkoutPage-left {
+        width: 50%;
+
+        .formInputs {
+            .labelElement {
+
+            }
+
+            .inputElement {
+                width: 160px;
+            }
+        }
+
+        .CreditCards {
+            .expiration {
+                #cardDate {
+                    width: 150px !important;
+                }
+                #cardCvc {
+                    width: 150px !important;
+                }
+            }
+        }
+
+        .confirmation {
+
+            .spanTitles {
+                justify-content: space-between ;
+                width: 100%;
+                .checkoutSpan {
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {}

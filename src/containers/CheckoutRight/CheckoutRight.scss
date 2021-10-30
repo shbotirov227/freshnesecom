@@ -1,120 +1,154 @@
 .Order {
-    width: 40%;
-    background: #FFFFFF;
-    border: 1px solid #D1D1D1;
-    box-sizing: border-box;
-    border-radius: 12px;
-    padding: 35px 20px;
-    height: 100%;
+	width: 40%;
+	background: #ffffff;
+	border: 1px solid #d1d1d1;
+	box-sizing: border-box;
+	border-radius: 12px;
+	padding: 35px 20px;
+	height: 100%;
 
-    &-title {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 33px;
-        color: #151515;
-        margin-bottom: 5px;
-    }
-    
-    &-span {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 16px;
-        color: #A9A9A9;
-        margin-bottom: 40px;
-    }
+	.mobileStyles {
+		margin-top: 20px;
+	}
 
-    .subtotal {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        color: #151515;
-    }
+	&-title {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 33px;
+		color: #151515;
+		margin-bottom: 5px;
+	}
 
-    .subtotalPrice {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        text-align: right;
-        color: #151515;
-    }
+	&-span {
+		font-family: "Open Sans";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 16px;
+		color: #a9a9a9;
+		margin-bottom: 40px;
+	}
 
-    .orderInputSection {
-        border: 1px solid #D1D1D1;
-        box-sizing: border-box;
-        border-radius: 12px;
-        background: #F9F9F9;
-        margin-bottom: 45px;
-        
-        .orderRightInput {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 19px;
-            color: #A9A9A9;
-            width: 82%;
-            outline: none;
-            border: none;
-            padding: 10px 20px;
-            background-color: transparent;
-        }
+	.subtotal {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 18px;
+		color: #151515;
+	}
 
-        .orderRightBtn {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: bold;
-            font-size: 15px;
-            line-height: 22px;
-            color: #151515;
-            outline: none;
-            border: none;
-            background-color: transparent;
-        }
-    }
+	.subtotalPrice {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 18px;
+		text-align: right;
+		color: #151515;
+	}
 
-    .deleveryTitle {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 16px;
-        color: #6A983C;
-    }
+	.orderInputSection {
+		border: 1px solid #d1d1d1;
+		box-sizing: border-box;
+		border-radius: 12px;
+		background: #f9f9f9;
+		margin-bottom: 45px;
 
-    .orderPrice {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 26px;
-        line-height: 39px;
-        text-align: right;
-        color: #6A983C;
-    }
+		.orderRightInput {
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 19px;
+			color: #a9a9a9;
+			width: 82%;
+			outline: none;
+			border: none;
+			padding: 10px 20px;
+			background-color: transparent;
+		}
+
+		.orderRightBtn {
+			font-family: "Poppins";
+			font-style: normal;
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 22px;
+			color: #151515;
+			outline: none;
+			border: none;
+			background-color: transparent;
+		}
+	}
+
+	.deleveryTitle {
+		font-family: "Open Sans";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 16px;
+		color: #6a983c;
+	}
+
+	.orderPrice {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 26px;
+		line-height: 39px;
+		text-align: right;
+		color: #6a983c;
+	}
 }
 
-@media screen and (max-width: '960px') {
-    .Order {
-        padding: 25px 15px;
-        &-title {
-            font-size: 20px;
-        }
+@media screen and (max-width: 960px) {
+	.Order {
+		padding: 25px 15px;
+		&-title {
+			font-size: 20px;
+		}
 
-        &-span {
-            font-size: 11px;
-            margin-bottom: 20px;
-        }
+		&-span {
+			font-size: 11px;
+			margin-bottom: 20px;
+		}
 
-        .orderRightBtn {
-            margin-left: 20px;
-            padding-bottom: 15px;
+		.orderRightBtn {
+			margin-left: 20px;
+			padding-bottom: 15px;
+		}
+
+		.orderInputSection {
+			.orderRightInput {
+                width: 65%;
+			}
+
+            .orderRightBtn {
+                padding: 0;
+            }
+		}
+
+        
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.Order {
+        .orderInputSection {
+            .orderRightInput {
+                width: 60%;
+                font-size: 13px;
+            }
+
+            .orderRightBtn {
+                margin-left: 10px;
+            }
         }
-    }
+	}
+}
+
+@media screen and (max-width: 375px) {
 }

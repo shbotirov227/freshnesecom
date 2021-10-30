@@ -29,71 +29,71 @@ const CategoryRating = () => {
 
   return (
     <div className="CategoryRating">
-        <div className="Rating mb-5">
-            <h4 className="CategoryRating-title">Rating</h4>
-            
-            <div className="d-flex align-items-center justify-content-start">
-                <Checkbox onChange={handleChange} inputProps={{ 'aria-label': 'controlled' }} />
-                <Rating name="half-rating" defaultValue={5} precision={0.5} className="ratingStar" />
-            </div>
-            <div className="d-flex align-items-center justify-content-start">
-                <Checkbox onChange={handleChange} inputProps={{ 'aria-label': 'controlled' }} />
-                <Rating name="half-rating" defaultValue={4} precision={0.5} className="ratingStar" />
-            </div>
-            <div className="d-flex align-items-center justify-content-start">
-                <Checkbox onChange={handleChange} inputProps={{ 'aria-label': 'controlled' }} />
-                <Rating name="half-rating" defaultValue={3} precision={0.5} className="ratingStar" />
-            </div>
-            <div className="d-flex align-items-center justify-content-start">
-                <Checkbox onChange={handleChange} inputProps={{ 'aria-label': 'controlled' }} />
-                <Rating name="half-rating" defaultValue={2} precision={0.5} className="ratingStar" />
-            </div>
-            <div className="d-flex align-items-center justify-content-start">
-                <Checkbox onChange={handleChange} inputProps={{ 'aria-label': 'controlled' }} />
-                <Rating name="half-rating" defaultValue={1} precision={0.5} className="ratingStar" />
-            </div>
+      <div className="Rating mb-5">
+        <h4 className="CategoryRating-title">Rating</h4>
+        
+        <div className="d-flex align-items-center justify-content-start">
+          <Checkbox onChange={handleChange} inputProps={{ 'aria-label': 'controlled' }} />
+          <Rating name="half-rating" defaultValue={5} precision={0.5} className="ratingStar" />
         </div>
 
-        <div className="Price mb-3">
-            <h4 className="CategoryRating-title">Price</h4>
-            
-            <div className="RangeSlider">
-              <form action="javascript:void(0)" autoComplete="off" noValidate>
-                <Box sx={{ width: 300 }}>
-                  <Slider
-                    getAriaLabel={() => 'Minimum distance'}
-                    value={value1}
-                    onChange={handleChange1}
-                    valueLabelDisplay="auto"
-                    disableSwap
-                    className="rangeInput"
-                  />
-                </Box>
+        <div className="d-flex align-items-center justify-content-start">
+          <Checkbox onChange={handleChange} inputProps={{ 'aria-label': 'controlled' }} />
+          <Rating name="half-rating" defaultValue={4} precision={0.5} className="ratingStar" />
+        </div>
 
-                <Box component="form" sx={{ '& > :not(style)': { m: 1, width: '25ch' } }} noValidate autoComplete="off" >
+        <div className="d-flex align-items-center justify-content-start">
+          <Checkbox onChange={handleChange} inputProps={{ 'aria-label': 'controlled' }} />
+          <Rating name="half-rating" defaultValue={3} precision={0.5} className="ratingStar" />
+        </div>
 
-                    <div className="d-flex align-items-center">
-                      <span className="min d-block price">Min</span>
-                      <span className="d-block price">Max</span>
-                    </div>
-                  <div className="d-flex">
-                    {/* <TextField className="inputField" id="outlined-basic" label="0" variant="outlined" /> */}
+        <div className="d-flex align-items-center justify-content-start">
+          <Checkbox onChange={handleChange} inputProps={{ 'aria-label': 'controlled' }} />
+          <Rating name="half-rating" defaultValue={2} precision={0.5} className="ratingStar" />
+        </div>
 
-                    {/* <TextField className="inputField" id="outlined-basic" label="000" variant="outlined" /> */}
+        <div className="d-flex align-items-center justify-content-start">
+          <Checkbox onChange={handleChange} inputProps={{ 'aria-label': 'controlled' }} />
+          <Rating name="half-rating" defaultValue={1} precision={0.5} className="ratingStar" />
+        </div>
+      </div>
 
-                    <input type="text" className="inputField" placeholder="0" />
-                    <input type="text" className="inputField" placeholder="000" />
-                  </div>
-
-                </Box>
-                <div className="d-flex align-items-center mt-5">
-                  <button className="priceBtn">Apply</button>
-                  <button className="priceBtn">Reset</button>
+      <div className="Price mb-3">
+        <h4 className="CategoryRating-title">Price</h4>
+        
+        <div className="RangeSlider">
+          <form action="javascript:void(0)" autoComplete="off" noValidate>
+            <Box sx={{ width: 300 }}>
+              <Slider
+                getAriaLabel={() => 'Minimum distance'}
+                value={value1}
+                onChange={handleChange1}
+                valueLabelDisplay="auto"
+                disableSwap
+                className="rangeInput"
+              />
+            </Box>
+            <Box component="form" sx={{ '& > :not(style)': { m: 1, width: '25ch' } }} noValidate autoComplete="off" >
+                <div className="d-flex align-items-center">
+                  <span className="min d-block price">Min</span>
+                  <span className="d-block price">Max</span>
                 </div>
-              </form>
-
+              <div className="d-flex m-0">
+                {/* <TextField className="inputField" id="outlined-basic" label="0" variant="outlined" /> */}
+                {/* <TextField className="inputField" id="outlined-basic" label="000" variant="outlined" /> */}
+                <input type="text" className="inputField" placeholder="0" />
+                <input type="text" className="inputField" placeholder="000" />
+              </div>
+            </Box>
+            
+            <div className="d-flex align-items-center mt-5">
+              <button className="priceBtn">Apply</button>
+              <button className="priceBtn">Reset</button>
             </div>
+            
+          </form>
         </div>
+      </div>
 
     </div>
   );

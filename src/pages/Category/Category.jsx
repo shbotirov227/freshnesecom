@@ -12,15 +12,15 @@ import {
 } from "@material-ui/core";
 
 import Header from "../../containers/Header";
+import CategoryFooter from "../../containers/CategoryFooter";
 import CategoryLink from "../../components/CategoryLink";
 import CategoryRating from "../../components/CategoryRating";
+import CategoryRadio from "../../components/CategoryRadio";
 import CategoryCard from "../../components/CategoryCard";
 import Card from '../../components/Card';
 import { ArrowDown, X, GridIcon, ListIcon } from "../../assets/icons/icons";
 
 import "./Category.scss";
-import CategoryFooter from "../../containers/CategoryFooter";
-import CategoryRadio from "../../components/CategoryRadio";
 
 const Category = () => {
   const [value, setValue] = React.useState("female");
@@ -149,8 +149,8 @@ const Category = () => {
           </div>
         </div>
 
-        <div className="d-flex justify-content-between">
-          <div className="d-block" style={{width: '17%'}}>
+        <div className="d-flex justify-content-between categoryMain">
+          <div className="d-block categoryMain-left" style={{width: '17%'}}>
             <CategoryLink
               className="d-flex justify-content-between"
               title="Categories"

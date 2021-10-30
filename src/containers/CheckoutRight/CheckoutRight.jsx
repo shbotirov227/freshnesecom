@@ -12,7 +12,7 @@ const CheckoutRight = () => {
             <OrderCard />
             <OrderCard />
 
-            <div className="d-flex justify-content-between align-items-center mb-5">
+            <div className="d-flex justify-content-between align-items-center mb-5 mobileStyles">
                 <div>
                     <span className="d-block subtotal mb-2">Subtotal</span>
                     <span className="d-block subtotal mb-2">Tax</span>

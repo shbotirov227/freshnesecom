@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-import Links from "../Links";
-import HeaderBottom from "../HeaderBottom";
+// import Links from "../Links";
+// import HeaderBottom from "../HeaderBottom";
 
 import {
 	Logo,

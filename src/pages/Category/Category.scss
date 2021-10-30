@@ -1,350 +1,483 @@
 .Category {
-    .category-title {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 48px;
-        color: #151515;
-        margin: 25px 0;
-    }
+	.category-title {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 48px;
+		color: #151515;
+		margin: 25px 0;
+	}
 
-    .categoryTopBtn {
-        border: none;
-        outline: none;
-        cursor: pointer;
-        background-color: transparent;
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 16px;
-        color: #A9A9A9;
-        margin-left: 25px;
-        transition: all ease 0.5s;
+	.categoryTopBtn {
+		border: none;
+		outline: none;
+		cursor: pointer;
+		background-color: transparent;
+		font-family: "Open Sans";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 16px;
+		color: #a9a9a9;
+		margin-left: 25px;
+		transition: all ease 0.5s;
 
-        &:hover {
-            color: #151515;
-        }
+		&:hover {
+			color: #151515;
+		}
 
-        &-icon {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 18px;
-            color: #6A983C;
-            background: #F4F8EC;
-            border-radius: 12px;
-            padding: 1px 10px;
-        }
-    }
+		&-icon {
+			font-family: "Poppins";
+			font-style: normal;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 18px;
+			color: #6a983c;
+			background: #f4f8ec;
+			border-radius: 12px;
+			padding: 1px 10px;
+		}
+	}
 
-    .breadcrumbItems {
-        margin-top: 25px;
-    }
+	.breadcrumbItems {
+		margin-top: 25px;
+	}
 
-    .radio-section {
-        display: flex;
-        background: #F9F9F9;
-        border: 1px solid #D1D1D1;
-        box-sizing: border-box;
-        border-radius: 12px;
-        width: 240px;
-    }
+	.radio-section {
+		display: flex;
+		background: #f9f9f9;
+		border: 1px solid #d1d1d1;
+		box-sizing: border-box;
+		border-radius: 12px;
+		width: 240px;
+	}
 
-    .checkbox-item {
-        background: #F9F9F9;
-        border: 1px solid #D1D1D1;
-        box-sizing: border-box;
-        border-radius: 12px;
-        padding: 2px 20px;
+	.checkbox-item {
+		background: #f9f9f9;
+		border: 1px solid #d1d1d1;
+		box-sizing: border-box;
+		border-radius: 12px;
+		padding: 2px 20px;
 
-        select {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 18px;
-            color: #151515;
-            outline: none;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-        }
+		select {
+			font-family: "Poppins";
+			font-style: normal;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 18px;
+			color: #151515;
+			outline: none;
+			border: none;
+			background-color: transparent;
+			cursor: pointer;
+		}
 
-        .line {
-            width: 1px;
-            height: 20px;
-            background-color: #D1D1D1;
-            margin: 0 25px 0 35px;
-            border-radius: 12px;
-            border: 1px solid #D1D1D1;
-            transform: rotate(90deg);
-        }
-    }
+		.line {
+			width: 1px;
+			height: 20px;
+			background-color: #d1d1d1;
+			margin: 0 25px 0 35px;
+			border-radius: 12px;
+			border: 1px solid #d1d1d1;
+			transform: rotate(90deg);
+		}
+	}
 
-    .check {
-        margin-right: 16px;
-    }
+	.check {
+		margin-right: 16px;
+	}
 
-    .radio-btn {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        color: #151515;
-        outline: none;
-        border: none;
-        border: 1px solid #D1D1D1;
-        box-sizing: border-box;
-        border-radius: 12px;
-        padding: 0 5px;
-    }
+	.radio-btn {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 18px;
+		color: #151515;
+		outline: none;
+		border: none;
+		border: 1px solid #d1d1d1;
+		box-sizing: border-box;
+		border-radius: 12px;
+		padding: 0 5px;
+	}
 
-    .selectedItems {
-        .selectedTitle {
-            margin-right: 12px;
-        }
+	.selectedItems {
+		.selectedTitle {
+			margin-right: 12px;
+		}
 
-        .selectedBtn {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 18px;
-            color: #6A983C;
-            padding: 1px 10px 1px 10px;
-            outline: none;
-            border: none;
-            background: #F4F8EC;
-            border-radius: 12px;
-            margin-right: 12px;
-            cursor: pointer;
-        }
-    }
+		.selectedBtn {
+			font-family: "Poppins";
+			font-style: normal;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 18px;
+			color: #6a983c;
+			padding: 1px 10px 1px 10px;
+			outline: none;
+			border: none;
+			background: #f4f8ec;
+			border-radius: 12px;
+			margin-right: 12px;
+			cursor: pointer;
+		}
+	}
 
-    .categorycard-section {
-        width: 100% !important;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
+	.categorycard-section {
+		width: 100% !important;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
 
-        .categoryCard-grid {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-left: 130px;
-            
-            .categoryCard-list {
-                margin-left: 10px;
-            }
+		.categoryCard-grid {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-left: 130px;
 
+			.categoryCard-list {
+				margin-left: 10px;
+			}
 
-            .Card {
-                margin-bottom: 50px;
-            }
-        }
-    }
+			.Card {
+				margin-bottom: 50px;
+			}
+		}
+	}
 
-    .css-1ri6ub7-MuiPaper-root-MuiCard-root {
-        box-shadow: none;
-        max-width: none;
-    }
+	.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+		box-shadow: none;
+		max-width: none;
+	}
 
-    .CategoryFooter {
-        &-btn {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: bold;
-            font-size: 15px;
-            line-height: 22px;
-            color: #FFFFFF;
-            background: #6A983C;
-            border: 2px solid #46760A;
-            box-sizing: border-box;
-            border-radius: 12px;
-            padding: 12px 20px;
-        }
+	.CategoryFooter {
+		&-btn {
+			font-family: "Poppins";
+			font-style: normal;
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 22px;
+			color: #ffffff;
+			background: #6a983c;
+			border: 2px solid #46760a;
+			box-sizing: border-box;
+			border-radius: 12px;
+			padding: 12px 20px;
+		}
 
-        &-backgroundBtn {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 18px;
-            color: #6A983C;
-            padding: 3px 10px 1px 10px;
-            background: #F4F8EC;
-            border-radius: 12px;
-            margin-right: 5px;
-        }
+		&-backgroundBtn {
+			font-family: "Poppins";
+			font-style: normal;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 18px;
+			color: #6a983c;
+			padding: 3px 10px 1px 10px;
+			background: #f4f8ec;
+			border-radius: 12px;
+			margin-right: 5px;
+		}
 
-        &-products {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 16px;
-            color: #A9A9A9;
-        }
+		&-products {
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 16px;
+			color: #a9a9a9;
+		}
 
-        &-pageNum {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 16px;
-            color: #151515;
-            margin-left: 10px;
-            cursor: pointer;
-            transition: all ease 0.5s;
+		&-pageNum {
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 16px;
+			color: #151515;
+			margin-left: 10px;
+			cursor: pointer;
+			transition: all ease 0.5s;
 
-            &:hover {
-                color: #6A983C;
-            }
-        }
-    }
+			&:hover {
+				color: #6a983c;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 960px) {
-    .Category {
+	.Category {
+		.radio-section {
+			height: 40px;
+			label {
+				span {
+					font-size: 14px;
+					svg {
+						width: 15px;
+						height: 15px;
+					}
+				}
+			}
+		}
+		.checkbox-item {
+			height: 40px;
+			label {
+				span {
+					font-size: 14px;
+					svg {
+						width: 15px;
+						height: 15px;
+					}
+				}
+			}
+			.radio-btn {
+				font-size: 10px;
+			}
+		}
 
-        .radio-section {
-            height: 40px;
-            label {
-                span {
-                    font-size: 14px;
-                    svg {
-                        width: 15px;
-                        height: 15px;
-                    }
-                }
-            }
+		.categorycard-section {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
 
-        }
-        .checkbox-item {
-            height: 40px;
-            label {
-                span {
-                    font-size: 14px;
-                    svg {
-                        width: 15px;
-                        height: 15px;
-                    }
-                }
-            }
-            .radio-btn {
-                font-size: 10px;
-            }
-        }
+			.categoryCard-list {
+				margin-left: 120px;
+			}
 
-        .categorycard-section {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            
-            .categoryCard-list {
-                margin-left: 120px;
-            }
+			.categoryCard-grid {
+				width: 85%;
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				margin-left: 120px;
+			}
+		}
 
-            .categoryCard-grid {
-                width: 85%;
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-                margin-left: 120px;
-            }
-        }
+		.container {
+			.category-title {
+				font-size: 23px;
+			}
+		}
+		.breadcrumb {
+			font-size: 15px;
+		}
+		.category-title {
+			font-size: 25px;
+		}
+		.selectedItems {
+			.selectedTitle {
+				font-size: 14px;
+			}
+		}
 
-        .container {
-            .category-title {
-                font-size: 23px;
-            }
-        }
-        .breadcrumb {
-            font-size: 15px;
-        }
-        .category-title {
-            font-size: 25px;
-        }
-        .selectedItems {
-            .selectedTitle {
-                font-size: 14px;
-            }
-        }
+		.categoryTopBtn {
+			font-size: 11px;
+			svg {
+				width: 15px;
+				height: 15px;
+			}
+			&-icon {
+				font-size: 10px;
+			}
+		}
 
-        .categoryTopBtn {
-            font-size: 11px;
-            svg {
-                width: 15px;
-                height: 15px;
-            }
-            &-icon {
-                font-size: 10px;
-            }
-        }
-
-        .CategoryFooter {
-            &-btn {
-                font-size: 12px;
-                padding: 10px 15px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .Category {
-        .container {
-            .breadcrumb {
-                font-size: 13px;
-            }
-        }
-        
-        .categoryTopTitles {
-            flex-direction: column;
-            // margin-bottom: 30px;
-            
-            .category-title {
-                font-size: 20px;
-                margin: 25px 0 30px 0;
-            }
-
-            .category-settings {
-                justify-content: space-between;
-                margin-bottom: 50px;
-
-                .categoryTopBtn {
-                    &:first-child {
-                        margin-left: 0;
-                    }
-                }
-
-                .check {
-                    :last-child {
-                        width: 100%;
-                    }
-                }
-            }
-        }
-
-        .w-100 {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 100%;
-
-            .radio-section {
-                width: 100%;
-            }
-        }
-    }
+		.CategoryFooter {
+			&-btn {
+				font-size: 12px;
+				padding: 10px 15px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
+	.Category {
 
+		.category-title {
+			font-size: 18px;
+		}
+
+		.w-100 {
+            flex-wrap: wrap;
+            .checkbox-item {
+                &:last-child {
+                    margin-right: 0;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .categoryMain {
+            flex-direction: column;
+
+            &-left {
+                width: 70% !important;
+                margin-bottom: 50px;
+
+                .categoryRadioSection {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+
+                    .CategoryRadio {
+                        min-width: 70%;
+                        position: relative;
+                        top: 0;
+                    }
+
+                    .CategoryRating {
+                        max-width: 30%;
+                    }
+                }
+            }
+
+            .categorycard-section {
+                width: 100%;
+
+                .categoryCard-list {
+                    margin-left: 0;
+                    width: 100%;
+                }
+
+                .categoryCard-grid {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.Category {
+		.container {
+			.breadcrumb {
+				font-size: 13px;
+			}
+			.categoryTopTitles {
+				flex-direction: column;
+				// margin-bottom: 30px;
+
+				.category-title {
+					font-size: 20px;
+					margin: 25px 0 30px 0;
+				}
+
+				.category-settings {
+					justify-content: space-between;
+					margin-bottom: 50px;
+
+					.categoryTopBtn {
+						&:first-child {
+							margin-left: 0;
+						}
+					}
+				}
+			}
+
+			.w-100 {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				width: 100%;
+
+				.radio-section {
+					width: 100%;
+					margin-right: 0;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+				}
+				.checkbox-item {
+					width: 45%;
+					margin-right: 0;
+					margin-top: 20px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					.line {
+						transform: rotate(180deg);
+					}
+
+					select {
+						width: 30%;
+					}
+
+					&:last-child {
+						width: 100%;
+					}
+				}
+			}
+
+			.selectedItems {
+				.selectedTitle {
+					font-size: 12px;
+				}
+
+				.selectedBtn {
+					font-size: 10px;
+				}
+			}
+
+			.categoryMain {
+				flex-direction: column;
+
+				&-left {
+					width: 70% !important;
+					margin-bottom: 50px;
+
+					.categoryRadioSection {
+						display: flex;
+						width: 100%;
+						justify-content: space-between;
+
+						.CategoryRadio {
+							min-width: 70%;
+						}
+
+						.CategoryRating {
+							max-width: 30%;
+						}
+					}
+				}
+
+				.categorycard-section {
+					width: 100%;
+
+					.categoryCard-list {
+						margin-left: 0;
+						width: 100%;
+					}
+
+					.categoryCard-grid {
+						width: 100%;
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.CategoryFooter-products {
+			font-size: 10px;
+		}
+
+		.CategoryFooter-pageNum {
+			font-size: 10px;
+			margin: 3px;
+		}
+
+		.CategoryFooter-backgroundBtn {
+			font-size: 10px;
+		}
+
+		.CategoryFooter-btn {
+			font-size: 12px;
+			padding: 3px 10px;
+		}
+	}
 }

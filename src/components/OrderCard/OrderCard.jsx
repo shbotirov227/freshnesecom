@@ -26,8 +26,8 @@ const OrderCard = ({ orderWidth }) => {
                 </div>
             </div>
 
-            <div className="d-flex">
-                <div className="me-5">
+            <div className="d-flex compires">
+                <div className="compire1">
                     <span className="d-block iconTitle mb-2" style={{cursor: 'pointer'}}>
                         <span className="me-2"><OrderLikeIcon /></span>
                         Wishlist
@@ -44,21 +44,21 @@ const OrderCard = ({ orderWidth }) => {
                     </span>
                 </div>
 
-                <div className="d-flex align-items-center justify-content-between ms-2">
-                        <div className="addButtons addButtons-priceItems">
-                            <h4 className="addButtons-price">36.23 USD</h4>
-                            <span className="addButtons-smBtn">48.56 USD</span>
-                        </div>
+                <div className="ms-2 pricesOption">
+                    <div className="addButtons addButtons-priceItems">
+                        <h4 className="addButtons-price">36.23 USD</h4>
+                        <span className="addButtons-smBtn">48.56 USD</span>
+                    </div>
 
-                        <div className="addButtons-select d-flex align-items-center justify-content-center ms-5">
-                            <input type="text" placeholder="1pcs" />
-                            <select name="" id="">
-                                <option value="">Pcs</option>
-                                <option value="">Kgs</option>
-                                <option value="">Box</option>
-                                <option value="">Pack</option>
-                            </select>
-                        </div>
+                    <div className="addButtons-select ms-5">
+                        <input type="text" placeholder="1pcs" />
+                        <select name="" id="">
+                            <option value="">Pcs</option>
+                            <option value="">Kgs</option>
+                            <option value="">Box</option>
+                            <option value="">Pack</option>
+                        </select>
+                    </div>
                 </div>
                 
             </div>
