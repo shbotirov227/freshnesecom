@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import { Breadcrumbs, Typography, Link } from "@material-ui/core";
 import { Rating } from "@mui/material";
 
@@ -11,8 +11,8 @@ import Footer from "../../containers/Footer";
 import DetailImage from "../../components/DetailImg";
 import VitaminItem from "../../components/VitaminItem";
 
-import LeftIcon from "../../assets/images/icons/LeftArrow.svg";
-import RightIcon from "../../assets/images/icons/RightArrow.svg";
+// import LeftIcon from "../../assets/images/icons/LeftArrow.svg";
+// import RightIcon from "../../assets/images/icons/RightArrow.svg";
 import {
   CompareIcon,
   DetailLikeIcon,
@@ -22,13 +22,13 @@ import {
 import "./Detail.scss";
 
 
-const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-  <span className="carouselIcon"><img src={LeftIcon} alt="nextArrow" {...props} /></span>
-);
+// const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+//   <span className="carouselIcon"><img src={LeftIcon} alt="nextArrow" {...props} /></span>
+// );
 
-const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-  <span className="carouselIcon"><img src={RightIcon} alt="nextArrow" {...props} /></span>
-);
+// const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+//   <span className="carouselIcon"><img src={RightIcon} alt="nextArrow" {...props} /></span>
+// );
 
 class Detail extends Component {
 
@@ -41,17 +41,17 @@ class Detail extends Component {
   }
 
   render () {
-    const settings = {
-      className: "center",
-      centerMode: true,
-      infinite: true,
-      centerPadding: "100px",
-      slidesToShow: 3,
-      speed: 500,
-      autoplay: true,
-      prevArrow: <SlickArrowLeft />,
-      nextArrow: <SlickArrowRight />
-    };
+    // const settings = {
+    //   className: "center",
+    //   centerMode: true,
+    //   infinite: true,
+    //   centerPadding: "100px",
+    //   slidesToShow: 3,
+    //   speed: 500,
+    //   autoplay: true,
+    //   prevArrow: <SlickArrowLeft />,
+    //   nextArrow: <SlickArrowRight />
+    // };
   
     return (
       <div className="Detail">

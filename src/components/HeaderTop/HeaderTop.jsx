@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-// import Links from "../Links";
-// import HeaderBottom from "../HeaderBottom";
+import HeaderBottomSelect from '../HeaderBottomSelect';
 
 import {
 	Logo,
@@ -64,22 +63,32 @@ const HeaderTop = () => {
 						</button>
 
 						{
-							open ? <>
-								
-								{/* <HeaderBottom /> */}
-								{/* <Links
-                    linksTitle="Best from Farmers"
-                    link={[
-                        "Carrots",
-                        "Tomatoes",
-                        "Potatoes",
-                        "Chicken",
-                        "Pork"
-                    ]}
-                    btnTitle="More products"
-                /> */}
-								
-							</> : undefined
+							open ?
+								<div className="mobileHeaderModal">
+									<HeaderBottomSelect
+										title={[
+											"Bakery",
+											"Fruit and vegetables",
+											"Meat and fish",
+											"Drinks",
+											"Kitchen",
+											"Special nutrition",
+											"Baby",
+											"Pharmacy",
+										]}
+										value={[
+											"bakery",
+											"fruit",
+											"meat",
+											"drinks",
+											"kitchen",
+											"nutrition",
+											"baby",
+											"pharmacy",
+										]}
+									/>
+								</div>
+								: undefined
 						}
 
 

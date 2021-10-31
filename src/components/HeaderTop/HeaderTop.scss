@@ -276,6 +276,7 @@
                 justify-content: space-between;
                 width: 100%;
                 margin-top: 20px;
+                position: relative;
 
                 .mobileNavBtn {
                     display: block;
@@ -324,9 +325,46 @@
     }
 
     
-    .visible {
-        .HeaderBottom {
+        .visible {
+            .HeaderBottom {
+                display: block;
+            }
+        }
+    .mobileHeaderModal {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        margin: auto;
+        height: 435px;
+        width: 75%;
+        background-color: #9c9c9c;
+        border-radius: 10px;
+        padding: 5px;
+        z-index: 9999;
+        
+        select {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            background-color: transparent;
+            color: #151515;
+            border: none;
+            outline: none;
+            width: 100%;
             display: block;
+            padding: 15px;
+            border-radius: 10px;
+            color: #fff;
+            z-index: 9999;
+            transition: all ease 0.2s;
+            cursor: pointer;
+            
+            &:hover {
+                background-color: #F9F9F9;
+                color: #151515;
+            }
         }
     }
 }

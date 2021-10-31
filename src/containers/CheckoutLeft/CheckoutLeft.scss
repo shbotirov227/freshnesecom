@@ -346,7 +346,7 @@
                         width: 194px;
                     }
                     #cardCvc {
-                        width: 194px;
+                        width: 205px;
                     }
                 }
             }
@@ -433,6 +433,14 @@
             }
         }
 
+        .radioSection {
+            .radioElement {
+                .fedEx-price {
+                    padding-left: 0 !important;
+                }
+            }
+        }
+
         .confirmation {
 
             .spanTitles {
@@ -446,4 +454,59 @@
     }
 }
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+    .checkoutPage-left {
+        width: 100%;
+        order: 2;
+
+        .formInputs {
+            .inputElement {
+                width: 150px;
+            }
+        }
+
+        .radioSection {
+            .radioElement {
+                .fedEx-price {
+                    // width: 100%;
+                    padding-left: 0 !important;
+                }
+
+                img {
+                    width: 60px;
+                    height: 15px;
+                }
+            }
+        }
+
+        .CreditCards {
+
+            .expiration {
+                #cardDate {
+                    width: 160px !important;
+                }
+                #cardCvc {
+                    width: 110px !important;
+                }
+            }
+        }
+
+        .Modal {
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+
+            .modalShopping {
+                .modalBtnTitle {
+                    font-size: 15px;
+                    width: 50%;
+                }
+
+                .modalBtn {
+                    font-size: 12px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Checkbox, Box, Rating, Slider, TextField   } from '@mui/material';
+import { Checkbox, Box, Rating, Slider   } from '@mui/material';
 
 import "./CategoryRating.scss";
 
@@ -62,7 +62,7 @@ const CategoryRating = () => {
         <h4 className="CategoryRating-title">Price</h4>
         
         <div className="RangeSlider">
-          <form action="javascript:void(0)" autoComplete="off" noValidate>
+          <form action="#" autoComplete="off" noValidate>
             <Box sx={{ width: 300 }}>
               <Slider
                 getAriaLabel={() => 'Minimum distance'}

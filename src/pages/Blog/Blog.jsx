@@ -14,7 +14,7 @@ import BlogCardImg4 from '../../assets/images/blogCardImg4.png';
 import BlogCardImg5 from '../../assets/images/blogCardImg5.png';
 import BlogCardImg6 from '../../assets/images/blogCardImg6.png';
 import BlogCardImg7 from '../../assets/images/blogCardImg7.png';
-import { ArrowBtn, GridIcon, ListIcon } from "../../assets/icons/icons";
+import { ArrowBtn } from "../../assets/icons/icons";
 
 import "./Blog.scss";
 
